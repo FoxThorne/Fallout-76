@@ -1,0 +1,7 @@
+[
+//FOX_KEEP is used to force specific interactions, where I wish to keep specific items in-stock on person.
+
+//Consumables
+	"Stimpack: Super",
+	"Purified Water"
+]
