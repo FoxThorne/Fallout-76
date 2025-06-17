@@ -1,1 +1,21 @@
-../../../../../../Program Files (x86)/Steam/steamapps/common/Fallout76/Data/ImprovedSocialMenuConfig.json
+{
+	"hideTeamsAvailablePopup": true,
+	"showFriendCount": true,
+	"showRecentCount": true,
+	"createTeamDelay": 25,
+	"showNameFormat": "{accountName} [{characterName}]",
+	"showTeamMemberCount": true,
+	"hideOfflineFriends": false,
+	"hideDisconnectedRecent": false,
+	"defaultSelectionJoin": true,
+	"disableFriendsGrouping": false,
+	"topSortFriends": [],
+	"hudModLoader": ["BuffsMeter","HUDChallenges"],
+	"delayModLoader": 30000,
+	"hideVignette": false,
+	"notificationHideDelay": 2500,
+	"hideBestBuildNotification": false,
+	"hideSelfName": false,
+	"hideAllPlayerNames": false,
+	"hideAllPlayerNamesReplacement": "REDACTED"
+}

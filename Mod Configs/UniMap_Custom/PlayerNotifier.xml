@@ -1,1 +1,8 @@
-../../../../../../Program Files (x86)/Steam/steamapps/common/Fallout76/Data/UniMap_Custom/PlayerNotifier.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<UniMap>
+ <PlayerNotifier>
+  <Player Ent="0">
+   <Name>PlayerNameIsHere</Name><Info>InfoIsHere</Info>
+  </Player>
+ </PlayerNotifier>
+</UniMap>

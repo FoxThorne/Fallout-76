@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UniMap>
+ <MapBook>
+  <MapBookName>No-Build Zones</MapBookName>
+  <MapBookCreator>PSYcosha</MapBookCreator>
+  <MapResolution>4K</MapResolution>
+  <Map Page="1">
+   <Directory>textures\NoCampZones\</Directory>
+   <Texture>main.dds</Texture>
+   <MapName>No Build Zones</MapName>
+   <MapModName></MapModName>
+   <Creator>PSYcosha</Creator>
+  </Map>
+ </MapBook>
+</UniMap>

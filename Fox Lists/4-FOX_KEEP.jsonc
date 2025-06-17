@@ -1,5 +1,6 @@
 [
 //FOX_KEEP is used to force specific interactions, where I wish to keep specific items in-stock on person.
+//Use FOX_SAFE to protect the items, and this to perform transfers.
 
 //Consumables
 	"Stimpack: Super",

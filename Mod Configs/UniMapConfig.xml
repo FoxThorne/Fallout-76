@@ -1,1 +1,161 @@
-../../../../../../Program Files (x86)/Steam/steamapps/common/Fallout76/Data/UniMapConfig.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<UniMap Creator="Unikko" Site="https://www.nexusmods.com/fallout76/mods/1534" Ver="1">
+
+ <UniMapVersion>1.2</UniMapVersion>
+
+ <MapBooks>
+  <MapBook Book="1">Appalachia Renaissance.xml</MapBook><MapPages Book="1">1</MapPages>
+  <MapBook Book="2">TZM_EasyInstall_UnibookBundle\UniMap_MapBooks\TZM_Consumables_Unibook.xml</MapBook><MapPages Book="2">10</MapPages>
+  <MapBook Book="3">TZM_EasyInstall_UnibookBundle\UniMap_MapBooks\TZM_Resources_Unibook.xml</MapBook><MapPages Book="3">10</MapPages>
+  <MapBook Book="4">TZM_EasyInstall_UnibookBundle\UniMap_MapBooks\TZM_Mobs_Unibook.xml</MapBook><MapPages Book="4">5</MapPages>
+  <MapBook Book="5">TZM_EasyInstall_UnibookBundle\UniMap_MapBooks\TZM_Flora_UniBook.xml</MapBook><MapPages Book="5">5</MapPages>
+  <MapBook Book="6">TZM_EasyInstall_UnibookBundle\UniMap_MapBooks\TZM_Unmarked_Locations_Unibook.xml</MapBook><MapPages Book="6">5</MapPages>
+  <MapBook Book="7">TZM_EasyInstall_UnibookBundle\UniMap_MapBooks\TZM_XPRecipes_Unibook.xml</MapBook><MapPages Book="7">5</MapPages>
+  <MapBook Book="8">data\NoCampZones.xml</MapBook><MapPages Book="8">1</MapPages>
+ </MapBooks>
+
+ <MapBooksPitt>
+  <MapBookPitt Book="1">TZM_EasyInstall_UnibookBundle\UniMap_MapBooks\TZM_ThePitt_UniBook.xml</MapBookPitt><MapPagesPitt Book="1">2</MapPagesPitt>
+  <MapBookPitt Book="2">TZM_EasyInstall_UnibookBundle\UniMap_MapBooks\TZM_Consumables_Unibook.xml</MapBookPitt><MapPagesPitt Book="2">10</MapPagesPitt>
+  <MapBookPitt Book="3">TZM_EasyInstall_UnibookBundle\UniMap_MapBooks\TZM_Flora_UniBook.xml</MapBookPitt><MapPagesPitt Book="3">5</MapPagesPitt>
+  <MapBookPitt Book="4">TZM_EasyInstall_UnibookBundle\UniMap_MapBooks\TZM_Mobs_Unibook.xml</MapBookPitt><MapPagesPitt Book="4">5</MapPagesPitt>
+  <MapBookPitt Book="5">TZM_EasyInstall_UnibookBundle\UniMap_MapBooks\TZM_Resources_Unibook.xml</MapBookPitt><MapPagesPitt Book="5">10</MapPagesPitt>
+  <MapBookPitt Book="6">TZM_EasyInstall_UnibookBundle\UniMap_MapBooks\TZM_ThePitt_UniBook.xml</MapBookPitt><MapPagesPitt Book="6">2</MapPagesPitt>
+  <MapBookPitt Book="7">TZM_EasyInstall_UnibookBundle\UniMap_MapBooks\TZM_Unmarked_Locations_Unibook.xml</MapBookPitt><MapPagesPitt Book="7">5</MapPagesPitt>
+  <MapBookPitt Book="8">TZM_EasyInstall_UnibookBundle\UniMap_MapBooks\TZM_Vanilla-Enhanced_UniBook.xml</MapBookPitt><MapPagesPitt Book="8">2</MapPagesPitt>
+  <MapBookPitt Book="9">TZM_EasyInstall_UnibookBundle\UniMap_MapBooks\TZM_XPRecipes_Unibook.xml</MapBookPitt><MapPagesPitt Book="9">5</MapPagesPitt>
+  <MapBookPitt Book="10">TZM_EasyInstall_UnibookBundle\UniMap_MapBooks\TZM_Consumables_Unibook.xml</MapBookPitt><MapPagesPitt Book="10">10</MapPagesPitt>
+  <MapBookPitt Book="11">TZM_EasyInstall_UnibookBundle\UniMap_MapBooks\TZM_Flora_UniBook.xml</MapBookPitt><MapPagesPitt Book="11">5</MapPagesPitt>
+  <MapBookPitt Book="12">TZM_EasyInstall_UnibookBundle\UniMap_MapBooks\TZM_Mobs_Unibook.xml</MapBookPitt><MapPagesPitt Book="12">5</MapPagesPitt>
+  <MapBookPitt Book="13">TZM_EasyInstall_UnibookBundle\UniMap_MapBooks\TZM_Resources_Unibook.xml</MapBookPitt><MapPagesPitt Book="13">10</MapPagesPitt>
+  <MapBookPitt Book="14">TZM_EasyInstall_UnibookBundle\UniMap_MapBooks\TZM_ThePitt_UniBook.xml</MapBookPitt><MapPagesPitt Book="14">2</MapPagesPitt>
+  <MapBookPitt Book="15">TZM_EasyInstall_UnibookBundle\UniMap_MapBooks\TZM_Unmarked_Locations_Unibook.xml</MapBookPitt><MapPagesPitt Book="15">5</MapPagesPitt>
+  <MapBookPitt Book="16">TZM_EasyInstall_UnibookBundle\UniMap_MapBooks\TZM_Vanilla-Enhanced_UniBook.xml</MapBookPitt><MapPagesPitt Book="16">2</MapPagesPitt>
+  <MapBookPitt Book="17">TZM_EasyInstall_UnibookBundle\UniMap_MapBooks\TZM_XPRecipes_Unibook.xml</MapBookPitt><MapPagesPitt Book="17">5</MapPagesPitt>
+ </MapBooksPitt>
+
+ <QuickFT>
+  <Activate>yes</Activate>
+  <MenuFile>UniMap_Custom\QuickFT_Menu.xml</MenuFile>
+  <HotKeyFile>UniMap_Custom\QuickFT_HotKey.xml</HotKeyFile>
+  <AliasesFile>UniMap_Custom\QuickFT_Aliases.xml</AliasesFile>
+  <DispMarkerID>yes</DispMarkerID>
+  <TwoStepQuickFT>2</TwoStepQuickFT>
+ </QuickFT>
+
+ <PlayerNotifier>
+  <Activate>no</Activate>
+  <PlayerNotifierFile>UniMap_Custom\PlayerNotifier.xml</PlayerNotifierFile>
+ </PlayerNotifier>
+
+ <MarkerList>
+  <Activate>yes</Activate>
+  <MarkerListSlotMax>10</MarkerListSlotMax>
+  <MarkerListFileDir>UniMap_Custom\MarkerList</MarkerListFileDir>
+ </MarkerList>
+
+ <Settings>
+
+  <Display>
+   <DispMapBookName>no</DispMapBookName>
+   <DispMapName>yes</DispMapName>
+   <DispMapModName>no</DispMapModName>
+   <DispMapModCreator>no</DispMapModCreator>
+   <DispButtonHints>yes</DispButtonHints>
+   <DispMapBookInfo>yes</DispMapBookInfo>
+   <DispMapPageInfo>yes</DispMapPageInfo>
+   <DispMapResolution>yes</DispMapResolution>
+   <DispHideLevelInfo>yes</DispHideLevelInfo>
+   <DispFindTypeInfo>yes</DispFindTypeInfo>
+   <DispPlayers>no</DispPlayers>
+   <DispNukes>yes</DispNukes>
+  </Display>
+
+  <ZoomSpeed>
+   <Trigger>2.5</Trigger>
+   <Wheel>0.1</Wheel>
+  </ZoomSpeed>
+
+  <GamePadController>
+   <UsePadButton>yes</UsePadButton>
+   <SwapPadButton>no</SwapPadButton>
+  </GamePadController>
+
+  <TimelinedBlastZone>
+   <Activate>no</Activate>
+   <HideDuplicateBlastZoneMarker>yes</HideDuplicateBlastZoneMarker>
+   <TLBZ1>
+    <LineColor>F5CC5C</LineColor>
+    <FillColor>FF0000</FillColor>
+   </TLBZ1>
+   <TLBZ2>
+    <LineColor>F5CC5C</LineColor>
+    <FillColor>00FF00</FillColor>
+   </TLBZ2>
+   <TLBZ3>
+    <LineColor>F5CC5C</LineColor>
+    <FillColor>0000FF</FillColor>
+   </TLBZ3>
+  </TimelinedBlastZone>
+
+  <HideMarker>
+   <HideIncKeyCode>80</HideIncKeyCode>
+   <HideDecKeyCode>79</HideDecKeyCode>
+   <HideLevel>
+    <Hide Level="1">1</Hide>
+    <Hide Level="2">2</Hide>
+    <Hide Level="3">3</Hide>
+    <Hide Level="4">4</Hide>
+    <Hide Level="5">5</Hide>
+    <Hide Level="6">6</Hide>
+    <Hide Level="7">7</Hide>
+   </HideLevel>
+  </HideMarker>
+
+  <FindMarker>
+   <FindIncKeyCode>190</FindIncKeyCode>
+   <FindDecKeyCode>188</FindDecKeyCode>
+   <HideResetOnFind>yes</HideResetOnFind>
+   <LineThickness>3</LineThickness>
+   <LineColor>FFFFFF</LineColor>
+   <LineAlpha>0.5</LineAlpha>
+   <TeamMemberWaypoint>yes</TeamMemberWaypoint>
+   <FindQuickCamp>yes</FindQuickCamp>
+   <FindType>
+    <Find Type ="1">6</Find>
+    <Find Type ="2">5</Find>
+    <Find Type ="3">4</Find>
+    <Find Type ="4">8</Find>
+    <Find Type ="5">3</Find>
+    <Find Type ="6">2</Find>
+    <Find Type ="7">1</Find>
+    <Find Type ="8">7</Find>
+   </FindType>
+  </FindMarker>
+
+  <MapBook>
+   <CycleMapBook>no</CycleMapBook>
+   <ForwardKeyCode>35</ForwardKeyCode>
+   <BackwardKeyCode>36</BackwardKeyCode>
+  </MapBook>
+
+  <MapPage>
+   <CycleMapPage>no</CycleMapPage>
+   <ForwardKeyCode>34</ForwardKeyCode>
+   <BackwardKeyCode>33</BackwardKeyCode>
+  </MapPage>
+
+  <Develop>
+   <PlayerPixPos>yes</PlayerPixPos>
+   <Pitt>yes</Pitt>
+  </Develop>
+
+  <System>
+   <SingleMapMode>no</SingleMapMode>
+   <VariableMapPages>yes</VariableMapPages>
+   <PageMax>10</PageMax>
+  </System>
+
+ </Settings>
+
+</UniMap>

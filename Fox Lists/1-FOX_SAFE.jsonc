@@ -5,8 +5,8 @@
 //Everything else is useful items for quests, buffs, crafting, selling, or collecting.
 //Feel free to add whatever else you wish, customize it to your hearts desire.
 
-
 // Weapons
+//Recommend renaming weapons to something more unique, so that you can easily identify them in your inventory.
                 "Radfang Revolver",
                 "Ghoulshock",
                 "Thunder Dragon",
@@ -15,13 +15,16 @@
                 "ProSnap Deluxe Camera",
 
 // Power Armor
-                "Excavator Armor",
+//Recommend renaming power armor to something more unique, so that you can easily identify them in your inventory.
+                "Excavator Armor", //Chassis
                     "Excavator Armor (Helmet)",
                     "Excavator Armor (Torso)",
                     "Excavator Armor (L-Arm)",
                     "Excavator Armor (R-Arm)",
                     "Excavator Armor (L-Leg)",
                     "Excavator Armor (R-Leg)",
+                    //This of course is each individual piece renamed.
+                    //This is needed so that we can scrap randomly looted pieces without losing the whole set.
 
                 "Hellcat Armor",
                     "Hellcat Armor (Helmet)",
@@ -112,15 +115,22 @@
                     "X-01 Armor (R-Leg)",
 
 // Armor & Apparel
-                "Rustclaw Guard",
-                "Scorchtail Sack",
-                "Slyfox Threads",
-                "Foxglint Garb",
-                "Bloodtail Brim",
+//Recommend renaming armor to something more unique, so that you can easily identify them in your inventory
+                //This is what I used for every armor piece
+                "Rustclaw Guard (Helmet)",
+                "Rustclaw Guard (Torso)",
+                "Rustclaw Guard (L-Arm)",
+                "Rustclaw Guard (R-Arm)",
+                "Rustclaw Guard (L-Leg)",
+                "Rustclaw Guard (R-Leg)",
+                "Scorchtail Sack", //Backpack
+                "Slyfox Threads", //Underarmor
+                "Foxglint Garb", //Apparel
+                "Bloodtail Brim", //Hat
 
 // Misc. Fixes
                 "Ogua",
-                "Helmet",
+
 //Consumables
     
     //XP Food & Drink

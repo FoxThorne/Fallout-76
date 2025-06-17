@@ -1,1 +1,148 @@
-../../../../../../Program Files (x86)/Steam/steamapps/common/Fallout76/Data/UniMap_Custom/QuickFT_HotKey.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<UniMap>
+ <QuickFT>
+  <HotKey>
+   <FT Slot="1">
+    <Key>112</Key>
+    <ID>80</ID>
+   </FT>
+   <FT Slot="2">
+    <Key>113</Key>
+    <ID>81</ID>
+   </FT>
+   <FT Slot="3">
+    <Key>114</Key>
+    <ID>6773263</ID>
+   </FT>
+   <FT Slot="4">
+    <Key>115</Key>
+    <ID>631890</ID>
+   </FT>
+   <FT Slot="5">
+    <Key>116</Key>
+    <ID>2913845</ID>
+   </FT>
+   <FT Slot="6">
+    <Key>117</Key>
+    <ID>399020</ID>
+   </FT>
+   <FT Slot="7">
+    <Key>118</Key>
+    <ID>617126</ID>
+   </FT>
+   <FT Slot="8">
+    <Key>119</Key>
+    <ID>631879</ID>
+   </FT>
+   <FT Slot="9">
+    <Key>120</Key>
+    <ID>8030880</ID>
+   </FT>
+   <FT Slot="10">
+    <Key>121</Key>
+    <ID>6769791</ID>
+   </FT>
+   <FT Slot="11">
+    <Key>122</Key>
+    <ID>7051120</ID>
+   </FT>
+   <FT Slot="12">
+    <Key>123</Key>
+    <ID>7935865</ID>
+   </FT>
+   <FT Slot="13">
+    <Key>97</Key>
+    <ID>80</ID>
+   </FT>
+   <FT Slot="14">
+    <Key>98</Key>
+    <ID>81</ID>
+   </FT>
+   <FT Slot="15">
+    <Key>99</Key>
+    <ID>725073</ID>
+   </FT>
+   <FT Slot="16">
+    <Key>100</Key>
+    <ID>1548354</ID>
+   </FT>
+   <FT Slot="17">
+    <Key>101</Key>
+    <ID>3008567</ID>
+   </FT>
+   <FT Slot="18">
+    <Key>102</Key>
+    <ID>3843327</ID>
+   </FT>
+   <FT Slot="19">
+    <Key>103</Key>
+    <ID>3837135</ID>
+   </FT>
+   <FT Slot="20">
+    <Key>104</Key>
+    <ID>3501068</ID>
+   </FT>
+   <FT Slot="21">
+    <Key>105</Key>
+    <ID>3742201</ID>
+   </FT>
+   <FT Slot="22">
+    <Key>96</Key>
+    <ID>4242713</ID>
+   </FT>
+   <FT Slot="23">
+    <Key>106</Key>
+    <ID>60</ID>
+   </FT>
+   <FT Slot="24">
+    <Key>107</Key>
+    <ID>61</ID>
+   </FT>
+   <FT Slot="25">
+    <Key>109</Key>
+    <ID>62</ID>
+   </FT>
+   <FT Slot="26">
+    <Key>110</Key>
+    <ID>63</ID>
+   </FT>
+   <FT Slot="27">
+    <Key>111</Key>
+    <ID>64</ID>
+   </FT>
+  </HotKey>
+
+  <HotKeyPlayer>
+   <Name ID="60">
+    Friend1
+   </Name>
+   <Name ID="61">
+    Friend2
+   </Name>
+   <Name ID="62">
+    Friend3
+   </Name>
+   <Name ID="63">
+    Friend4
+   </Name>
+   <Name ID="64">
+    Friend5
+   </Name>
+   <Name ID="65">
+    Friend6
+   </Name>
+   <Name ID="66">
+    Friend7
+   </Name>
+   <Name ID="67">
+    Friend8
+   </Name>
+   <Name ID="68">
+    Friend9
+   </Name>
+   <Name ID="69">
+    Friend10
+   </Name>
+  </HotKeyPlayer>
+ </QuickFT>
+</UniMap>

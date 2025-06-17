@@ -1,1 +1,23 @@
-../../../../../../Program Files (x86)/Steam/steamapps/common/Fallout76/Data/FastCampConfig.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<FastCamp Creator="Unikko" Site="https://www.nexusmods.com/fallout76/mods/1834" Ver="1">
+	<FastCampVersion>1.0</FastCampVersion>
+
+	<!-- Recommend validating the XML file. https://www.xmlvalidation.com/ -->
+
+	<Settings>
+		<LabelSelectorAnimation>
+			<!-- Show animation when moving selection labels? -->
+			yes
+		</LabelSelectorAnimation>
+
+		<DispHotKeyName>
+			<!-- Display the key name corresponding to the label? -->
+			yes
+		</DispHotKeyName>
+	</Settings>
+
+	<HotKeyFile>
+		<!-- Hotkey definition file -->
+		FastCamp_HotKey.xml
+	</HotKeyFile>
+</FastCamp>

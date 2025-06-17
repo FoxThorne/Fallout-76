@@ -1,1 +1,78 @@
-../../../../../../Program Files (x86)/Steam/steamapps/common/Fallout76/Data/TZM_EasyInstall_UnibookBundle/UniMap_MapBooks/TZM_Resources_Unibook.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<UniMap>
+ <MapBook>
+  <MapBookName>TZM_EasyInstall_UnibookBundle</MapBookName>
+  <MapBookCreator>TZTZT</MapBookCreator>
+  <MapResolution>8K</MapResolution>
+  <Map Page="1">
+   <Directory>textures\TZM_EasyInstall_UnibookBundle\TZM_Resources_Unibook\</Directory>
+   <Texture>OreVeins_1.dds</Texture>
+   <MapName>Uranium, Gold, Titanium, Ultracite, Silver, Iron</MapName>
+   <MapModName>TZMap</MapModName>
+   <Creator>TZTZT</Creator>
+  </Map>
+  <Map Page="2">
+   <Directory>textures\TZM_EasyInstall_UnibookBundle\TZM_Resources_Unibook\</Directory>
+   <Texture>OreVeins_2.dds</Texture>
+   <MapName>Crystal, Coal, Aluminum, Lead, Copper</MapName>
+   <MapModName>TZMap</MapModName>
+   <Creator>TZTZT</Creator>
+  </Map>
+  <Map Page="3">
+   <Directory>textures\TZM_EasyInstall_UnibookBundle\TZM_Resources_Unibook\</Directory>
+   <Texture>Resource_Deposits.dds</Texture>
+   <MapName>Acid, Aluminum, Black Titanium, Coal, Copper, Crystal, Gold, Gravel, Iron, Junk, Lead, Oil, Phosphate, Silver, Uranium, Wood</MapName>
+   <MapModName>TZMap</MapModName>
+   <Creator>TZTZT</Creator>
+  </Map>
+  <Map Page="4">
+   <Directory>textures\TZM_EasyInstall_UnibookBundle\TZM_Resources_Unibook\</Directory>
+   <Texture>Components_Acid.dds</Texture>
+   <MapName>Acid</MapName>
+   <MapModName>TZMap</MapModName>
+   <Creator>TZTZT</Creator>
+  </Map>
+  <Map Page="5">
+   <Directory>textures\TZM_EasyInstall_UnibookBundle\TZM_Resources_Unibook\</Directory>
+   <Texture>Components_Adhesive.dds</Texture>
+   <MapName>Adhesive</MapName>
+   <MapModName>TZMap</MapModName>
+   <Creator>TZTZT</Creator>
+  </Map>
+  <Map Page="6">
+   <Directory>textures\TZM_EasyInstall_UnibookBundle\TZM_Resources_Unibook\</Directory>
+   <Texture>Components_BallisticFiber_FiberOptics.dds</Texture>
+   <MapName>Ballistic Fiber &amp; Fiber Optics</MapName>
+   <MapModName>TZMap</MapModName>
+   <Creator>TZTZT</Creator>
+  </Map>
+  <Map Page="7">
+   <Directory>textures\TZM_EasyInstall_UnibookBundle\TZM_Resources_Unibook\</Directory>
+   <Texture>Components_Plastic.dds</Texture>
+   <MapName>Plastic</MapName>
+   <MapModName>TZMap</MapModName>
+   <Creator>TZTZT</Creator>
+  </Map>
+  <Map Page="8">
+   <Directory>textures\TZM_EasyInstall_UnibookBundle\TZM_Resources_Unibook\</Directory>
+   <Texture>Components_Spring.dds</Texture>
+   <MapName>Spring</MapName>
+   <MapModName>TZMap</MapModName>
+   <Creator>TZTZT</Creator>
+  </Map>
+  <Map Page="9">
+   <Directory>textures\TZM_EasyInstall_UnibookBundle\TZM_Resources_Unibook\</Directory>
+   <Texture>Components_Screws.dds</Texture>
+   <MapName>Screws</MapName>
+   <MapModName>TZMap</MapModName>
+   <Creator>TZTZT</Creator>
+  </Map>
+  <Map Page="10">
+   <Directory>textures\TZM_EasyInstall_UnibookBundle\TZM_Resources_Unibook\</Directory>
+   <Texture>Components_Sources.dds</Texture>
+   <MapName>Sources</MapName>
+   <MapModName>TZMap</MapModName>
+   <Creator>TZTZT</Creator>
+  </Map>
+ </MapBook>
+</UniMap>

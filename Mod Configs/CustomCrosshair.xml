@@ -1,1 +1,126 @@
-../../../../../../Program Files (x86)/Steam/steamapps/common/Fallout76/Data/CustomCrosshair.xml
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Crosshair>
+
+<Colors>
+  <OnTarget>
+	<ColorChange>
+	  <RGB>bb0000</RGB>
+	  <Brightness>0</Brightness>
+	  <Saturation>35</Saturation>
+	  <Contrast>0</Contrast>
+	</ColorChange>
+	<Glow>
+	  <RGB>ff00ff</RGB>
+	</Glow>
+  </OnTarget>
+  <OffTarget>
+	  <ColorChange>
+		  <RGB>75FF19</RGB>
+		  <Brightness>0</Brightness>
+		  <Saturation>50</Saturation>
+		  <Contrast>0</Contrast>
+	  </ColorChange>
+	  <Glow>
+		  <RGB>BA00FF</RGB>
+	  </Glow>
+  </OffTarget>
+</Colors>
+
+<Filters>
+	<Glow>
+		<Visible>false</Visible>
+		<Length>8</Length>
+		<Strength>1.2</Strength>
+	</Glow>
+	<InnerShadow>
+		<Visible>false</Visible>
+	</InnerShadow>
+	<OuterShadow>
+		<Visible>true</Visible>
+	</OuterShadow>
+</Filters>
+
+<!--When any gun is pulled out-->
+<part state="GUN">
+	<!--Show/hide default animated crosshair for that state-->
+	<bethesda>false</bethesda>
+	<dot>
+		<enable>true</enable>
+		<size>2</size>
+	</dot>
+	<circle>
+		<enable>true</enable>
+		<radius>10</radius>
+		<thickness>2</thickness>
+	</circle>
+	<cross>
+		<enable>true</enable>
+		<gap>8</gap>
+		<length>10</length>
+		<thickness>2</thickness>
+	</cross>
+	
+</part>
+
+<!--When using melee and when gun put away-->
+<part state="MELEE">
+	<!--Show/hide default crosshair for that state-->
+	<bethesda>false</bethesda>
+	<dot>
+		<enable>true</enable>
+		<size>3</size>
+	</dot>
+	<circle>
+		<enable>true</enable>
+		<radius>10</radius>
+		<thickness>2</thickness>
+	</circle>
+	<cross>
+		<enable>true</enable>
+		<gap>10</gap>
+		<length>14</length>
+		<thickness>2</thickness>
+	</cross>
+</part>
+
+<!--When interacting with something-->
+<part state="ACTIVATE">
+	<!--Show/hide default animated crosshair for that state-->
+	<bethesda>false</bethesda>
+	<dot>
+		<enable>true</enable>
+		<size>2</size>
+	</dot>
+	<circle>
+		<enable>true</enable>
+		<radius>6</radius>
+		<thickness>4</thickness>
+	</circle>
+	<cross>
+		<enable>true</enable>
+		<gap>20</gap>
+		<length>4</length>
+		<thickness>2</thickness>
+	</cross>
+</part>
+
+<!--When aiming down iron sight-->
+<part state="SIGHT">
+	<dot>
+		<enable>true</enable>
+		<size>2</size>
+	</dot>
+	<circle>
+		<enable>false</enable>
+		<radius>10</radius>
+		<thickness>2</thickness>
+	</circle>
+	<cross>
+		<enable>true</enable>
+		<gap>8</gap>
+		<length>10</length>
+		<thickness>2</thickness>
+	</cross>
+</part>
+
+</Crosshair>

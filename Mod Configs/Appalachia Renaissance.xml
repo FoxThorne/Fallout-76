@@ -1,1 +1,15 @@
-../../../../../../Program Files (x86)/Steam/steamapps/common/Fallout76/Data/Appalachia Renaissance.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<UniMap>
+ <MapBook>
+  <MapBookName>Appalachia Renaissance</MapBookName>
+  <MapBookCreator>ggMAtze</MapBookCreator>
+  <MapResolution>8K</MapResolution>
+  <Map Page="1">
+   <Directory>textures\interface\pip-boy\</Directory>
+   <Texture>papermap_city_d.dds</Texture>
+   <MapName>Appalachia Renaissance</MapName>
+   <MapModName>Appalachia Renaissance Map</MapModName>
+   <Creator>ggMatze</Creator>
+  </Map>
+ </MapBook>
+</UniMap>

@@ -1,1 +1,163 @@
-../../../../../../Program Files (x86)/Steam/steamapps/common/Fallout76/Data/ImprovedPipboyStatsConfig.json
+{
+	"EnableHotkeyTabChanges": true, // Update 1.0.1
+	
+	"PerksTitle": "$PipboyPerksCategory",
+	"CurrentlyText": "\nCurrently:",
+	
+	"HidePerksFromEffectsTab": true,
+	"HidePerksFromEffectsTabExclude": [ // Update 1.0.2
+		// EXAMPLES:
+		//"Adrenaline (<1m)",
+		//"Serendipity",
+		//"Ricochet",
+		//"Evasive"
+	],
+	"HideOtherFromEffectsTab": [ // Update 1.0.2
+		
+	],
+	
+	// If effect names in pipboy don't match perk names, list them below
+	// "Pipboy Effect Name" : "Perk Name"
+	"MapPerkNames": {
+		"Slugger Master": "Master Slugger",
+		"Slugger Expert": "Expert Slugger",
+		"Gladiator Master": "Master Gladiator",
+		"Gladiator Expert": "Expert Gladiator",
+		"Heavy Gunner Master": "Master Heavy Gunner",
+		"Heavy Gunner Expert": "Expert Heavy Gunner",
+		"Action Boy/Girl": "Action Girl",
+		"Life Giver": "LifeGiver",
+		"Nerd Rage": "Nerd Rage!",
+		"Archer Master": "Master Archer",
+		"Archer Expert": "Expert Archer",
+		"Adrenaline (<1m)": "Adrenaline",
+		"Packin Light": "Packin' Light"
+	},
+	
+	// Curve table data to show for listed perks
+	// PTS curve tables in comments below (\/\*|\*\/)
+	"CurveDataDirectories": {
+		"Adamantium Skeleton": [
+			"../misc/curvetables/json/perks/adamantiumskeletonbonus.json"
+		],
+		"Adrenaline": [
+			"../misc/curvetables/json/perks/adrenalinebonus.json"
+		],
+		"Awareness": [
+			"../misc/curvetables/json/perks/awarenessbonus.json"
+		],
+		"Barbarian": [
+			"../misc/curvetables/json/perks/barbarianbonus.json"
+		],
+		"Bodyguards": [
+			"../misc/curvetables/json/perks/bodyguardsbonus.json"
+		],
+		"Can Do!": [
+			"../misc/curvetables/json/perks/candobonus.json"
+		], 
+		"Cap Collector": [
+			"../misc/curvetables/json/perks/capcollectorbonus.json"
+		],
+		"Evasive": [
+			"../misc/curvetables/json/perks/evasivebonus.json",
+			"../misc/curvetables/json/perks/evasivehppercentbonus.json"
+		],
+		"First Aid": [
+			"../misc/curvetables/json/perks/firstaidbonus.json"
+		],
+		"Four Leaf Clover": [
+			"../misc/curvetables/json/perks/fourleafcloverbonus.json"
+		],
+		"Guerrilla Expert": [
+			"../misc/curvetables/json/perks/guerrillaexpertbonus.json"
+		],
+		"Guerrilla Master": [
+			"../misc/curvetables/json/perks/guerrillamasterbonus.json"
+		],
+		"Gunslinger Expert": [
+			"../misc/curvetables/json/perks/gunslingerexpertbonus.json"
+		],
+		"Gunslinger Master": [
+			"../misc/curvetables/json/perks/gunslingermasterbonus.json"
+		],
+		"Inspirational": [
+			"../misc/curvetables/json/perks/inspirationalradiusbonus.json",
+			"../misc/curvetables/json/perks/inspirationalselfbonus.json",
+			"../misc/curvetables/json/perks/inspirationalteambonus.json"
+		], 
+		"Iron Stomach": [
+			"../misc/curvetables/json/perks/ironstomachbonus.json"
+		],
+		"Junk Shield": [
+			"../misc/curvetables/json/perks/junkshieldscalebonus.json",
+			"../misc/curvetables/json/perks/junkshielddrbonus.json"
+		],
+		"Lead Belly": [
+			"../misc/curvetables/json/perks/leadbellybonus.json"
+		], 
+		"LifeGiver": [
+			"../misc/curvetables/json/perks/lifegiverbonus.json"
+		],
+		"Lone Wanderer": [
+			"../misc/curvetables/json/perks/lonewandererapregenbonus.json",
+			"../misc/curvetables/json/perks/lonewandererdrbonus.json"
+		],
+		"Natural Resistance": [
+			"../misc/curvetables/json/perks/naturalresistancebonus.json"
+		],
+		"Nerd Rage!": [
+			"../misc/curvetables/json/perks/nerdragedamagebonus.json",
+			"../misc/curvetables/json/perks/nerdrageapbonus.json"
+		],
+		"Pharmacist": [
+			"../misc/curvetables/json/perks/pharmacistbonus.json"
+		],
+		"Pharma Farma": [
+			"../misc/curvetables/json/perks/pharmafarmabonus.json"
+		],
+		"Rad Resistant": [
+			"../misc/curvetables/json/perks/radresistantbonus.json"
+		],
+		"Rad Sponge": [
+			"../misc/curvetables/json/perks/radspongeselfbonus.json",
+			"../misc/curvetables/json/perks/radspongeteambonus.json"
+		],
+		"Refractor": [
+			"../misc/curvetables/json/perks/refractorbonus.json"
+		], 
+		"Ricochet": [
+			"../misc/curvetables/json/perks/ricochetbonus.json"
+		],
+		"Science!": [
+			"../misc/curvetables/json/perks/sciencebonus.json"
+		],
+		"Pyro-Technician": [
+			"../misc/curvetables/json/perks/scienceexpertbonus.json"
+		],
+		"Cryologist": [
+			"../misc/curvetables/json/perks/sciencemasterbonus.json"
+		],
+		"Scrounger": [
+			"../misc/curvetables/json/perks/scroungerbonus.json"
+		], 
+		"Serendipity": [
+			"../misc/curvetables/json/perks/serendipitybonus.json"
+		],
+		"Shotgun Champ": [
+			"../misc/curvetables/json/perks/shotgunnermasterbonus.json"
+		],
+		"Spiritual Healer": [
+			"../misc/curvetables/json/perks/spiritualhealerselfbonus.json",
+			"../misc/curvetables/json/perks/spiritualhealerteambonus.json"
+		],
+		"Strong Back": [
+			"../misc/curvetables/json/perks/strongbackbonus.json"
+		], 
+		"Thirst Quencher": [
+			"../misc/curvetables/json/perks/thirstquencherbonus.json"
+		],
+		"Vaccinated": [
+			"../misc/curvetables/json/perks/vaccinatedbonus.json"
+		]
+	}
+}

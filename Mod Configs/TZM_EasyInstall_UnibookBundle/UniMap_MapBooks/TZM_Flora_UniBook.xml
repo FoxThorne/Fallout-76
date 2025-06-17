@@ -1,1 +1,43 @@
-../../../../../../Program Files (x86)/Steam/steamapps/common/Fallout76/Data/TZM_EasyInstall_UnibookBundle/UniMap_MapBooks/TZM_Flora_UniBook.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<UniMap>
+ <MapBook>
+  <MapBookName>TZM_EasyInstall_UnibookBundle</MapBookName>
+  <MapBookCreator>TZTZT</MapBookCreator>
+  <MapResolution>8K</MapResolution>
+  <Map Page="1">
+   <Directory>textures\TZM_EasyInstall_UnibookBundle\TZM_Flora_UniBook\</Directory>
+   <Texture>Flora_1.dds</Texture>
+   <MapName>Melon, Gourd, Carrot, Razorgrain, Tato, Pumpkin, Corn, Snaptail, Silt Bean</MapName>
+   <MapModName>TZMap</MapModName>
+   <Creator>TZTZT</Creator>
+  </Map>
+  <Map Page="2">
+   <Directory>textures\TZM_EasyInstall_UnibookBundle\TZM_Flora_UniBook\</Directory>
+   <Texture>Flora_2.dds</Texture>
+   <MapName>Cranberry, Tarberry, Starlight Creeper, Mutfruit, Diseased Cranberry, Firecracker Berry, Blackberry</MapName>
+   <MapModName>TZMap</MapModName>
+   <Creator>TZTZT</Creator>
+  </Map>
+  <Map Page="3">
+   <Directory>textures\TZM_EasyInstall_UnibookBundle\TZM_Flora_UniBook\</Directory>
+   <Texture>Flora_3.dds</Texture>
+   <MapName>Ginseng, Giant Pitcher Plant, Firecap, Bleach Dogwood, Glowing Resin, Brain Fungus, Glowing Fungus</MapName>
+   <MapModName>TZMap</MapModName>
+   <Creator>TZTZT</Creator>
+  </Map>
+  <Map Page="4">
+   <Directory>textures\TZM_EasyInstall_UnibookBundle\TZM_Flora_UniBook\</Directory>
+   <Texture>Flora_4.dds</Texture>
+   <MapName>Fever Blossom, Kaleidopore FLower, Thistle, Melon Blossom, Tato Flower, Ash Rose, Strangler Pod, Gourd Blossom, Mutated Soot Flower, Bloodleaf, Aster, Carrot Flower, Mutated Fern Flower, Soot Flower, Rhododendron Flower</MapName>
+   <MapModName>TZMap</MapModName>
+   <Creator>TZTZT</Creator>
+  </Map>
+  <Map Page="5">
+   <Directory>textures\TZM_EasyInstall_UnibookBundle\TZM_Flora_UniBook\</Directory>
+   <Texture>Flora_5.dds</Texture>
+   <MapName>Crimson Flux, Cobalt Flux, Violet Flux, Yellowcake Flux</MapName>
+   <MapModName>TZMap</MapModName>
+   <Creator>TZTZT</Creator>
+  </Map>
+ </MapBook>
+</UniMap>

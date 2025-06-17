@@ -1,1 +1,373 @@
-../../../../../../Program Files (x86)/Steam/steamapps/common/Fallout76/Data/FastCamp_HotKey.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<FastCamp>
+	<HotKey>
+		<!-- Registers the key name and label name to be used for the hotkey.(* Case insensitive) -->
+		<!-- Recommend validating the XML file. https://www.xmlvalidation.com/ -->
+
+		<HK>
+			<Key>F1</Key>
+			<Lab>Floors</Lab>
+		</HK>
+
+		<HK>
+			<Key>F2</Key>
+			<Lab>Walls</Lab>
+		</HK>
+
+		<HK>
+			<Key>F3</Key>
+			<Lab>Roofs</Lab>
+		</HK>
+
+		<HK>
+			<Key>F4</Key>
+			<Lab>Stairs</Lab>
+		</HK>
+
+		<HK>
+			<Key>F5</Key>
+			<Lab>Doors</Lab>
+		</HK>
+
+		<HK>
+			<Key>F6</Key>
+			<Lab>Beds</Lab>
+		</HK>
+
+		<HK>
+			<Key>F7</Key>
+			<Lab>Tables</Lab>
+		</HK>
+
+		<HK>
+			<Key>F8</Key>
+			<Lab>Chairs</Lab>
+		</HK>
+
+		<HK>
+			<Key>F9</Key>
+			<Lab>Power_Connectors</Lab>
+		</HK>
+
+		<HK>
+			<Key>F10</Key>
+			<Lab>Lights</Lab>
+		</HK>
+
+		<HK>
+			<Key>F11</Key>
+			<Lab>Stored</Lab>
+		</HK>
+
+		<HK>
+			<Key>F12</Key>
+			<Lab>Recent</Lab>
+		</HK>
+
+		<HK>
+			<Key>1</Key>
+			<Lab>Floor_Decor</Lab>
+		</HK>
+
+		<HK>
+			<Key>2</Key>
+			<Lab>Wall_Decor</Lab>
+		</HK>
+
+		<HK>
+			<Key>3</Key>
+			<Lab>Water</Lab>
+		</HK>
+
+		<HK>
+			<Key>4</Key>
+			<Lab>Food</Lab>
+		</HK>
+
+		<HK>
+			<Key>5</Key>
+			<Lab>Resources</Lab>
+		</HK>
+
+		<HK>
+			<Key>6</Key>
+			<Lab>Crafting</Lab>
+		</HK>
+
+		<HK>
+			<Key>7</Key>
+			<Lab>Generators</Lab>
+		</HK>
+
+		<HK>
+			<Key>8</Key>
+			<Lab>Appliances</Lab>
+		</HK>
+
+		<HK>
+			<Key>9</Key>
+			<Lab>Stash_Boxes</Lab>
+		</HK>
+
+		<HK>
+			<Key>0</Key>
+			<Lab>Displays</Lab>
+		</HK>
+
+		<HK>
+			<Key>-</Key>
+			<Lab>Shelves</Lab>
+		</HK>
+
+		<HK>
+			<Key>=</Key>
+			<Lab>Vendors</Lab>
+		</HK>
+
+		<HK>
+			<Key>[</Key>
+			<Lab>Turrets_Traps</Lab>
+		</HK>
+
+		<HK>
+			<Key>]</Key>
+			<Lab>Defenses</Lab>
+		</HK>
+
+		<HK>
+			<Key>\</Key>
+			<Lab>Shelters</Lab>
+		</HK>
+
+		<HK>
+			<Key>;</Key>
+			<Lab>Quest</Lab>
+		</HK>
+
+		<HK>
+			<Key>'</Key>
+			<Lab>Allies</Lab>
+		</HK>
+
+		<HK>
+			<Key>B</Key>
+			<Lab>Blueprints</Lab>
+		</HK>
+
+		<HK>
+			<Key>M</Key>
+			<Lab>Misc_Structures</Lab>
+		</HK>
+
+		<HK>
+			<Key>N</Key>
+			<Lab>New</Lab>
+		</HK>
+
+		<HK>
+			<Key>#1</Key>
+			<Lab>Floor_Decor</Lab>
+		</HK>
+
+		<HK>
+			<Key>#2</Key>
+			<Lab>Wall_Decor</Lab>
+		</HK>
+
+		<HK>
+			<Key>#3</Key>
+			<Lab>Water</Lab>
+		</HK>
+
+		<HK>
+			<Key>#4</Key>
+			<Lab>Food</Lab>
+		</HK>
+
+		<HK>
+			<Key>#5</Key>
+			<Lab>Resources</Lab>
+		</HK>
+
+		<HK>
+			<Key>#6</Key>
+			<Lab>Crafting</Lab>
+		</HK>
+
+		<HK>
+			<Key>#7</Key>
+			<Lab>Generators</Lab>
+		</HK>
+
+		<HK>
+			<Key>#8</Key>
+			<Lab>Appliances</Lab>
+		</HK>
+
+		<HK>
+			<Key>#9</Key>
+			<Lab>Stash_Boxes</Lab>
+		</HK>
+
+		<HK>
+			<Key>#0</Key>
+			<Lab>Displays</Lab>
+		</HK>
+
+		<HK>
+			<Key>#*</Key>
+			<Lab>Doors</Lab>
+		</HK>
+
+		<HK>
+			<Key>#+</Key>
+			<Lab>Walls</Lab>
+		</HK>
+
+		<HK>
+			<Key>#-</Key>
+			<Lab>Roofs</Lab>
+		</HK>
+
+		<HK>
+			<Key>#.</Key>
+			<Lab>Floors</Lab>
+		</HK>
+
+		<HK>
+			<Key>#/</Key>
+			<Lab>Stairs</Lab>
+		</HK>
+	</HotKey>
+
+	<!-- Available Labels
+		Recent
+		Stored
+		Blueprints
+		New
+		Quest
+		Allies
+		Floors
+		Walls
+		Roofs
+		Stairs
+		Doors
+		Crafting
+		Turrets_Traps
+		Defenses
+		Generators
+		Power_Connectors
+		Lights
+		Food
+		Water
+		Resources
+		Appliances
+		Beds
+		Chairs
+		Stash_Boxes
+		Displays
+		Floor_Decor
+		Shelves
+		Vendors
+		Tables
+		Wall_Decor
+		Misc_Structures
+		Shelters
+	-->
+
+	<!-- Available key
+		NOTE:	When playing with keyboard and mouse, do not use keys marked with "*".
+			They are keys used in the game and will cause conflicts.
+
+			When playing with a controller, all keys can be use.
+		0
+		1
+		2
+		3
+		4
+		5
+		6
+		7
+		8
+		9
+
+		A	* PC move left
+		B
+		C	* Label Selector right
+		D	* PC move right
+		E	* build
+		F	* rotate ccw
+		G	* rotate cw
+		H
+		I
+		J
+		K
+		L
+		M
+		N
+		O
+		P
+		Q	* toggle buildable objects
+		R	* scrap
+		S	* PC move bwd
+		T	* tag for search
+		U
+		V	* toggle camera
+		W	* PC move fwd
+		X	* PC move run
+		Y
+		Z	* Label Selecter Left
+
+		F1
+		F2
+		F3
+		F4
+		F5
+		F6
+		F7
+		F8
+		F9
+		F10
+		F11
+		F12
+
+		BS
+		SHIFT
+		CTRL
+		ALT
+		SPACE
+		PageUp
+		PageDown
+		END
+		HOME
+		INS
+		DEL
+		;
+		=
+		,
+		-
+		.
+		`
+		[
+		\
+		]
+		'
+
+		#1	* NumPad 1
+		#2	* NumPad 2
+		#3	* NumPad 3
+		#4	* NumPad 4
+		#5	* NumPad 5
+		#6	* NumPad 6
+		#7	* NumPad 7
+		#8	* NumPad 8
+		#9	* NumPad 9
+		#0	* NumPad 0
+		#*	* NumPad *
+		#+	* NumPad +
+		#-	* NumPad -
+		#.	* NumPad .
+		#/	* NumPad /
+	-->
+
+</FastCamp>

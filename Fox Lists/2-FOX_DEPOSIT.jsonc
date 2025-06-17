@@ -1,7 +1,7 @@
 [
 //FOX_DEPOSIT is an EXCLUSIONARY list, intended to be used for transfers INTO the Stash Box/Scrap Box/Ammo Storage Box (deposits...)
 //It's to check against this file and deposit everything EXCEPT these items into storage.
-
+//Use FOX_SAFE to protect the items, and this to perform transfers, or consume automations.
 //Misc. Manual Fixes
 
 //Consumables

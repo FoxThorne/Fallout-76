@@ -1,1 +1,43 @@
-../../../../../../Program Files (x86)/Steam/steamapps/common/Fallout76/Data/TZM_EasyInstall_UnibookBundle/UniMap_MapBooks/TZM_Mobs_Unibook.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<UniMap>
+ <MapBook>
+  <MapBookName>TZM_EasyInstall_UnibookBundle</MapBookName>
+  <MapBookCreator>TZTZT</MapBookCreator>
+  <MapResolution>8K</MapResolution>
+  <Map Page="1">
+   <Directory>textures\TZM_EasyInstall_UnibookBundle\TZM_Mobs_Unibook\</Directory>
+   <Texture>Mobs_1.dds</Texture>
+   <MapName>Humanoids</MapName>
+   <MapModName>TZMap</MapModName>
+   <Creator>TZTZT</Creator>
+  </Map>
+  <Map Page="2">
+   <Directory>textures\TZM_EasyInstall_UnibookBundle\TZM_Mobs_Unibook\</Directory>
+   <Texture>Mobs_2.dds</Texture>
+   <MapName>Robots</MapName>
+   <MapModName>TZMap</MapModName>
+   <Creator>TZTZT</Creator>
+  </Map>
+  <Map Page="3">
+   <Directory>textures\TZM_EasyInstall_UnibookBundle\TZM_Mobs_Unibook\</Directory>
+   <Texture>Fauna_1.dds</Texture>
+   <MapName>Cryptids</MapName>
+   <MapModName>TZMap</MapModName>
+   <Creator>TZTZT</Creator>
+  </Map>
+  <Map Page="4">
+   <Directory>textures\TZM_EasyInstall_UnibookBundle\TZM_Mobs_Unibook\</Directory>
+   <Texture>Fauna_2.dds</Texture>
+   <MapName>Beasts</MapName>
+   <MapModName>TZMap</MapModName>
+   <Creator>TZTZT</Creator>
+  </Map>
+  <Map Page="5">
+   <Directory>textures\TZM_EasyInstall_UnibookBundle\TZM_Mobs_Unibook\</Directory>
+   <Texture>Fauna_3.dds</Texture>
+   <MapName>Critters</MapName>
+   <MapModName>TZMap</MapModName>
+   <Creator>TZTZT</Creator>
+  </Map>
+ </MapBook>
+</UniMap>
