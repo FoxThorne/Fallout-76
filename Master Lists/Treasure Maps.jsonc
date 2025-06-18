@@ -1,11 +1,15 @@
 [
 //Treasure Maps
+
+//Ash Heap
 "Ash Heap Treasure Map #01",
 "Ash Heap Treasure Map #02",
+//Cranberry Bog
 "Cranberry Bog Treasure Map #01",
 "Cranberry Bog Treasure Map #02",
 "Cranberry Bog Treasure Map #03",
 "Cranberry Bog Treasure Map #04",
+//Forest
 "Forest Treasure Map #01",
 "Forest Treasure Map #02",
 "Forest Treasure Map #03",
@@ -16,11 +20,13 @@
 "Forest Treasure Map #08",
 "Forest Treasure Map #09",
 "Forest Treasure Map #10",
+//Mire
 "Mire Treasure Map #01",
 "Mire Treasure Map #02",
 "Mire Treasure Map #03",
 "Mire Treasure Map #04",
 "Mire Treasure Map #05",
+//Savage Divide
 "Savage Divide Treasure Map #01",
 "Savage Divide Treasure Map #02",
 "Savage Divide Treasure Map #03",
@@ -31,6 +37,7 @@
 "Savage Divide Treasure Map #08",
 "Savage Divide Treasure Map #09",
 "Savage Divide Treasure Map #10",
+//Toxic Valley
 "Toxic Valley Treasure Map #01",
 "Toxic Valley Treasure Map #02",
 "Toxic Valley Treasure Map #03",

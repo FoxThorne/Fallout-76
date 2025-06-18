@@ -285,8 +285,8 @@
 		<!-- Grenade / Throwable Counter -->
 			<ExplosiveAmmoCount>
 				<Scale>.80</Scale>
-				<X>-40</X>
-				<Y>10</Y>
+				<X>60</X>
+				<Y>90</Y>
 				<PowerArmor>
 					<X>0</X>
 					<Y>0</Y>

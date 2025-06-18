@@ -1,7 +1,7 @@
 {
 	// WIDGET SETTINGS
 	"x": 1510,
-	"y": 900,
+	"y": 920,
 	"anchor": "bottom", /* top, bottom */
 	"ySpacing": -5,
 	"width": 400,

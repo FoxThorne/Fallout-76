@@ -13,6 +13,58 @@ SetTitleMatchMode, 2
     ^5::Send, Armor (Torso)
     ^6::Send, Armor (Helmet)
 
+; *********************** E Spam Toggle ***********************
+SpamE := 0  ; Toggle state tracker
+
+NumpadMult::
+    SpamE := !SpamE  ; Flip state
+    if SpamE {
+        SetTimer, PressE, 50  ; Spam every 50ms (adjust this number as needed)
+    } else {
+        SetTimer, PressE, Off
+    }
+return
+
+PressE:
+    Send, {e down}
+    Sleep, 20  ; Short press duration
+    Send, {e up}
+return
+
+; *********************** R Spam Toggle, useful for collecting Toxic Water ***********************
+SpamR := 0  ; Toggle state tracker
+
+NumpadDiv::
+    SpamR := !SpamR  ; Flip state
+    if SpamR {
+        SetTimer, PressR, 50  ; Spam every 50ms (adjust as needed)
+    } else {
+        SetTimer, PressR, Off
+    }
+return
+
+PressR:
+    Send, {r down}
+    Sleep, 20  ; Short keypress duration
+    Send, {r up}
+return
+
+; *********************** Press "C" when "R" or "E" is pressed, this is a workaround for the o-matic add-ons that have trouble with the "New" tab ***********************
+
+~r::
+    SetTimer, PressC_AfterR, -1500  ; One-shot timer, triggers once
+return
+
+~e::
+    SetTimer, PressC_AfterR, -1500  ; One-shot timer, triggers once
+return
+
+PressC_AfterR:
+    Send, {c down}
+    Sleep, 50
+    Send, {c up}
+return
+
 
 ; *********************** Perk Loadout Manager Macros ***********************
 F1:: ; Loadout 1
