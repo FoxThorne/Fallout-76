@@ -600,6 +600,19 @@
                 "Hardened Mass",
                 "Glowing Mass",
                 "High-Radiation Fluids",
+                
+                "Aluminum Ore",
+                "Black Titanium Ore",
+                "Copper Ore",
+                "Gold Ore",
+                "Iron Ore",
+                "Irradiated Ore",
+                "Lead Ore",
+                "Silver Ore",
+                "Ultracite Ore",
+                "Uranium Ore",
+                "Unrefined Coal",
+                "Raw Crystal",
 
     // Aid
                 "Addictol",
@@ -657,20 +670,6 @@
                 "Nuka-Cade Token",
                 "Perk Token",
                 "Token",
-
-                "Aluminum Ore",
-                "Black Titanium Ore",
-                "Copper Ore",
-                "Gold Ore",
-                "Iron Ore",
-                "Irradiated Ore",
-                "Lead Ore",
-                "Silver Ore",
-                "Ultracite Ore",
-                "Uranium Ore",
-                "Unrefined Coal",
-                "Raw Crystal",
-
 
 //Treasure Maps
 
@@ -996,7 +995,6 @@
                 "Assaultron recall keycard",
                 "US government supply requisition",
                 "Nuclear Keycard",
-                "Vox",
 
 // Special & Collectable
 
@@ -1358,14 +1356,8 @@
 
 
     //Rare Plans & Recipes
-                "Plan: Plasma grenade",
-				"Plan: Heavy raider arms",
-				"Plan: Heavy raider torso",
-				"Plan: Heavy raider legs",
-				"Plan: Deathclaw gauntlet extra claw",
-				"Plan: Ultracite calibrated shocks",
-                "Plan: Bear Arm",
-                "Plan: Cuckoo clock",
+                "Plan:",
+                "Recipe:",
 
     //Cursed Items
                 "Cursed Pickaxe",
