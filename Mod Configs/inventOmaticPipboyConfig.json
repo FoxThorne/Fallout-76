@@ -24,11 +24,14 @@
 // Weapons
 //Recommend renaming weapons to something more unique, so that you can easily identify them in your inventory.
                 "Radfang Revolver",
-                "Ghoulshock",
-                "Thunder Dragon",
-                "Valkyrie",
-                "Glowfang Gatling",
-                "ProSnap Deluxe Camera",
+			    "Ashclaw Longshot",
+			    "Emberglow Spitter",
+			    "Luminfang Volley",
+			    "Flareclaw Barrage",
+			    "Camera",
+			    "Voltfang Blaster",
+			    "Ironfang Saber",
+			    "Brimstone Maul",
 
 //Ammo
 				".50 Caliber Ball",
@@ -37,6 +40,16 @@
 				"Plasma Core",
 				"Fusion Core",
 				"Camera Film",
+
+//Throwables
+                "Nuka Grenade",
+                "Molotov Cocktail",
+                "Meat Cleaver", // (Fasnacht event)",
+                "Snowball", // (Holiday Scorched event)
+                "Pumpkin Grenade", //(Spooky Scorched event)
+                "Confetti Grenade", //(Used in some seasonal events)
+                "Firecracker Berry Grenade", //(Meat Week event)
+                "Mystery Candy Grenade", //(Halloween events)
 
 // Power Armor
 //Recommend renaming power armor to something more unique, so that you can easily identify them in your inventory.
@@ -229,6 +242,7 @@
 
 // Misc. Fixes
                 "Ogua",
+                "Blue Devil",
 
 //Consumables
     
@@ -559,7 +573,6 @@
                 "Wild Blackberry",
 
                 "Gourd",
-                "Pumpkin",
                 "Honey",
                 "Tato",
 
@@ -616,6 +629,19 @@
                 "Hardened Mass",
                 "Glowing Mass",
                 "High-Radiation Fluids",
+                
+                "Aluminum Ore",
+                "Black Titanium Ore",
+                "Copper Ore",
+                "Gold Ore",
+                "Iron Ore",
+                "Irradiated Ore",
+                "Lead Ore",
+                "Silver Ore",
+                "Ultracite Ore",
+                "Uranium Ore",
+                "Unrefined Coal",
+                "Raw Crystal",
 
     // Aid
                 "Addictol",
@@ -673,20 +699,6 @@
                 "Nuka-Cade Token",
                 "Perk Token",
                 "Token",
-
-                "Aluminum Ore",
-                "Black Titanium Ore",
-                "Copper Ore",
-                "Gold Ore",
-                "Iron Ore",
-                "Irradiated Ore",
-                "Lead Ore",
-                "Silver Ore",
-                "Ultracite Ore",
-                "Uranium Ore",
-                "Unrefined Coal",
-                "Raw Crystal",
-
 
 //Treasure Maps
 
@@ -1012,7 +1024,7 @@
                 "Assaultron recall keycard",
                 "US government supply requisition",
                 "Nuclear Keycard",
-                "Vox",
+                "Mysterious Map Fragment",
 
 // Special & Collectable
 
@@ -1374,14 +1386,8 @@
 
 
     //Rare Plans & Recipes
-                "Plan: Plasma grenade",
-				"Plan: Heavy raider arms",
-				"Plan: Heavy raider torso",
-				"Plan: Heavy raider legs",
-				"Plan: Deathclaw gauntlet extra claw",
-				"Plan: Ultracite calibrated shocks",
-                "Plan: Bear Arm",
-                "Plan: Cuckoo clock",
+                "Plan:",
+                "Recipe:",
 
     //Cursed Items
                 "Cursed Pickaxe",
@@ -1413,13 +1419,13 @@
                 "Paddle Ball",
                 "Pearly Peepers",
                 "Perfect Storm",
-                "Pumpkin Grenade",
                 "Pyrolyzer",
                 "Rose's Syringer",
                 "Somerset Special",
                 "The Gutter",
                 "The Tenderizer",
                 "Voice of Set",
+                "Cauterizer",
 
         //Armor & Apparel
                 "Eye of Ra",
@@ -1868,6 +1874,29 @@
         "Missle",
         "40mm Grenade Round",
 
+//Throwables
+        "Fragmentation Grenade",
+        "Fragmentation Mine",
+        "Pulse Grenade",
+        "Pulse Mine",
+        "Plasma Grenade",
+        "Plasma Mine",
+        "Cryogenic Grenade",
+        "Cryogenic Mine",
+        "Baseball Grenade",
+        "Nuka Mine",
+        "Dynamite",
+        "Dynamite Bundle",
+        "Tomahawk",
+        "Throwing Knife",
+        "HalluciGen Gas Grenade",
+        "Artillery Smoke Grenade",
+        "Smoke Grenade",
+        "Vertibird Signal Grenade (for calling in Vertibird support)",
+        "Orbital Scan Beacon (for scanning)",
+        "Orbital Strike Beacon (for calling in orbital strikes)",
+        "Signal Flare (various colors)",
+        
 //Notes (Excluding popular player traded ones)
         "Excavator suit - Final steps",
         "A job opportunity",
@@ -3352,7 +3381,6 @@
         "Volunteer training program: Water",
         "Volunteer training: Camping 101",
         "Voting advertisement",
-        "Vox interpreter holotape",
         "War games",
         "Water data",
         "Watoga municipal courtroom recording",
@@ -3558,11 +3586,14 @@
 // Weapons
 //Recommend renaming weapons to something more unique, so that you can easily identify them in your inventory.
                 "Radfang Revolver",
-                "Ghoulshock",
-                "Thunder Dragon",
-                "Valkyrie",
-                "Glowfang Gatling",
-                "ProSnap Deluxe Camera",
+			    "Ashclaw Longshot",
+			    "Emberglow Spitter",
+			    "Luminfang Volley",
+			    "Flareclaw Barrage",
+			    "Camera",
+			    "Voltfang Blaster",
+			    "Ironfang Saber",
+			    "Brimstone Maul",
 
 //Ammo
 				".50 Caliber Ball",
@@ -3571,6 +3602,16 @@
 				"Plasma Core",
 				"Fusion Core",
 				"Camera Film",
+
+//Throwables
+                "Nuka Grenade",
+                "Molotov Cocktail",
+                "Meat Cleaver", // (Fasnacht event)",
+                "Snowball", // (Holiday Scorched event)
+                "Pumpkin Grenade", //(Spooky Scorched event)
+                "Confetti Grenade", //(Used in some seasonal events)
+                "Firecracker Berry Grenade", //(Meat Week event)
+                "Mystery Candy Grenade", //(Halloween events)
 
 // Power Armor
 //Recommend renaming power armor to something more unique, so that you can easily identify them in your inventory.
@@ -3763,6 +3804,7 @@
 
 // Misc. Fixes
                 "Ogua",
+                "Blue Devil",
 
 //Consumables
     
@@ -4093,7 +4135,6 @@
                 "Wild Blackberry",
 
                 "Gourd",
-                "Pumpkin",
                 "Honey",
                 "Tato",
 
@@ -4150,6 +4191,19 @@
                 "Hardened Mass",
                 "Glowing Mass",
                 "High-Radiation Fluids",
+                
+                "Aluminum Ore",
+                "Black Titanium Ore",
+                "Copper Ore",
+                "Gold Ore",
+                "Iron Ore",
+                "Irradiated Ore",
+                "Lead Ore",
+                "Silver Ore",
+                "Ultracite Ore",
+                "Uranium Ore",
+                "Unrefined Coal",
+                "Raw Crystal",
 
     // Aid
                 "Addictol",
@@ -4207,20 +4261,6 @@
                 "Nuka-Cade Token",
                 "Perk Token",
                 "Token",
-
-                "Aluminum Ore",
-                "Black Titanium Ore",
-                "Copper Ore",
-                "Gold Ore",
-                "Iron Ore",
-                "Irradiated Ore",
-                "Lead Ore",
-                "Silver Ore",
-                "Ultracite Ore",
-                "Uranium Ore",
-                "Unrefined Coal",
-                "Raw Crystal",
-
 
 //Treasure Maps
 
@@ -4546,7 +4586,7 @@
                 "Assaultron recall keycard",
                 "US government supply requisition",
                 "Nuclear Keycard",
-                "Vox",
+                "Mysterious Map Fragment",
 
 // Special & Collectable
 
@@ -4908,14 +4948,8 @@
 
 
     //Rare Plans & Recipes
-                "Plan: Plasma grenade",
-				"Plan: Heavy raider arms",
-				"Plan: Heavy raider torso",
-				"Plan: Heavy raider legs",
-				"Plan: Deathclaw gauntlet extra claw",
-				"Plan: Ultracite calibrated shocks",
-                "Plan: Bear Arm",
-                "Plan: Cuckoo clock",
+                "Plan:",
+                "Recipe:",
 
     //Cursed Items
                 "Cursed Pickaxe",
@@ -4947,13 +4981,13 @@
                 "Paddle Ball",
                 "Pearly Peepers",
                 "Perfect Storm",
-                "Pumpkin Grenade",
                 "Pyrolyzer",
                 "Rose's Syringer",
                 "Somerset Special",
                 "The Gutter",
                 "The Tenderizer",
                 "Voice of Set",
+                "Cauterizer",
 
         //Armor & Apparel
                 "Eye of Ra",
@@ -5192,7 +5226,7 @@
 				"matchMode": "CONTAINS",
 				"itemNames":
                 [
-                    "Excavator Armor (Helmet)",
+                    ["Excavator Armor (Helmet)",
                     "Hellcat Armor (Helmet)",
                     "Raider Armor (Helmet)",
                     "Strangler Armor (Helmet)",
@@ -5204,7 +5238,7 @@
                     "Union Armor (Helmet)",
                     "Vulcan Armor (Helmet)",
                     "X-01 Armor (Helmet)",
-                    "Rustclaw Guard (Helmet)"
+                    "Rustclaw Guard (Helmet)"]
                 ]
 			}
 		]

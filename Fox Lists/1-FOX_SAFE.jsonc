@@ -8,11 +8,14 @@
 // Weapons
 //Recommend renaming weapons to something more unique, so that you can easily identify them in your inventory.
                 "Radfang Revolver",
-                "Ghoulshock",
-                "Thunder Dragon",
-                "Valkyrie",
-                "Glowfang Gatling",
-                "ProSnap Deluxe Camera",
+			    "Ashclaw Longshot",
+			    "Emberglow Spitter",
+			    "Luminfang Volley",
+			    "Flareclaw Barrage",
+			    "Camera",
+			    "Voltfang Blaster",
+			    "Ironfang Saber",
+			    "Brimstone Maul",
 
 //Ammo
 				".50 Caliber Ball",
@@ -21,6 +24,16 @@
 				"Plasma Core",
 				"Fusion Core",
 				"Camera Film",
+
+//Throwables
+                "Nuka Grenade",
+                "Molotov Cocktail",
+                "Meat Cleaver", // (Fasnacht event)",
+                "Snowball", // (Holiday Scorched event)
+                "Pumpkin Grenade", //(Spooky Scorched event)
+                "Confetti Grenade", //(Used in some seasonal events)
+                "Firecracker Berry Grenade", //(Meat Week event)
+                "Mystery Candy Grenade", //(Halloween events)
 
 // Power Armor
 //Recommend renaming power armor to something more unique, so that you can easily identify them in your inventory.
@@ -213,6 +226,7 @@
 
 // Misc. Fixes
                 "Ogua",
+                "Blue Devil",
 
 //Consumables
     
@@ -543,7 +557,6 @@
                 "Wild Blackberry",
 
                 "Gourd",
-                "Pumpkin",
                 "Honey",
                 "Tato",
 
@@ -995,6 +1008,7 @@
                 "Assaultron recall keycard",
                 "US government supply requisition",
                 "Nuclear Keycard",
+                "Mysterious Map Fragment",
 
 // Special & Collectable
 
@@ -1389,13 +1403,13 @@
                 "Paddle Ball",
                 "Pearly Peepers",
                 "Perfect Storm",
-                "Pumpkin Grenade",
                 "Pyrolyzer",
                 "Rose's Syringer",
                 "Somerset Special",
                 "The Gutter",
                 "The Tenderizer",
                 "Voice of Set",
+                "Cauterizer",
 
         //Armor & Apparel
                 "Eye of Ra",

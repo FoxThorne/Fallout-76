@@ -19,15 +19,15 @@
 			"hotkey": 49, // 1
 			"name": "Heavy Guns",
 			"1": "Radfang Revolver",
-			"2": "Thunder Dragon",
-			"3": "Ghoulshock",
-			"4": "Valkyrie",
-			"5": "Glowfang Gatling",
+			"2": "Ashclaw Longshot",
+			"3": "Emberglow Spitter",
+			"4": "Luminfang Volley",
+			"5": "Flareclaw Barrage",
 			"6": ["Shepherd's crook", "vox", "camera"], //Quest Items
-			"7": "Lorem Ipsum",
-			"8": "Lorem Ipsum",
-			"9": ["Lorem Ipsum", "Lorem Ipsum", "Lorem Ipsum"],
-			"10": "Lorem Ipsum", // Disable if not longer a Ghoul. ["Radaway", "Radaway: diluted"],
+			"7": "Voltfang Blaster",
+			"8": ["Nuka Grenade", "Molotov Cocktail"], //Quest Items
+			"9": "Ironfang Saber",
+			"10": "Brimstone Maul",
 			"11": [ "The Fix", "Super Chem", "Survival Syringe", "Fury", "Pyschobuff", "Bufftats", "Overdrive", "Pyscho", "X-Cell", "Buffout", "Calmex", "Daddy-O", "Day Tripper", "Formula P"],
 			"12": "Toxic Water" // Disable if not longer a Ghoul. ["Purified water", "Boiled water", "Dirty water"]
 		},

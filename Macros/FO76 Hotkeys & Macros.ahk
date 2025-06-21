@@ -1,122 +1,319 @@
-﻿; *********************** Header - some configuration  ***********************
+﻿; *********************** Fallout 76 Hotkeys & Macros Script ***********************
+
+Menu, Tray, Icon, C:\Program Files (x86)\Steam\steamapps\common\Fallout76\fallout76.exe, 2
 #NoEnv
-SendMode Input
+#MaxThreadsPerHotkey 3
+SendMode Event
+SetBatchLines -1
 SetWorkingDir %A_ScriptDir%
 SetTitleMatchMode, 2
 #IfWinActive, ahk_class Fallout76
+LWin::Return
+RWin::Return
+#IfWinActive
 
-; *********************** Fallout76 Armor Naming Macros ***********************
-    ^1::Send, Armor (L-Leg)
-    ^2::Send, Armor (R-Leg)
-    ^3::Send, Armor (L-Arm)
-    ^4::Send, Armor (R-Arm)
-    ^5::Send, Armor (Torso)
-    ^6::Send, Armor (Helmet)
 
-; *********************** E Spam Toggle ***********************
-SpamE := 0  ; Toggle state tracker
+; ======================= HOTKEYS =======================
+
+Pause::Pause
+
+; ======================= GLOBAL FLAGS =======================
+global SpamE := 0
+global SpamR := 0
+global SpamEnabled := 1
+global GlobalInterrupt := 0
+global CAfterX_Interrupt := 0
+
+; *********************** Armor Naming Macros BEGIN ***********************
+
+^1::SendInput, (L-Leg)
+^2::SendInput, (R-Leg)
+^3::SendInput, (L-Arm)
+^4::SendInput, (R-Arm)
+^5::SendInput, (Torso)
+^6::SendInput, (Helmet)
+
+; *********************** Armor Naming Macros END ***********************
+
+; *********************** LOOT ALL THE THINGS!!! Begin ***********************
 
 NumpadMult::
-    SpamE := !SpamE  ; Flip state
-    if SpamE {
-        SetTimer, PressE, 50  ; Spam every 50ms (adjust this number as needed)
+    GlobalInterrupt := 0
+    if (!SpamEnabled) {
+        SpamEnabled := 1
+        return
+    }
+    if (!SpamE) {
+        if (SpamR) {
+            SetTimer, PressRSpam, Off
+            SetTimer, R_Spam_Reminder, Off
+            SpamR := 0
+            SoundPlay, notification_off.wav
+        }
+        SetTimer, PressESpam, 15
+        SetTimer, E_Spam_Reminder, 1000
+        SpamE := 1
+        SoundPlay, notification_on.wav
     } else {
-        SetTimer, PressE, Off
+        SetTimer, PressESpam, Off
+        SetTimer, E_Spam_Reminder, Off
+        SpamE := 0
+        SoundPlay, notification_off.wav
     }
 return
 
-PressE:
-    Send, {e down}
-    Sleep, 20  ; Short press duration
-    Send, {e up}
+PressESpam:
+    if (GlobalInterrupt)
+        return
+    SendInput {e Down}
+    Sleep, 20
+    SendInput {e Up}
 return
 
-; *********************** R Spam Toggle, useful for collecting Toxic Water ***********************
-SpamR := 0  ; Toggle state tracker
+E_Spam_Reminder:
+    if (GlobalInterrupt)
+        return
+    SoundPlay, notification_running.wav
+return
+
+ResumeSpam:
+    GlobalInterrupt := 0
+return
 
 NumpadDiv::
-    SpamR := !SpamR  ; Flip state
-    if SpamR {
-        SetTimer, PressR, 50  ; Spam every 50ms (adjust as needed)
+    GlobalInterrupt := 0
+    if (!SpamEnabled) {
+        SpamEnabled := 1
+        return
+    }
+    if (!SpamR) {
+        if (SpamE) {
+            SetTimer, PressESpam, Off
+            SetTimer, E_Spam_Reminder, Off
+            SpamE := 0
+            SoundPlay, notification_off.wav
+        }
+        SetTimer, PressRSpam, 15
+        SetTimer, R_Spam_Reminder, 1000
+        SpamR := 1
+        SoundPlay, notification_on.wav
     } else {
-        SetTimer, PressR, Off
+        SetTimer, PressRSpam, Off
+        SetTimer, R_Spam_Reminder, Off
+        SpamR := 0
+        SoundPlay, notification_off.wav
     }
 return
 
-PressR:
-    Send, {r down}
-    Sleep, 20  ; Short keypress duration
-    Send, {r up}
+PressRSpam:
+    if (GlobalInterrupt)
+        return
+    SendInput {r Down}
+    Sleep, 20
+    SendInput {r Up}
 return
 
-; *********************** Press "C" when "R" or "E" is pressed, this is a workaround for the o-matic add-ons that have trouble with the "New" tab ***********************
+R_Spam_Reminder:
+    if (GlobalInterrupt)
+        return
+    SoundPlay, notification_running.wav
+return
+
+; *********************** H Spam Macro BEGIN ***********************
+
+HSpamLock := 0
+
+~h::
+    if (HSpamLock || GlobalInterrupt)
+        return
+    HSpamLock := 1
+    Loop, 6
+    {
+        if (GlobalInterrupt) {
+            HSpamLock := 0
+            return
+        }
+        SendInput {h Down}
+        Sleep, 40
+        SendInput {h Up}
+        Sleep, 40
+    }
+    HSpamLock := 0
+return
+
+; *********************** H Spam Macro END ***********************
+
+; *********************** C after "X" Macros BEGIN ***********************
 
 ~r::
-    SetTimer, PressC_AfterR, -1500  ; One-shot timer, triggers once
+    CAfterX_Interrupt := 0
+    ; Pause E-spam immediately if running
+    if (SpamE) {
+        GlobalInterrupt := 1
+        SoundPlay, notification_pause.wav
+        SetTimer, ResumeSpam, -10000
+    }
+    SetTimer, PressC_AfterR, -3000
 return
 
 ~e::
-    SetTimer, PressC_AfterR, -1500  ; One-shot timer, triggers once
+    CAfterX_Interrupt := 0
+    SetTimer, PressC_AfterE, -3000
 return
 
 PressC_AfterR:
-    Send, {c down}
-    Sleep, 50
-    Send, {c up}
+    if (CAfterX_Interrupt)
+        return
+    SoundBeep 750, 150  ; Beep when C fires
+    SendInput {c Down}
+    Sleep, 20
+    SendInput {c Up}
 return
 
-
-; *********************** Perk Loadout Manager Macros ***********************
-F1:: ; Loadout 1
-    Send {Tab down}
-    Sleep, 200
-    Send {Tab up}
-    Sleep, 1000
-    Send {t down}
-    Sleep, 200
-    Send {t up}
-    Sleep, 1000
-    Send {1 down}
-    Sleep, 200
-    Send {1 up}
-    Sleep, 1000
-    Send {Tab down}
-    Sleep, 200
-    Send {Tab up}
+PressC_AfterE:
+    if (CAfterX_Interrupt)
+        return
+    SoundBeep 750, 150  ; Beep when C fires
+    SendInput {c Down}
+    Sleep, 20
+    SendInput {c Up}
 return
 
-F3:: ; Loadout 3
-    Send {Tab down}
-    Sleep, 200
-    Send {Tab up}
-    Sleep, 1000
-    Send {t down}
-    Sleep, 200
-    Send {t up}
-    Sleep, 1000
-    Send {3 down}
-    Sleep, 200
-    Send {3 up}
-    Sleep, 1000
-    Send {Tab down}
-    Sleep, 200
-    Send {Tab up}
+; Wildcard hotkey for any key except R and E - only affects C-after-X macros
+~*a::
+~*b::
+~*d::
+~*f::
+~*g::
+~*h::
+~*i::
+~*j::
+~*k::
+~*l::
+~*m::
+~*n::
+~*o::
+~*p::
+~*q::
+~*s::
+~*t::
+~*u::
+~*v::
+~*w::
+~*x::
+~*y::
+~*z::
+~*1::
+~*2::
+~*3::
+~*4::
+~*5::
+~*6::
+~*7::
+~*8::
+~*9::
+~*0::
+~*Space::
+~*Shift::
+~*Ctrl::
+~*Alt::
+~*LWin::
+~*RWin::
+~*Up::
+~*Down::
+~*Left::
+~*Right::
+~*Enter::
+~*Esc::
+    CAfterX_Interrupt := 1
 return
 
-F6:: ; Loadout 6
-    Send {Tab down}
+; *********************** C after "X" Macros END ***********************
+
+; *********************** Perk Loadout Manager Macros BEGIN ***********************
+
+F1::
+    SendInput {Tab down}
     Sleep, 200
-    Send {Tab up}
+    SendInput {Tab up}
     Sleep, 1000
-    Send {t down}
+    SendInput {t down}
     Sleep, 200
-    Send {t up}
+    SendInput {t up}
     Sleep, 1000
-    Send {6 down}
+    SendInput {1 down}
     Sleep, 200
-    Send {6 up}
+    SendInput {1 up}
     Sleep, 1000
-    Send {Tab down}
+    SendInput {Tab down}
     Sleep, 200
-    Send {Tab up}
+    SendInput {Tab up}
 return
+
+F3::
+    SendInput {Tab down}
+    Sleep, 200
+    SendInput {Tab up}
+    Sleep, 1000
+    SendInput {t down}
+    Sleep, 200
+    SendInput {t up}
+    Sleep, 1000
+    SendInput {3 down}
+    Sleep, 200
+    SendInput {3 up}
+    Sleep, 1000
+    SendInput {Tab down}
+    Sleep, 200
+    SendInput {Tab up}
+return
+
+F6::
+    SendInput {Tab down}
+    Sleep, 200
+    SendInput {Tab up}
+    Sleep, 1000
+    SendInput {t down}
+    Sleep, 200
+    SendInput {t up}
+    Sleep, 1000
+    SendInput {6 down}
+    Sleep, 200
+    SendInput {6 up}
+    Sleep, 1000
+    SendInput {Tab down}
+    Sleep, 200
+    SendInput {Tab up}
+return
+
+; *********************** Perk Loadout Manager Macros END ***********************
+
+; *********************** DISABLE ALL SPAM ON M, TAB, or ESC BEGIN ***********************
+
+~m::
+~Tab::
+~Esc::
+    if (!GlobalInterrupt) {
+        GlobalInterrupt := 1
+        if (SpamEnabled) {
+            SpamEnabled := 0
+            change := 0
+            if (SpamE) {
+                SetTimer, PressESpam, Off
+                SetTimer, E_Spam_Reminder, Off
+                SpamE := 0
+                change := 1
+            }
+            if (SpamR) {
+                SetTimer, PressRSpam, Off
+                SetTimer, R_Spam_Reminder, Off
+                SpamR := 0
+                change := 1
+            }
+            if (change)
+                SoundPlay, notification_off.wav
+        }
+    }
+return
+
+; *********************** DISABLE ALL SPAM ON M, TAB, or ESC END ***********************
