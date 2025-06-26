@@ -160,7 +160,7 @@
 			"transferEquipped": false,
 			"transferFavorite": false,
 			"transferAssigned": true,
-			"singleItemPerName": false,
+			"singleItemPerName": true,
             "itemNames":["Lorem Ipsum"],
 			"direction": "FROM_CONTAINER",
             "matchMode": "ALL",
@@ -358,7 +358,7 @@
 	"showDurabilityValue": true,
 	"maintainScrollPosition": true,
     "showCategoryItemCount": true,
-    "hideLoadMessage": true,
+    "hideLoadMessage": false,
     "hideTakeAllConfirm": true,
     "defaultVendorItemPrice": -1,
     "hideHeader": true,
@@ -382,11 +382,14 @@
 // Weapons
 //Recommend renaming weapons to something more unique, so that you can easily identify them in your inventory.
                 "Radfang Revolver",
-                "Ghoulshock",
-                "Thunder Dragon",
-                "Valkyrie",
-                "Glowfang Gatling",
-                "ProSnap Deluxe Camera",
+			    "Ashclaw Longshot",
+			    "Emberglow Spitter",
+			    "Luminfang Volley",
+			    "Flareclaw Barrage",
+			    "Camera",
+			    "Voltfang Blaster",
+			    "Ironfang Saber",
+			    "Brimstone Maul",
 
 //Ammo
 				".50 Caliber Ball",
@@ -395,6 +398,16 @@
 				"Plasma Core",
 				"Fusion Core",
 				"Camera Film",
+
+//Throwables
+                "Nuka Grenade",
+                "Molotov Cocktail",
+                "Meat Cleaver", // (Fasnacht event)",
+                "Snowball", // (Holiday Scorched event)
+                "Pumpkin Grenade", //(Spooky Scorched event)
+                "Confetti Grenade", //(Used in some seasonal events)
+                "Firecracker Berry Grenade", //(Meat Week event)
+                "Mystery Candy Grenade", //(Halloween events)
 
 // Power Armor
 //Recommend renaming power armor to something more unique, so that you can easily identify them in your inventory.
@@ -918,9 +931,7 @@
                 "Wild Blackberry",
 
                 "Gourd",
-                "Pumpkin",
                 "Honey",
-                "Tato",
 
                 "Tato Flower",
                 "Carrot Flower",
@@ -953,7 +964,6 @@
                 "Scorchbeast Lung",
                 "Scorchbeast Meat",
 
-                "Plastic",
                 "Water Filter",
                 "Antiseptic",
                 "Tick Blood",
@@ -1368,6 +1378,7 @@
                 "Assaultron recall keycard",
                 "US government supply requisition",
                 "Nuclear Keycard",
+                "Mysterious Map Fragment",
 
 // Special & Collectable
 
@@ -1618,6 +1629,7 @@
                 "Jaguar Short Suit",
 
 				"Reclaimed Deep Mining Gas Mask",
+                "Gas Mask",
 
 				"Sack Hood",
 
@@ -1727,10 +1739,19 @@
                 "Skiing Red And Green Outfit",
                 "Skiing Red",
 
+                "Cappy",
+                "Nuka-World",
+
+
+    //Misc. Items
+                "Board Game",
+                "All-Star",
+                "Decoration",
+                "Garden Gnome",
+                "New Toy",
+                "Clown",
 
     //Rare Plans & Recipes
-                "Plan:",
-                "Recipe:",
 
     //Cursed Items
                 "Cursed Pickaxe",
@@ -1762,7 +1783,6 @@
                 "Paddle Ball",
                 "Pearly Peepers",
                 "Perfect Storm",
-                "Pumpkin Grenade",
                 "Pyrolyzer",
                 "Rose's Syringer",
                 "Somerset Special",
@@ -1809,8 +1829,8 @@
                 "Bird Decoration",
 
                 "Pristine",
-                "Clean",
                 "Undamaged",
+                "New",
 
                 "Souvenir",
                 "Decoration",
@@ -1856,7 +1876,9 @@
 
                 "Earle's Pocket Watch",
                 
-                "Drum",
+                "Drumstick",
+                "Snare Drum",
+                "Frame Drum",
                 "Violin",
                 "Flute",
                 "Trumpet",
@@ -3524,7 +3546,9 @@
 // Quest Related, but stays in the inventory for some reason.
         "Inert Bomb",
         "Water Cooled Bone Saw",
-        "Intrusion Module", 
+        "Intrusion Module",
+        "Multiscope",
+        "Portable Power Pack",
 
 //Useless Consumables
 //Either has little value, no special stats or effects, or there is a more powerful version. e.g. Perfect Bubblegum is useful and not included; but every other bubblegum is. 
@@ -3805,34 +3829,50 @@
         "Harpoon",
         "Paddle Ball String",
         "Railway Spike",
-        "Fusion Core",
         "Plasma Core",
         "Mini Nuke",
         "Missle",
         "40mm Grenade Round",
 
 //Throwables
-        "Fragmentation Grenade",
-        "Fragmentation Mine",
-        "Pulse Grenade",
-        "Pulse Mine",
-        "Plasma Grenade",
-        "Plasma Mine",
-        "Cryogenic Grenade",
-        "Cryogenic Mine",
-        "Baseball Grenade",
-        "Nuka Mine",
-        "Dynamite",
-        "Dynamite Bundle",
+        "Sheepsquatch shard",
+        "Throwing knife",
         "Tomahawk",
-        "Throwing Knife",
-        "HalluciGen Gas Grenade",
-        "Artillery Smoke Grenade",
-        "Smoke Grenade",
-        "Vertibird Signal Grenade (for calling in Vertibird support)",
-        "Orbital Scan Beacon (for scanning)",
-        "Orbital Strike Beacon (for calling in orbital strikes)",
-        "Signal Flare (various colors)",
+        "Blast mine",
+        "Bottlecap mine",
+        "Cryo mine",
+        "Fragmentation mine",
+        "Nuke mine",
+        "Plasma mine",
+        "Pulse mine",
+        "Red fireworks mine",
+        "Artillery smoke grenade",
+        "Baseball grenade",
+        "Bug grenade",
+        "Cryogenic grenade",
+        "Dross",
+        "Dynamite",
+        "Dynamite bundle",
+        "Explosive bait",
+        "Flare",
+        "Floater flamer grenade",
+        "Floater freezer grenade",
+        "Floater gnasher grenade",
+        //"Fragmentation grenade",
+        "Fragmentation grenade MIRV",
+        "HalluciGen gas grenade",
+        //"Molotov cocktail",
+        //"Nuka grenade",
+        "Nuka Quantum grenade",
+        "Orbital scan beacon",
+        "Orbital strike beacon",
+        "Plasma grenade",
+        "Pulse grenade",
+        "Pumpkin grenade",
+        "Trail fireworks",
+        //"Turbo-Fert fertilizer",
+        "Vertibot signal grenade",
+
         
 //Notes (Excluding popular player traded ones)
         "Excavator suit - Final steps",
@@ -5499,7 +5539,11 @@
         "Magellan's log 3",
         "Captain's log #1",
         "Captain's log #2",
-        "Captain's log #3"
+        "Captain's log #3",
+        "Fortune:",
+        "Earle's",
+        "Recipe",
+        "Plan"
 ]
 ,
 	"FOX_BUY":

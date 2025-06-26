@@ -1,0 +1,13 @@
+{
+	"debug": true,
+	"testRun": true,
+	"SkipDelay": 25,
+	"AutoUseRepairKit": true,
+	"ScrapLegendary": true,
+	"ScrapPremium": true,
+	"SkipCustom": {
+		"By performing this action, you will leave your current team. Leave your team?": 0,
+		"$Loaded_Into_Nuke_Zone": 0,
+		"$ConfirmDestroyUnlockedCraftable": 1
+	}
+}

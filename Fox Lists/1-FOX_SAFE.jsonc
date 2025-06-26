@@ -16,6 +16,7 @@
 			    "Voltfang Blaster",
 			    "Ironfang Saber",
 			    "Brimstone Maul",
+                "Thirst Zapper",
 
 //Ammo
 				".50 Caliber Ball",
@@ -558,7 +559,6 @@
 
                 "Gourd",
                 "Honey",
-                "Tato",
 
                 "Tato Flower",
                 "Carrot Flower",
@@ -591,9 +591,6 @@
                 "Scorchbeast Lung",
                 "Scorchbeast Meat",
 
-                "Ultracite",
-                "Plastic",
-                "Wood",
                 "Water Filter",
                 "Antiseptic",
                 "Tick Blood",
@@ -1259,6 +1256,7 @@
                 "Jaguar Short Suit",
 
 				"Reclaimed Deep Mining Gas Mask",
+                "Gas Mask",
 
 				"Sack Hood",
 
@@ -1368,10 +1366,19 @@
                 "Skiing Red And Green Outfit",
                 "Skiing Red",
 
+                "Cappy",
+                "Nuka-World",
+
+
+    //Misc. Items
+                "Board Game",
+                "All-Star",
+                "Decoration",
+                "Garden Gnome",
+                "New Toy",
+                "Clown",
 
     //Rare Plans & Recipes
-                "Plan:",
-                "Recipe:",
 
     //Cursed Items
                 "Cursed Pickaxe",
@@ -1449,8 +1456,8 @@
                 "Bird Decoration",
 
                 "Pristine",
-                "Clean",
                 "Undamaged",
+                "New",
 
                 "Souvenir",
                 "Decoration",
@@ -1496,7 +1503,9 @@
 
                 "Earle's Pocket Watch",
                 
-                "Drum",
+                "Drumstick",
+                "Snare Drum",
+                "Frame Drum",
                 "Violin",
                 "Flute",
                 "Trumpet",

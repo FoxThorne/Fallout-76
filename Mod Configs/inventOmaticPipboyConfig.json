@@ -2,7 +2,7 @@
 	"debug": true,
 	"debugKeys": false,
 	"toggleDebugHotkey": 76,
-	"hideLoadMessage": true,
+	"hideLoadMessage": false,
 	"orderButtons": ["findForRepair", "consume", "drop"],
 	"protectionConfig": {
 		"debug": true,
@@ -38,7 +38,7 @@
 				"5mm Round",
 				"Fusion Cell",
 				"Plasma Core",
-				"Fusion Core",
+				//"Fusion Core",
 				"Camera Film",
 
 //Throwables
@@ -574,7 +574,6 @@
 
                 "Gourd",
                 "Honey",
-                "Tato",
 
                 "Tato Flower",
                 "Carrot Flower",
@@ -607,9 +606,6 @@
                 "Scorchbeast Lung",
                 "Scorchbeast Meat",
 
-                "Ultracite",
-                "Plastic",
-                "Wood",
                 "Water Filter",
                 "Antiseptic",
                 "Tick Blood",
@@ -1275,6 +1271,7 @@
                 "Jaguar Short Suit",
 
 				"Reclaimed Deep Mining Gas Mask",
+                "Gas Mask",
 
 				"Sack Hood",
 
@@ -1384,10 +1381,19 @@
                 "Skiing Red And Green Outfit",
                 "Skiing Red",
 
+                "Cappy",
+                "Nuka-World",
+
+
+    //Misc. Items
+                "Board Game",
+                "All-Star",
+                "Decoration",
+                "Garden Gnome",
+                "New Toy",
+                "Clown",
 
     //Rare Plans & Recipes
-                "Plan:",
-                "Recipe:",
 
     //Cursed Items
                 "Cursed Pickaxe",
@@ -1465,8 +1471,8 @@
                 "Bird Decoration",
 
                 "Pristine",
-                "Clean",
                 "Undamaged",
+                "New",
 
                 "Souvenir",
                 "Decoration",
@@ -1512,7 +1518,9 @@
 
                 "Earle's Pocket Watch",
                 
-                "Drum",
+                "Drumstick",
+                "Snare Drum",
+                "Frame Drum",
                 "Violin",
                 "Flute",
                 "Trumpet",
@@ -1544,7 +1552,7 @@
 		},
 		"equipProtection": {
 			"enabled": false,
-			"apparel": false, //If enabled can't use Power Armor. Weird bug.
+			"apparel": true,
 			"parts": ["UNDERARMOR", "LEFT_LEG", "RIGHT_LEG", "LEFT_ARM", "RIGHT_ARM", "CHEST", "HAT", "EYEWEAR", "MASK"]
 		}
 	},
@@ -1587,7 +1595,9 @@
 // Quest Related, but stays in the inventory for some reason.
         "Inert Bomb",
         "Water Cooled Bone Saw",
-        "Intrusion Module", 
+        "Intrusion Module",
+        "Multiscope",
+        "Portable Power Pack",
 
 //Useless Consumables
 //Either has little value, no special stats or effects, or there is a more powerful version. e.g. Perfect Bubblegum is useful and not included; but every other bubblegum is. 
@@ -1868,34 +1878,50 @@
         "Harpoon",
         "Paddle Ball String",
         "Railway Spike",
-        "Fusion Core",
         "Plasma Core",
         "Mini Nuke",
         "Missle",
         "40mm Grenade Round",
 
 //Throwables
-        "Fragmentation Grenade",
-        "Fragmentation Mine",
-        "Pulse Grenade",
-        "Pulse Mine",
-        "Plasma Grenade",
-        "Plasma Mine",
-        "Cryogenic Grenade",
-        "Cryogenic Mine",
-        "Baseball Grenade",
-        "Nuka Mine",
-        "Dynamite",
-        "Dynamite Bundle",
+        "Sheepsquatch shard",
+        "Throwing knife",
         "Tomahawk",
-        "Throwing Knife",
-        "HalluciGen Gas Grenade",
-        "Artillery Smoke Grenade",
-        "Smoke Grenade",
-        "Vertibird Signal Grenade (for calling in Vertibird support)",
-        "Orbital Scan Beacon (for scanning)",
-        "Orbital Strike Beacon (for calling in orbital strikes)",
-        "Signal Flare (various colors)",
+        "Blast mine",
+        "Bottlecap mine",
+        "Cryo mine",
+        "Fragmentation mine",
+        "Nuke mine",
+        "Plasma mine",
+        "Pulse mine",
+        "Red fireworks mine",
+        "Artillery smoke grenade",
+        "Baseball grenade",
+        "Bug grenade",
+        "Cryogenic grenade",
+        "Dross",
+        "Dynamite",
+        "Dynamite bundle",
+        "Explosive bait",
+        "Flare",
+        "Floater flamer grenade",
+        "Floater freezer grenade",
+        "Floater gnasher grenade",
+        //"Fragmentation grenade",
+        "Fragmentation grenade MIRV",
+        "HalluciGen gas grenade",
+        //"Molotov cocktail",
+        //"Nuka grenade",
+        "Nuka Quantum grenade",
+        "Orbital scan beacon",
+        "Orbital strike beacon",
+        "Plasma grenade",
+        "Pulse grenade",
+        "Pumpkin grenade",
+        "Trail fireworks",
+        //"Turbo-Fert fertilizer",
+        "Vertibot signal grenade",
+
         
 //Notes (Excluding popular player traded ones)
         "Excavator suit - Final steps",
@@ -3562,7 +3588,11 @@
         "Magellan's log 3",
         "Captain's log #1",
         "Captain's log #2",
-        "Captain's log #3"
+        "Captain's log #3",
+        "Fortune:",
+        "Earle's",
+        "Recipe",
+        "Plan"
 ]
 ,
 				"dropFavorite": false,
@@ -3600,7 +3630,6 @@
 				"5mm Round",
 				"Fusion Cell",
 				"Plasma Core",
-				"Fusion Core",
 				"Camera Film",
 
 //Throwables
@@ -4948,8 +4977,8 @@
 
 
     //Rare Plans & Recipes
-                "Plan:",
-                "Recipe:",
+                //"Plan:",
+                //"Recipe:",
 
     //Cursed Items
                 "Cursed Pickaxe",

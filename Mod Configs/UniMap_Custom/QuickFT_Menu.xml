@@ -3,24 +3,19 @@
  <QuickFT>
   <Menu List="Main">
    <Title>Main</Title>
-   <ID>92</ID>
+   <ID>90</ID>
+   <ID>91</ID>
    <ID>1</ID>
    <ID>0</ID>
    <ID>80</ID>
-   <ID>0</ID>
-   <ID>16</ID>
    <ID>81</ID>
    <ID>15</ID>
-   <ID>17</ID>
+   <ID>0</ID>
    <ID>21</ID>
-   <ID>20</ID>
-   <ID>22</ID>
    <ID>19</ID>
-   <ID>18</ID>
    <ID>0</ID>
    <ID>725073</ID>
    <ID>631890</ID>
-   <ID>6773263</ID>
    <ID>2913845</ID>
    <ID>399020</ID>
    <ID>617126</ID>
@@ -49,10 +44,6 @@
 
   <Menu List="1">
    <Title>[ $$PlayerSetMarkerName ]</Title>
-   <ID>90</ID>
-   <ID>91</ID>
-   <ID>92</ID>
-   <ID>0</ID>
    <ID>101</ID>
    <ID>102</ID>
    <ID>103</ID>
@@ -661,45 +652,36 @@
 
   <Menu List="15">
    <Title>FOX</Title>
-   <ID>3183207</ID>
-   <ID>604863</ID>
-   <ID>631882</ID>
-   <ID>1101036</ID>
+   <ID>465570</ID>
+   <ID>630858</ID>
+   <ID>468471</ID>
    <ID>0</ID>
-   <ID>4136226</ID>
-   <ID>618771</ID>
-   <ID>617364</ID>
-   <ID>623782</ID>
-   <ID>624124</ID>
-   <ID>539258</ID>
-   <ID>618416</ID>
-   <ID>468493</ID>
+   <ID>450088</ID>
+   <ID>1089771</ID>
+   <ID>389234</ID>
+   <ID>459679</ID>
+   <ID>598560</ID>
+   <ID>631890</ID>
+   <ID>0</ID>
+   <ID>605170</ID>
+   <ID>20583</ID>
+   <ID>102080</ID>
+   <ID>0</ID>
+   <ID>3183207</ID>
+   <ID>396485</ID>
+   <ID>465605</ID>
+   <ID>630868</ID>
+   <ID>0</ID>
    <ID>16738</ID>
    <ID>0</ID>
-   <ID>3501094</ID>
-   <ID>465605</ID>
-   <ID>396485</ID>
+   <ID>468493</ID>
    <ID>0</ID>
-   <ID>102080</ID>
-   <ID>605170</ID>
-   <ID>0</ID>
-   <ID>631890</ID>
-   <ID>630868</ID>
-   <ID>598560</ID>
-   <ID>0</ID>
-   <ID>459679</ID>
-   <ID>389234</ID>
-   <ID>1089771</ID>
-   <ID>379915</ID>
-   <ID>468471</ID>
-   <ID>630858</ID>
-   <ID>465570</ID>
-   <ID>0</ID>
-   <ID>45623</ID>
-   <ID>604494</ID>
-   <ID>611764</ID>
-   <ID>16820</ID>
-   <ID>0</ID>
+   <ID>618416</ID>
+   <ID>539258</ID>
+   <ID>624124</ID>
+   <ID>623782</ID>
+   <ID>617364</ID>
+   <ID>618771</ID>
   </Menu>
 
  </QuickFT>

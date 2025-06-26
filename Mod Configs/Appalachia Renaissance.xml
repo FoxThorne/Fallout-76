@@ -3,7 +3,7 @@
  <MapBook>
   <MapBookName>Appalachia Renaissance</MapBookName>
   <MapBookCreator>ggMAtze</MapBookCreator>
-  <MapResolution>8K</MapResolution>
+  <MapResolution>4K</MapResolution>
   <Map Page="1">
    <Directory>textures\interface\pip-boy\</Directory>
    <Texture>papermap_city_d.dds</Texture>

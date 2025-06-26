@@ -6,11 +6,11 @@
  <MapBooks>
   <MapBook Book="1">Appalachia Renaissance.xml</MapBook><MapPages Book="1">1</MapPages>
   <MapBook Book="2">TZM_EasyInstall_UnibookBundle\UniMap_MapBooks\TZM_Consumables_Unibook.xml</MapBook><MapPages Book="2">10</MapPages>
-  <MapBook Book="3">TZM_EasyInstall_UnibookBundle\UniMap_MapBooks\TZM_Resources_Unibook.xml</MapBook><MapPages Book="3">10</MapPages>
-  <MapBook Book="4">TZM_EasyInstall_UnibookBundle\UniMap_MapBooks\TZM_Mobs_Unibook.xml</MapBook><MapPages Book="4">5</MapPages>
+  <MapBook Book="3">TZM_EasyInstall_UnibookBundle\UniMap_MapBooks\TZM_Mobs_Unibook.xml</MapBook><MapPages Book="3">5</MapPages>
+  <MapBook Book="4">TZM_EasyInstall_UnibookBundle\UniMap_MapBooks\TZM_XPRecipes_Unibook.xml</MapBook><MapPages Book="4">5</MapPages>
   <MapBook Book="5">TZM_EasyInstall_UnibookBundle\UniMap_MapBooks\TZM_Flora_UniBook.xml</MapBook><MapPages Book="5">5</MapPages>
-  <MapBook Book="6">TZM_EasyInstall_UnibookBundle\UniMap_MapBooks\TZM_Unmarked_Locations_Unibook.xml</MapBook><MapPages Book="6">5</MapPages>
-  <MapBook Book="7">TZM_EasyInstall_UnibookBundle\UniMap_MapBooks\TZM_XPRecipes_Unibook.xml</MapBook><MapPages Book="7">5</MapPages>
+  <MapBook Book="6">TZM_EasyInstall_UnibookBundle\UniMap_MapBooks\TZM_Resources_Unibook.xml</MapBook><MapPages Book="6">10</MapPages>
+  <MapBook Book="7">TZM_EasyInstall_UnibookBundle\UniMap_MapBooks\TZM_Unmarked_Locations_Unibook.xml</MapBook><MapPages Book="7">5</MapPages>
   <MapBook Book="8">data\NoCampZones.xml</MapBook><MapPages Book="8">1</MapPages>
  </MapBooks>
 
@@ -40,8 +40,8 @@
   <HotKeyFile>UniMap_Custom\QuickFT_HotKey.xml</HotKeyFile>
   <AliasesFile>UniMap_Custom\QuickFT_Aliases.xml</AliasesFile>
   <DispMarkerID>yes</DispMarkerID>
-  <TwoStepQuickFT>2</TwoStepQuickFT>
- </QuickFT>
+  <TwoStepQuickFT>0</TwoStepQuickFT>
+eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee </QuickFT>
 
  <PlayerNotifier>
   <Activate>no</Activate>
@@ -116,7 +116,7 @@
    <FindIncKeyCode>190</FindIncKeyCode>
    <FindDecKeyCode>188</FindDecKeyCode>
    <HideResetOnFind>yes</HideResetOnFind>
-   <LineThickness>3</LineThickness>
+   <LineThickness>2</LineThickness>
    <LineColor>FFFFFF</LineColor>
    <LineAlpha>0.5</LineAlpha>
    <TeamMemberWaypoint>yes</TeamMemberWaypoint>
