@@ -111,7 +111,7 @@
             // FOX_DEPOSIT is setup as an inclusionary list, use it in conjunction with matchMode: CONTAINS
 			"direction": "TO_CONTAINER",
             "matchMode": "CONTAINS",
-            "types":["ARMOR", "APPAREL", "FOOD_WATER", "AID", "NOTES", "HOLO", "MISC", "MODS", "JUNK"],
+            "types":["WEAPON", "ARMOR", "APPAREL", "FOOD_WATER", "AID", "NOTES", "HOLO", "MISC", "MODS", "JUNK"],
 			"checkCharacterName": false,
 			"characterName": "Lorem Ipsum",
 			"checkAccountName": false,
@@ -146,38 +146,9 @@
 			"checkAccountName": false,
 			"accountName": "Lorem Ipsum"
 },
-// Take All
-{
-			"name": "Take All!",
-            // No really, this will take everything; use with caution.
-			"testRun": false,
-			"enabled": true,
-			"debug": true,
-			"showButton": true,
-			"showMessage": false,
-			"hotkey": 96, // NumPad 0
-            "maxItems":0,
-            "amount":0,
-            "exactAmountInDestination":false,
-            "repeat":1,
-            "delay":50,
-            "onlyHighlightedItem":false,
-			"transferEquipped": false,
-			"transferFavorite": false,
-			"transferAssigned": false,
-			"singleItemPerName": false,
-            "itemNames":["Lorem Ipsum"],
-			"direction": "FROM_CONTAINER",
-            "matchMode": "ALL",
-            "types":["FOOD_WATER", "AID", "NOTES", "HOLO", "AMMO", "MISC", "JUNK"],
-			"checkCharacterName": false,
-			"characterName": "Lorem Ipsum",
-			"checkAccountName": false,
-			"accountName": "Lorem Ipsum"
-},
 // XP Buffs
 {
-			"name": "XP!",
+			"name": "Take Buff Items",
 			"testRun": false,
 			"enabled": true,
 			"debug": true,
@@ -210,9 +181,9 @@
 			"testRun": false,
 			"enabled": true,
 			"debug": true,
-			"showButton": true,
+			"showButton": false,
 			"showMessage": true,
-			"hotkey": 100, // NumPad 4
+			"hotkey": 99, // NumPad 3
             "maxItems":0,
 			"amount": 3,
             "exactAmountInDestination":false,
@@ -228,6 +199,35 @@
             "direction": "FROM_CONTAINER",
             "matchMode": "CONTAINS",
             "types":["AID","FOOD_WATER","MISC"],
+			"checkCharacterName": false,
+			"characterName": "Lorem Ipsum",
+			"checkAccountName": false,
+			"accountName": "Lorem Ipsum"
+},
+// Take All
+{
+			"name": "Take All!",
+            // No really, this will take everything; use with caution.
+			"testRun": false,
+			"enabled": true,
+			"debug": true,
+			"showButton": true,
+			"showMessage": false,
+			"hotkey": 96, // NumPad 0
+            "maxItems":0,
+            "amount":0,
+            "exactAmountInDestination":false,
+            "repeat":1,
+            "delay":50,
+            "onlyHighlightedItem":false,
+			"transferEquipped": false,
+			"transferFavorite": false,
+			"transferAssigned": false,
+			"singleItemPerName": false,
+            "itemNames":["Lorem Ipsum"],
+			"direction": "FROM_CONTAINER",
+            "matchMode": "ALL",
+            "types":["FOOD_WATER", "AID", "NOTES", "HOLO", "AMMO", "MISC"],
 			"checkCharacterName": false,
 			"characterName": "Lorem Ipsum",
 			"checkAccountName": false,
@@ -279,10 +279,10 @@
 				"enabled": true,
 				"amount": 0,
 				"sellEquipped": false,
-				"sellFavorite": false,
+				"sellFavorite": true,
 				"itemNames":["FOX_DROP_ALL"],
-				"matchMode": "EXACT",
-				"types": ["WEAPON", "FOOD_WATER", "AID", "NOTES", "HOLO", "AMMO", "MISC"],
+				"matchMode": "CONTAINS",
+				"types": ["WEAPON", "FOOD_WATER", "NOTES", "HOLO", "AMMO"],
 				"checkCharacterName": false,
 				"characterName": "Lorem Ipsum",
 				"checkAccountName": false,
@@ -295,7 +295,7 @@
 				"sellEquipped": true,
 				"sellFavorite": true,
 				"itemNames":["FOX_DROP_X"],
-				"matchMode": "EXACT",
+				"matchMode": "CONTAINS",
 				"types": ["WEAPON", "FOOD_WATER", "AID", "NOTES", "HOLO", "AMMO", "MISC"],
 				"checkCharacterName": false,
 				"characterName": "Lorem Ipsum",
@@ -308,7 +308,7 @@
 // Mass Purchase
 "buyConfig": {
   "name": "AutoBuy",
-  "testRun": true,
+  "testRun": false,
   "enabled": true,
   "debug": true,
   "hotkey": 66, // B
@@ -325,7 +325,7 @@
       "maxPrice": 5000,
       "types": ["WEAPON", "ARMOR", "APPAREL", "FOOD_WATER", "AID", "NOTES", "AMMO", "MISC", "MODS", "JUNK"],
       "itemNames": ["FOX_BUY"],
-      "matchMode": "EXACT",
+      "matchMode": "CONTAINS",
       "checkCharacterName": false,
       "characterName": "Lorem Impsum",
       "checkAccountName": false
@@ -406,13 +406,13 @@
 		},
 		"transferProtection": {
 			"debug": true,
-			"enabled": false,
+			"enabled": true,
 			"favorite": true,
 			"equipped": true,
 			"named": true,
 			"matchMode": "CONTAINS",
-			"itemNames":["FOX_SAFE"],
-			"disableForContainers": ["Power Armor", "Power Armor Chasis", "Gold Press Machine"]
+			"itemNames":["Taxidermy Storage Key"],
+			"disableForContainers": ["Power Armor", "Power Armor Chasis", "Gold Press Machine", "DONATIONS BOX"]
 		}
 	},
 // Debug Settings
@@ -2079,6 +2079,7 @@
 "Wavy Willard",
 // Consumables
 // Bobbleheads
+"Bobblehead",
 "Bobblehead: Agility",
 "Bobblehead: Big Guns",
 "Bobblehead: Caps",
@@ -2267,7 +2268,6 @@
 "Small Handmade Holiday Gift",
 "Small Holiday Gift",
 "Spooky Treat Bag",
-"Halloween Candy",
 "Mystery Candy",
 "Crafted Dusty Mole Miner Pail",
 "Crafted Mole Miner Pail",
@@ -2281,6 +2281,7 @@
 "Fermentable Nukashine",
 "Nuka-Bombdrop",
 "Nuka-Bottle Dog",
+"Nuka-Cola",
 "Nuka-Cherry",
 "Nuka-Cola Candy",
 "Nuka-Cola Dark",
@@ -2558,6 +2559,7 @@
 "Vodka",
 "White Russian",
 "Wine",
+"Canned Coffee",
 // Aid & Chems
 "Buffout",
 "Bufftats",
@@ -2702,6 +2704,9 @@
 "Stealth Boy",
 "Phantom Device",
 // Special & Collectable
+"Plushie",
+"Snow Globe",
+"Taxidermy",
 // Holotapes
 "Atomic Command",
 "Automatron",
@@ -3161,6 +3166,7 @@
 //Unique Items
 //Weapons
 "Cauterizer",
+"Fragmentation Grenade",
 //Armor & Apparel
 "New",
 "Blue Devil"
@@ -3449,7 +3455,7 @@
 "Skeeto Spit",
 "Stimpak Diffuser",
 "Stimpak: Diluted",
-"Stimpak",
+//"Stimpak",
 "X-Cell",
 // Heavy/Useless Ammo
 "Cannonball",
@@ -3461,7 +3467,7 @@
 "Missle",
 "40Mm Grenade Round",
 // Throwables
-"Sheepsquatch Shard",
+//"Sheepsquatch Shard",
 "Throwing Knife",
 "Tomahawk",
 "Blast Mine",
@@ -5138,8 +5144,9 @@
 "Captain'S Log #1",
 "Captain'S Log #2",
 "Captain'S Log #3",
+//Misc.
 "Fortune:",
-"Earle'S",
+"Earle's",
 "Recipe",
 "Plan"
 ]
@@ -5250,6 +5257,7 @@
 "High-Powered Microscope",
 "Microscope",
 // Ballistic Fiber
+"Ballistic Fiber",
 "Ballistic Fiber Scrap",
 "Bulk Ballistic Fiber",
 "Military Ammo Bag",
@@ -5352,10 +5360,8 @@
 // Buff Items
 "Cranberry Relish",
 "Canned Cranberry Relish",
-// Carnivore
 // "Tasty Squirrel Stew",
 // "Canned Tasty Squirrel Stew",
-// Int Food & Drink
 "Brain Bombs",
 "Brain Fungus Soup",
 "Steeped Aster Tea",
@@ -5363,26 +5369,22 @@
 "Simple Aster Tea",
 // "Broiled Scorchbeast Brain",
 // "Owlet Nuggets",
-// Carry Weight
-// +30
 "Pepperoni Roll",
 // "Smoked Mirelurk Fillets",
 // "Yao Guai Pastry",
 "Carry Weight Booster",
-// +20
 // "Ribeye Steak",
 // "Canned Ribeye Steak",
 // "Cramburger",
 // "Fried Radtoad Legs",
 // "Grilled Radstag",
 // "Mystery Meat Pie",
-// +10
 // "Grilled Radtoad",
 // "Roasted Ant",
 // Chems
-"Berry Mentats", // Xp!
-"Grape Mentats", // Bartering!
-"Mentats", // Crafting The Other Two!
+"Berry Mentats",
+"Grape Mentats", 
+"Mentats",
 "Addictol",
 // Misc. Consumables
 "Sugar Bombs",

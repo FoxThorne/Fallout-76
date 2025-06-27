@@ -84,6 +84,7 @@
 "High-Powered Microscope",
 "Microscope",
 // Ballistic Fiber
+"Ballistic Fiber",
 "Ballistic Fiber Scrap",
 "Bulk Ballistic Fiber",
 "Military Ammo Bag",
@@ -186,10 +187,8 @@
 // Buff Items
 "Cranberry Relish",
 "Canned Cranberry Relish",
-// Carnivore
 // "Tasty Squirrel Stew",
 // "Canned Tasty Squirrel Stew",
-// Int Food & Drink
 "Brain Bombs",
 "Brain Fungus Soup",
 "Steeped Aster Tea",
@@ -197,26 +196,22 @@
 "Simple Aster Tea",
 // "Broiled Scorchbeast Brain",
 // "Owlet Nuggets",
-// Carry Weight
-// +30
 "Pepperoni Roll",
 // "Smoked Mirelurk Fillets",
 // "Yao Guai Pastry",
 "Carry Weight Booster",
-// +20
 // "Ribeye Steak",
 // "Canned Ribeye Steak",
 // "Cramburger",
 // "Fried Radtoad Legs",
 // "Grilled Radstag",
 // "Mystery Meat Pie",
-// +10
 // "Grilled Radtoad",
 // "Roasted Ant",
 // Chems
-"Berry Mentats", // Xp!
-"Grape Mentats", // Bartering!
-"Mentats", // Crafting The Other Two!
+"Berry Mentats",
+"Grape Mentats", 
+"Mentats",
 "Addictol",
 // Misc. Consumables
 "Sugar Bombs",

@@ -1478,7 +1478,7 @@
 				"delay": 50,
 				"hotkey": 85, // U
 				"amount": 0,
-				"matchMode": "EXACT",
+				"matchMode": "CONTAINS",
 				"itemNames": // Paste from FOX_DROP_ALL
 [
 // FOX_DROP_ALL includes all the items we wish to drop ENTIRE STACK/AMOUNT when overnecumbered, or otherwise just looking to clean a cluttered inventory in Fallout 76.
@@ -3451,14 +3451,15 @@
 "Captain'S Log #1",
 "Captain'S Log #2",
 "Captain'S Log #3",
+//Misc.
 "Fortune:",
-"Earle'S",
+"Earle's",
 "Recipe",
 "Plan"
 ]
 ,
-				"dropFavorite": false,
-				"dropEquipped": false,
+				"dropFavorite": true,
+				"dropEquipped": true,
 				"checkCharacterName": false,
 				"characterName": "none",
 				"checkAccountName": false,
@@ -3470,7 +3471,12 @@
 					"excluded": // Paste from FOX_SAFE, if needed; currently disabled because too many false positives.
 [
     "Stimpak: Super",
-    "Token"
+    "Token",
+    "Covert Operations Manual",
+    "Sheepsquatch Card",
+    "Treasury Note",
+    "Serum"
+
 ]
 			}
             },
@@ -3503,8 +3509,8 @@
 "Turbo-Fert Fertilizer"
 ]
 ,
-				"dropFavorite": false,
-				"dropEquipped": false,
+				"dropFavorite": true,
+				"dropEquipped": true,
 				"checkCharacterName": false,
 				"characterName": "none",
 				"checkAccountName": false,
@@ -3522,7 +3528,7 @@
         // Stimpak: Super (Keep X Amount)
 			{
 				"enabled": true,
-				"name": "Stimpak: Super (Keep X Amount)",
+				"name": "Stimpaks (Keep X Amount)",
 				"showButton": false,
 				"showMessage": false,
 				"delay": 50,
@@ -3534,7 +3540,7 @@
         "Stimpak: Super"
 ]
 ,
-				"dropFavorite": false,
+				"dropFavorite": true,
 				"dropEquipped": false,
 				"checkCharacterName": false,
 				"characterName": "none",
@@ -3566,8 +3572,8 @@
 "Fusion Core"
 ]
 ,
-				"dropFavorite": false,
-				"dropEquipped": false,
+				"dropFavorite": true,
+				"dropEquipped": true,
                 "conditionUnder": 3,
 				"checkCharacterName": false,
 				"characterName": "none",
@@ -3677,7 +3683,7 @@
 			{
 				"enabled": true,
                 "testRun": true,
-				"name": "Buffs!",
+				"name": "Carry Weight Buffs!",
 				"showButton": true,
 				"showMessage": false,
 				"hotkey": 98, // NumPad2

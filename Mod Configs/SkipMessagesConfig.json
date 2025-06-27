@@ -1,7 +1,7 @@
 {
 	"debug": true,
 	"testRun": false,
-	"SkipDelay": 25,
+	"SkipDelay": 50,
 	"AutoUseRepairKit": true,
 	"ScrapLegendary": true,
 	"ScrapPremium": true,
@@ -14,6 +14,7 @@
 		"$ConfirmDestroyUnlockedCraftable": 1,
 		"$ConfirmDestroyNonCraftable": 1,
 		"$ConfirmDestroyNonCraftableMTX": 1,
-		"$SecureTrade_TransferDisplayItemInactiveCampConfirm": 1
+		"$SecureTrade_TransferDisplayItemInactiveCampConfirm": 1,
+		"$ConfirmFavoritedItemHeader": 1
 	}
 }

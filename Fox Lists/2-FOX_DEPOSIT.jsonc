@@ -208,6 +208,7 @@
 "Wavy Willard",
 // Consumables
 // Bobbleheads
+"Bobblehead",
 "Bobblehead: Agility",
 "Bobblehead: Big Guns",
 "Bobblehead: Caps",
@@ -396,7 +397,6 @@
 "Small Handmade Holiday Gift",
 "Small Holiday Gift",
 "Spooky Treat Bag",
-"Halloween Candy",
 "Mystery Candy",
 "Crafted Dusty Mole Miner Pail",
 "Crafted Mole Miner Pail",
@@ -410,6 +410,7 @@
 "Fermentable Nukashine",
 "Nuka-Bombdrop",
 "Nuka-Bottle Dog",
+"Nuka-Cola",
 "Nuka-Cherry",
 "Nuka-Cola Candy",
 "Nuka-Cola Dark",
@@ -687,6 +688,7 @@
 "Vodka",
 "White Russian",
 "Wine",
+"Canned Coffee",
 // Aid & Chems
 "Buffout",
 "Bufftats",
@@ -831,6 +833,9 @@
 "Stealth Boy",
 "Phantom Device",
 // Special & Collectable
+"Plushie",
+"Snow Globe",
+"Taxidermy",
 // Holotapes
 "Atomic Command",
 "Automatron",
@@ -1290,6 +1295,7 @@
 //Unique Items
 //Weapons
 "Cauterizer",
+"Fragmentation Grenade",
 //Armor & Apparel
 "New",
 "Blue Devil"
