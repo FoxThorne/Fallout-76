@@ -362,12 +362,12 @@
 	"HUDModes": [
 		"ActivateTypeMode",
 		"All",
-		"ContainerMode",
-		"InspectMode",
-		"MapMenu",
-		"Pipboy",
-		"PowerArmor",
-		"SelfieMode",
-		"WorkshopMode"
+		//"ContainerMode",
+		//"InspectMode",
+		//"MapMenu",
+		//"Pipboy",
+		"PowerArmor"
+		//"SelfieMode",
+		//"WorkshopMode"
 	]
 }

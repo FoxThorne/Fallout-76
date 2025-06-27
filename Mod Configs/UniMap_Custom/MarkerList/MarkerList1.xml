@@ -4,16 +4,16 @@
   <Title>[ Treasure Maps ]</Title>
   <Coordinate>8K</Coordinate>
   <Markers>
-   <Marker><Name>The Forest #01</Name><X>800</X><Y>1585</Y></Marker>
-   <Marker><Name>The Forest #02</Name><X>939</X><Y>2335</Y></Marker>
-   <Marker><Name>The Forest #03</Name><X>1096</X><Y>2508</Y></Marker>
-   <Marker><Name>The Forest #04</Name><X>1208</X><Y>1206</Y></Marker>
-   <Marker><Name>The Forest #05</Name><X>1191</X><Y>2399</Y></Marker>
-   <Marker><Name>The Forest #06</Name><X>1477</X><Y>1705</Y></Marker>
-   <Marker><Name>The Forest #07</Name><X>1498</X><Y>2642</Y></Marker>
-   <Marker><Name>The Forest #08</Name><X>1761</X><Y>1540</Y></Marker>
+   <Marker><Name>The Forest #01</Name><X>1598</X><Y>3173</Y></Marker>
+   <Marker><Name>The Forest #02</Name><X>1878</X><Y>4672</Y></Marker>
+   <Marker><Name>The Forest #03</Name><X>2193</X><Y>5018</Y></Marker>
+   <Marker><Name>The Forest #04</Name><X>2418</X><Y>2414</Y></Marker>
+   <Marker><Name>The Forest #05</Name><X>2954</X><Y>3411</Y></Marker>
+   <Marker><Name>The Forest #06</Name><X>2998</X><Y>5284</Y></Marker>
+   <Marker><Name>The Forest #07</Name><X>3523</X><Y>3081</Y></Marker>
+   <Marker><Name>The Forest #08</Name><X>3520</X><Y>4452</Y></Marker>
    <Marker><Name>The Forest #09</Name><X>1760</X><Y>2225</Y></Marker>
-   <Marker><Name>The Forest #10</Name><X>1869</X><Y>1746</Y></Marker>
+   <Marker><Name>The Forest #10</Name><X>3739</X><Y>3494</Y></Marker>
    <Marker><Name></Name></Marker>	<!-- Separator -->
    <Marker><Name>Savage Divide #01</Name><X>1991</X><Y>3155</Y></Marker>
    <Marker><Name>Savage Divide #02</Name><X>2163</X><Y>2164</Y></Marker>

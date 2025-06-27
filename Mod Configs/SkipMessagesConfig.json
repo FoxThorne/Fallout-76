@@ -1,13 +1,19 @@
 {
 	"debug": true,
-	"testRun": true,
+	"testRun": false,
 	"SkipDelay": 25,
 	"AutoUseRepairKit": true,
 	"ScrapLegendary": true,
 	"ScrapPremium": true,
 	"SkipCustom": {
+		//Custom text
 		"By performing this action, you will leave your current team. Leave your team?": 0,
+		"Scrap all junk items and move to Scrapbox?": 0,
+		//Header Message
 		"$Loaded_Into_Nuke_Zone": 0,
-		"$ConfirmDestroyUnlockedCraftable": 1
+		"$ConfirmDestroyUnlockedCraftable": 1,
+		"$ConfirmDestroyNonCraftable": 1,
+		"$ConfirmDestroyNonCraftableMTX": 1,
+		"$SecureTrade_TransferDisplayItemInactiveCampConfirm": 1
 	}
 }

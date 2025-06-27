@@ -28,7 +28,7 @@
 			"8": ["Nuka Grenade", "Molotov Cocktail"], //Quest Items
 			"9": "Ironfang Saber",
 			"10": "Brimstone Maul",
-			"11": [ "The Fix", "Super Chem", "Survival Syringe", "Fury", "Pyschobuff", "Bufftats", "Overdrive", "Pyscho", "X-Cell", "Buffout", "Calmex", "Daddy-O", "Day Tripper", "Formula P"],
+			"11": [], //[ "The Fix", "Super Chem", "Survival Syringe", "Fury", "Pyschobuff", "Bufftats", "Overdrive", "Pyscho", "X-Cell", "Buffout", "Calmex", "Daddy-O", "Day Tripper", "Formula P"],
 			"12": "Toxic Water" // Disable if not longer a Ghoul. ["Purified water", "Boiled water", "Dirty water"]
 		},
 		{

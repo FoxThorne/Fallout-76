@@ -41,7 +41,7 @@
   <AliasesFile>UniMap_Custom\QuickFT_Aliases.xml</AliasesFile>
   <DispMarkerID>yes</DispMarkerID>
   <TwoStepQuickFT>0</TwoStepQuickFT>
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee </QuickFT>
+ </QuickFT>
 
  <PlayerNotifier>
   <Activate>no</Activate>

@@ -1,0 +1,17 @@
+[
+// FOX_DROP_X includes all the items we wish to drop ENTIRE STACK/AMOUNT when overnecumbered, or otherwise just looking to clean a cluttered inventory in Fallout 76.
+// FOX_DROP_X is highly curated, utilizing lists of ALL known useless items that just clutter inventory, or aren't worth their weight.
+// Included full list from HOLOTAPES (except the games) and NOTES, if there is a specific Holotape/Note you like and wish you keep be sure to comment it out.
+// Feel free to add whatever else you wish, customize it to your hearts desire.
+// This list is meant to be used as the INCLUSIVE list of things to drop/sell/destroy because they have little value.
+// BE SURE TO ACTUALLY READ THIS LIST OR DOUBLE-CHECK YOUR LOOT BAG WHEN DROPPING ITEMS!!!
+// I AM NOT RESPONSIBLE IF YOU DROP/SELL/SCRAP SOMETHING YOU WANTED!!!
+
+// List of things I want to drop all but X amount of.
+
+// Throwables
+"Fragmentation Grenade",
+"Molotov Cocktail",
+"Nuka Grenade",
+"Turbo-Fert Fertilizer"
+]
