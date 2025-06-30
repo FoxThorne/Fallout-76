@@ -1,7 +1,7 @@
 {
 	"hideLoadMessage": true,
 	"showDurabilityValue": true,
-	"enableExamineRepairAll": true,
+	"enableExamineRepairAll": false,
 	"enableQuickRepairButton": true,
 	"enableImprovedQuantityMenu": true,
 	"enableLegendaryModTracking": true,

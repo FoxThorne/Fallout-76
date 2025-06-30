@@ -1,5 +1,5 @@
-// Extraction
 {
+// Extraction
 "extractConfig": {
 	"enabled": false,
 	"name": "Extract",
@@ -104,7 +104,7 @@
             "delay":50,
             "onlyHighlightedItem":false,
 			"transferEquipped": false,
-			"transferFavorite": true,
+			"transferFavorite": false,
 			"transferAssigned": false,
 			"singleItemPerName": false,
             "itemNames": ["FOX_DEPOSIT"],
@@ -282,7 +282,7 @@
 				"sellFavorite": true,
 				"itemNames":["FOX_DROP_ALL"],
 				"matchMode": "CONTAINS",
-				"types": ["WEAPON", "FOOD_WATER", "NOTES", "HOLO", "AMMO"],
+				"types": ["WEAPON", "FOOD_WATER", "AID", "NOTES", "HOLO", "AMMO"],
 				"checkCharacterName": false,
 				"characterName": "Lorem Ipsum",
 				"checkAccountName": false,
@@ -319,12 +319,69 @@
   "delayNpcVendor": 50,
   "delayCampVendor": 1500,
   "configs": [
+    //Buy everything
     {
       "enabled": true,
       "amount": 0,
       "maxPrice": 5000,
       "types": ["WEAPON", "ARMOR", "APPAREL", "FOOD_WATER", "AID", "NOTES", "AMMO", "MISC", "MODS", "JUNK"],
       "itemNames": ["FOX_BUY"],
+      "matchMode": "CONTAINS",
+      "checkCharacterName": false,
+      "characterName": "Lorem Impsum",
+      "checkAccountName": false
+    },
+    //Buy Treasure Maps (limited because people are freaks)
+    {
+      "enabled": true,
+      "amount": 0,
+      "maxPrice": 100,
+      "types": ["NOTES"],
+      "itemNames":
+      [
+        // Treasure Maps
+// Ash Heap
+"Ash Heap Treasure Map #01",
+"Ash Heap Treasure Map #02",
+// Cranberry Bog
+"Cranberry Bog Treasure Map #01",
+"Cranberry Bog Treasure Map #02",
+"Cranberry Bog Treasure Map #03",
+"Cranberry Bog Treasure Map #04",
+// Forest
+"Forest Treasure Map #01",
+"Forest Treasure Map #02",
+"Forest Treasure Map #03",
+"Forest Treasure Map #04",
+"Forest Treasure Map #05",
+"Forest Treasure Map #06",
+"Forest Treasure Map #07",
+"Forest Treasure Map #08",
+"Forest Treasure Map #09",
+"Forest Treasure Map #10",
+// Mire
+"Mire Treasure Map #01",
+"Mire Treasure Map #02",
+"Mire Treasure Map #03",
+"Mire Treasure Map #04",
+"Mire Treasure Map #05",
+// Savage Divide
+"Savage Divide Treasure Map #01",
+"Savage Divide Treasure Map #02",
+"Savage Divide Treasure Map #03",
+"Savage Divide Treasure Map #04",
+"Savage Divide Treasure Map #05",
+"Savage Divide Treasure Map #06",
+"Savage Divide Treasure Map #07",
+"Savage Divide Treasure Map #08",
+"Savage Divide Treasure Map #09",
+"Savage Divide Treasure Map #10",
+// Toxic Valley
+"Toxic Valley Treasure Map #01",
+"Toxic Valley Treasure Map #02",
+"Toxic Valley Treasure Map #03",
+"Toxic Valley Treasure Map #04"
+      ],
       "matchMode": "CONTAINS",
       "checkCharacterName": false,
       "characterName": "Lorem Impsum",
@@ -343,7 +400,7 @@
 	},
 // Legendary Mod Tracking
 	"legendaryModsConfig": {
-		"enabled": false,
+		"enabled": true,
 		"showUnknownModsAmongAllChars": false,
 		"showInWorkbench": true,
 		"showInStash": true,
@@ -354,7 +411,7 @@
 		"learnableFromWeaponText": "[Learnable from Weapon]",
 		"learnableTextColorStyle": "PREFIX",
 		"learnableTextColor": "0xff0000",
-		"loadFileDirectory": "../legendary_mods.ini"
+		"loadFileDirectory": "../fox_legendary_mods.ini"
 	},
 // Camp Assign
 	"campAssignConfig": {
@@ -390,6 +447,7 @@
 			"favorite": true,
 			"equipped": true,
 			"maxCurrency": true,
+            "knownLegendaryMods": true,
 			"named": true,
 			"matchMode": "CONTAINS",
 			"itemNames": ["FOX_SAFE"]
@@ -399,14 +457,14 @@
 			"enabled": true,
 			"favorite": true,
 			"equipped": true,
-			"knownLegendaryMods": false,
+			"knownLegendaryMods": true,
 			"named": true,
 			"matchMode": "CONTAINS",
 			"itemNames": ["FOX_SAFE"]
 		},
 		"transferProtection": {
 			"debug": true,
-			"enabled": true,
+			"enabled": false,
 			"favorite": true,
 			"equipped": true,
 			"named": true,
@@ -576,57 +634,6 @@
 "Bloodtail Brim", // Hat
 "Wedding Ring", // Accessory
 "Old Ring", // Accessory
-// Mods
-// Legendary Mods
-// 1 Star
-"Anti-Armor",
-"Executioner",
-"Furious",
-"Gourmand",
-"Instigating",
-"Juggernaut",
-"Life Saving",
-"Medic",
-"Quad",
-"Regenerating",
-"Stalker",
-"Vampire",
-"Weightless",
-// 2 Star
-"Crippling",
-"Explosive",
-"Heavy Hitter",
-"Hitman",
-"Inertial",
-"Intelligence",
-"Rapid",
-"Strength",
-// 3 Star
-"Secret Agent",
-"Thru-Hiker",
-"Belted",
-// 4 Star
-"Bruiser",
-"Bully",
-"Fencer",
-"Pin-Pointer",
-"Pounder",
-"Propelling",
-"Ranger'S",
-"Rejuvenator",
-"Stabilizer",
-// Armor
-"Buttressed",
-"Deep Pocketed",
-"Stabilized",
-"Jet Pack",
-"Shielded Lining",
-"Internal Database",
-"Targeting Hud",
-"Optimized Bracers",
-"Motion-Assist Servos",
-"Kinetic Dynamo",
-"Calibrated Shocks",
 // Fishing
 // Rods
 "Broken Fishing Rod",
@@ -926,12 +933,27 @@
 "Spooky Treat Bag",
 "Halloween Candy",
 "Mystery Candy",
+//Treasure Hunters
 "Dusty Mole Miner Pail",
 "Crafted Dusty Mole Miner Pail",
 "Mole Miner Pail",
 "Crafted Mole Miner Pail",
 "Ornate Mole Miner Pail",
 "Crafted Ornate Mole Miner Pail",
+// Prize Packs
+"Small Vault-Tec Supply Package",
+"Medium Vault-Tec Supply Package",
+"Large Vault-Tec Supply Package",
+"Mutated Package",
+"Double Mutated Package",
+"Mutated Party Pack",
+"Double Mutated Party Pack",
+"Small Mutated Party Pack",
+"Medium Mutated Party Pack",
+"Large Mutated Party Pack",
+"X-Large Mutated Party Pack",
+"Mystery Bobblehead Box",
+"Mystery Magazine Package",
 // Legendary Perks
 "Super Chem Mk I",
 "Super Chem Mk Ii",
@@ -995,7 +1017,6 @@
 "Toxic Soot Flower",
 "Soot Flower",
 "Firecap",
-"Aster",
 "Snaptail Reed",
 "Blight",
 "Ash Rose",
@@ -1018,7 +1039,6 @@
 "Scorchbeast Meat",
 "Water Filter",
 "Antiseptic",
-"Tick Blood",
 "Raw Cobalt Flux",
 "Raw Crimson Flux",
 "Raw Fluorescent Flux",
@@ -1074,23 +1094,8 @@
 "Nuka-Cade Token",
 "Perk Token",
 "Token",
-"Treasury Note",
 "Gold Bullion",
 "Stack Of Gold Bullion",
-// Prize Packs
-"Small Vault-Tec Supply Package",
-"Medium Vault-Tec Supply Package",
-"Large Vault-Tec Supply Package",
-"Mutated Package",
-"Double Mutated Package",
-"Mutated Party Pack",
-"Double Mutated Party Pack",
-"Small Mutated Party Pack",
-"Medium Mutated Party Pack",
-"Large Mutated Party Pack",
-"X-Large Mutated Party Pack",
-"Mystery Bobblehead Box",
-"Mystery Magazine Package",
 // Treasure Maps
 // Ash Heap
 "Ash Heap Treasure Map #01",
@@ -1732,13 +1737,8 @@
 "Clown",
 "Snow Globe",
 "Taxidermy",
-
 // Rare Plans & Recipes
 // Cursed Items
-"Cursed Pickaxe",
-"Cursed Harpoon Gun",
-"Cursed Shovel",
-"Cursed Rolling Pin",
 "Elder'S Mark",
 "Holy Fire",
 // Unique Items
@@ -1748,18 +1748,16 @@
 "Black Diamond",
 "Blade Of Bastet",
 "Bunker Buster",
-"Commie Whacker",
 "Camden Whacker",
 "Civil Unrest",
 "Daisycutter",
-"The Dragon",
+//"The Dragon",
 "Dross",
 "The Fixer",
 "Grant'S Saber",
 "Meteoritic Sword",
 "Nailer",
 "Old Guard'S 10Mm Smg",
-"Paddle Ball",
 "Pearly Peepers",
 "Perfect Storm",
 "Pyrolyzer",
@@ -1806,12 +1804,8 @@
 "Pawn",
 "Bishop",
 "Knight",
-"Rook",
-"Queen",
-"King",
 "Chessboard",
 "Carlisle Typewriter",
-"Prototype",
 "Super Mutant Head",
 "Super Mutant Left Lower Arm",
 "Super Mutant Left Lower Leg",
@@ -1842,7 +1836,6 @@
 "Flute",
 "Trumpet",
 "Harmonica",
-"Guitar",
 "Accordion",
 "Fancy Glass",
 "Cocktail Glass",
@@ -3068,7 +3061,7 @@
 "Prisoner Collar",
 "Dud Explosive Collar",
 "Tin Foil Hat",
-"Alien Blaster Round",
+//"Alien Blaster Round",
 ".308 Casing",
 "Mr. Gutsy Model",
 "Eyebot Model",
@@ -3402,7 +3395,6 @@
 "Purified Water",
 "Rad Ant Lager",
 "Rodgers' Reserve Beer",
-"Rum",
 "Simple Ash Rose Tea",
 "Simple Bloodleaf Tea",
 "Simple Fern Flower Tea",
@@ -3455,7 +3447,7 @@
 "Skeeto Spit",
 "Stimpak Diffuser",
 "Stimpak: Diluted",
-//"Stimpak",
+"Stimpak",
 "X-Cell",
 // Heavy/Useless Ammo
 "Cannonball",
@@ -3467,7 +3459,7 @@
 "Missle",
 "40Mm Grenade Round",
 // Throwables
-//"Sheepsquatch Shard",
+"Sheepsquatch Shard",
 "Throwing Knife",
 "Tomahawk",
 "Blast Mine",
@@ -5430,7 +5422,6 @@
 "Meteoritic Sword",
 "Nailer",
 "Old Guard'S 10Mm Smg",
-"Paddle Ball",
 "Pearly Peepers",
 "Perfect Storm",
 "Pyrolyzer",
@@ -5476,11 +5467,7 @@
 "Pawn",
 "Bishop",
 "Knight",
-"Rook",
-"Queen",
-"King",
 "Chessboard",
-"Prototype",
 "Super Mutant Head",
 "Super Mutant Left Lower Arm",
 "Super Mutant Left Lower Leg",
@@ -5522,48 +5509,6 @@
 "Foil Ogua Card",
 "Sheepsquatch Card",
 "Foil Sheepsquatch Card",
-// Treasure Maps
-// Ash Heap
-"Ash Heap Treasure Map #01",
-"Ash Heap Treasure Map #02",
-// Cranberry Bog
-"Cranberry Bog Treasure Map #01",
-"Cranberry Bog Treasure Map #02",
-"Cranberry Bog Treasure Map #03",
-"Cranberry Bog Treasure Map #04",
-// Forest
-"Forest Treasure Map #01",
-"Forest Treasure Map #02",
-"Forest Treasure Map #03",
-"Forest Treasure Map #04",
-"Forest Treasure Map #05",
-"Forest Treasure Map #06",
-"Forest Treasure Map #07",
-"Forest Treasure Map #08",
-"Forest Treasure Map #09",
-"Forest Treasure Map #10",
-// Mire
-"Mire Treasure Map #01",
-"Mire Treasure Map #02",
-"Mire Treasure Map #03",
-"Mire Treasure Map #04",
-"Mire Treasure Map #05",
-// Savage Divide
-"Savage Divide Treasure Map #01",
-"Savage Divide Treasure Map #02",
-"Savage Divide Treasure Map #03",
-"Savage Divide Treasure Map #04",
-"Savage Divide Treasure Map #05",
-"Savage Divide Treasure Map #06",
-"Savage Divide Treasure Map #07",
-"Savage Divide Treasure Map #08",
-"Savage Divide Treasure Map #09",
-"Savage Divide Treasure Map #10",
-// Toxic Valley
-"Toxic Valley Treasure Map #01",
-"Toxic Valley Treasure Map #02",
-"Toxic Valley Treasure Map #03",
-"Toxic Valley Treasure Map #04",
 // Bobbleheads
 "Bobblehead: Intelligence",
 "Bobblehead: Leader",

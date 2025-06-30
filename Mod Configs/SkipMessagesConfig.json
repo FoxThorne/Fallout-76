@@ -1,20 +1,37 @@
 {
 	"debug": true,
 	"testRun": false,
-	"SkipDelay": 50,
+	"SkipDelay": 25,
+	
+	"SkipScrapComponentsView": {
+		"Enabled": true,
+		"Legendary": false,
+		"NonLegendary": true
+	},
+	
 	"AutoUseRepairKit": true,
 	"ScrapLegendary": true,
 	"ScrapPremium": true,
+	
 	"SkipCustom": {
+		
 		//Custom text
 		"By performing this action, you will leave your current team. Leave your team?": 0,
 		"Scrap all junk items and move to Scrapbox?": 0,
+		"Repair ?": 1,
 		//Header Message
 		"$Loaded_Into_Nuke_Zone": 0,
 		"$ConfirmDestroyUnlockedCraftable": 1,
 		"$ConfirmDestroyNonCraftable": 1,
 		"$ConfirmDestroyNonCraftableMTX": 1,
 		"$SecureTrade_TransferDisplayItemInactiveCampConfirm": 1,
-		"$ConfirmFavoritedItemHeader": 1
+		"$ConfirmFavoritedItemHeader": 1,
+		".....":0
+	},
+	"SkipCustomRegex": {
+		
+		// Few examples:
+		"Pay [0-9]{1,2} Caps to travel": 0
+		// "Choose a travel point for": 1
 	}
 }

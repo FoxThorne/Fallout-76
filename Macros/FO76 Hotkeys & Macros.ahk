@@ -24,13 +24,28 @@ global SpamEnabled := 1
 global GlobalInterrupt := 0
 
 ; *********************** Armor Naming Macros BEGIN ***********************
-^1::SendInput, (L-Leg)
-^2::SendInput, (R-Leg)
-^3::SendInput, (L-Arm)
-^4::SendInput, (R-Arm)
-^5::SendInput, (Torso)
-^6::SendInput, (Helmet)
+; Optional: Set a delay to ensure all characters are sent correctly
+SetKeyDelay, 50, 50
+
+; Rustclaw Guard (Ctrl + Number)
+^1::Send, {Text} ~Rustclaw Guard (Arm-L)
+^2::Send, {Text} ~Rustclaw Guard (Arm-R)
+^3::Send, {Text} ~Rustclaw Guard (Leg-L)
+^4::Send, {Text} ~Rustclaw Guard (Leg-R)
+^5::Send, {Text} ~Rustclaw Guard (Torso)
+^6::Send, {Text} ~Rustclaw Guard (Helmet)
+
+; Excavator (Shift + Number)
++1::Send, {Text} ~Excavator Armor (Arm-L)
++2::Send, {Text} ~Excavator Armor (Arm-R)
++3::Send, {Text} ~Excavator Armor (Leg-L)
++4::Send, {Text} ~Excavator Armor (Leg-R)
++5::Send, {Text} ~Excavator Armor (Torso)
++6::Send, {Text} ~Excavator Armor (Helmet)
+
+
 ; *********************** Armor Naming Macros END ***********************
+
 
 ; *********************** LOOT ALL THE THINGS!!! Begin ***********************
 NumpadMult:: ; Toggle E-spam
