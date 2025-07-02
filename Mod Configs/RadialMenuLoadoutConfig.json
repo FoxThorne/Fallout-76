@@ -16,31 +16,65 @@
 	
 	"loadouts": [
 		{
-			"hotkey": 49, // 1
+			"enabled": true,
+			"hotkey":49, //1
 			"name": "Heavy Guns",
-			"1": "Radfang Revolver",
-			"2": "Ashclaw Longshot",
-			"3": "Emberglow Spitter",
-			"4": "Luminfang Volley",
-			"5": "Thirst Zapper",
-			"6": ["Shepherd's crook", "vox", "camera"], //Quest Items
-			"7": "Voltfang Blaster",
+			//"account": ["acc 1", "acc 2", "..."],
+			//"character": ["char 1", "char 2", "..."],
+			"matchMode": "CONTAINS",
+			"1": "~Radfang Revolver",
+			"2": "~Ashclaw Longshot",
+			"3": "~Emberglow Spitter",
+			"4": "~Luminfang Volley",
+			"5": "~Thirst Zapper",
+			"6": ["Shepherd's Crook", "Vox", "Camera"], //Quest Items
+			"7": "~Voltfang",
 			"8": ["Nuka Grenade", "Molotov Cocktail"], //Quest Items
-			"9": "Ironfang Saber",
-			"10": "Brimstone Maul",
-			"11": [], //[ "The Fix", "Super Chem", "Survival Syringe", "Fury", "Pyschobuff", "Bufftats", "Overdrive", "Pyscho", "X-Cell", "Buffout", "Calmex", "Daddy-O", "Day Tripper", "Formula P"],
-			"12": "Toxic Water" // Disable if not longer a Ghoul. ["Purified water", "Boiled water", "Dirty water"]
-		},
-		{
-			"hotkey": 50, // 2
-			"name": "Lorem Ipsum",
-			"1": "Lorem Ipsum",
-			"7": "Lorem Ipsum",
-			"8": "Lorem Ipsum",
-			"9": ["Lorem Ipsum", "Lorem Ipsum", "Lorem Ipsum"],
+			"9": "~Ironfang Saber",
 			"10": "Lorem Ipsum",
 			"11": "Lorem Ipsum",
-			"12": "Lorem Ipsum"
+			"12": ["Toxic Water", "Toxic Goo"] // Disable if not longer a Ghoul. ["Purified water", "Boiled water", "Dirty water"]
+		},
+		{
+			"enabled": false,
+			"hotkey": 112, //F1
+			"name": "Utility buffs",
+			"1": "canned coffee",
+			"7": "company tea",
+			"8": "berry mentats",
+			"9": ["psychobuff", "bufftats", "buffout"],
+			"10": "vintage mire magic moonshine",
+			"11": "rad ant lager",
+			"12": "radaway: diluted"
+		},
+		{
+			"enabled": false,
+			"hotkey": 113, //F2
+			"name": "DMG buffs",
+			"7": "ballistic bock",
+			"8": "high voltage hefe",
+			"9": "overdrive",
+			"10": "psychobuff",
+			"11": "fury"
+		},
+		{
+			"enabled": false,
+			"hotkey": 116, //F5
+			"name": "Tesla",
+			"5": "*tcn",
+			"6": "Tesla"
+		},
+		{
+			"enabled": false,
+			"hotkey": 117, //F6
+			"name": "+3 Cha",
+			"11": "+cha"
+		},
+		{
+			"enabled": false,
+			"hotkey": 118, //F7
+			"name": "Camera",
+			"11": "**cam"
 		}
 	]
 }

@@ -21,8 +21,8 @@
 		"Repair ?": 1,
 		//Header Message
 		"$Loaded_Into_Nuke_Zone": 0,
-		"$ConfirmDestroyUnlockedCraftable": 1,
-		"$ConfirmDestroyNonCraftable": 1,
+		"$ConfirmDestroyUnlockedCraftable": 0,
+		"$ConfirmDestroyNonCraftable": 0,
 		"$ConfirmDestroyNonCraftableMTX": 1,
 		"$SecureTrade_TransferDisplayItemInactiveCampConfirm": 1,
 		"$ConfirmFavoritedItemHeader": 1,

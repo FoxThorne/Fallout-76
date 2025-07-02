@@ -1,0 +1,58 @@
+[
+// FOX_BUFFS is the curated list of consumables to transfer OUT of storage and consume, for use in general combar/playing.
+// Use FOX_KEEP to protect the items, and this to perform transfers, or consume automations.
+
+// Xp Food & Drink
+"Cranberry Relish",
+"Canned Cranberry Relish",
+"Cranberry Cobbler",
+"Cranberry Juice",
+"Brain Bombs",
+"Brain Fungus Soup",
+"Steeped Aster Tea",
+"Steeped Tato Flower Tea",
+"Simple Aster Tea",
+// Chems
+"Berry Mentats",
+"Mentats",
+// Serums
+"Egg Head Serum",
+"Herd Mentality Serum",
+"Marsupial Serum",
+// Bobblehead
+"Bobblehead: Leader",
+"Glowing Bobblehead: Leader",
+"Bobblehead: Intelligence",
+"Glowing Bobblehead: Intelligence",
+"Bobblehead: Strength",
+"Glowing Bobblehead: Strength",
+"Bobblehead: Agility",
+"Glowing Bobblehead: Agility",
+"Bobblehead: Agility",
+"Glowing Bobblehead: Agility",
+"Bobblehead: Big Guns",
+"Glowing Bobblehead: Big Guns",
+"Bobblehead: Big Guns",
+"Glowing Bobblehead: Big Guns",
+"Bobblehead: Caps",
+"Glowing Bobblehead: Caps",
+//Magazines
+"Live & Love 8",
+"Live & Love 4",
+"Guns And Bullets 4", // +6% AP regeneration 
+"Astoundingly Awesome Tales 6", // +0.20% Health Regeneration
+"Astoundingly Awesome Tales 7", // +5 maximum AP
+"Astoundingly Awesome Tales 8", // 25% less damage from robots
+"Astoundingly Awesome Tales 1", // +15% damage against mirelurks
+"Astoundingly Awesome Tales 2", // +15% damage against super mutants
+"Astoundingly Awesome Tales 11", //  	+15 damage to ghouls 
+"Backwoodsman 5", //  	+15% damage to animals 
+"Grognak The Barbarian 5", //  	+15% damage to Scorched creatures 
+"Guns And Bullets 1", //  	+15% damage against robots
+//Nuka Cola
+"Nuka-Cola Twist",
+//AP Regen
+"Company Tea",
+"Hard Lemonade",
+"Infused Soot Flower Tea"
+]

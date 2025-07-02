@@ -1,0 +1,53 @@
+[
+// This is Used to define items I wish to purchase from vendors. Good for hunting rare items at player vendors or just farming NPC vendors automatically. This is for MODS only, to isolate only buying MODS and not buying items  with these words in the names accidently.
+// Legendary Mods
+// 1 Star
+"Anti-Armor",
+"Executioner",
+"Furious",
+"Gourmand",
+"Instigating",
+"Juggernaut",
+"Life Saving",
+"Medic",
+"Quad",
+"Regenerating",
+"Stalker",
+"Vampire",
+"Weightless",
+// 2 Star
+"Crippling",
+"Explosive",
+"Heavy Hitter",
+"Hitman",
+"Inertial",
+"Intelligence",
+"Rapid",
+"Strength",
+// 3 Star
+"Secret Agent",
+"Thru-Hiker",
+"Belted",
+// 4 Star
+"Bruiser",
+"Bully",
+"Fencer",
+"Pin-Pointer",
+"Pounder",
+"Propelling",
+"Ranger's",
+"Rejuvenator",
+"Stabilizer",
+// Armor
+"Buttressed",
+"Deep Pocketed",
+"Stabilized",
+"Jet Pack",
+"Shielded Lining",
+"Internal Database",
+"Targeting Hud",
+"Optimized Bracers",
+"Motion-Assist Servos",
+"Kinetic Dynamo",
+"Calibrated Shocks"
+]

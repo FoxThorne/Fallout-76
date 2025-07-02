@@ -1,5 +1,4 @@
 ﻿; *********************** Fallout 76 Hotkeys & Macros Script ***********************
-
 Menu, Tray, Icon, C:\Program Files (x86)\Steam\steamapps\common\Fallout76\fallout76.exe, 1
 #NoEnv
 #MaxThreadsPerHotkey 3
@@ -12,7 +11,6 @@ SetTitleMatchMode, 2
 #IfWinActive, ahk_class Fallout76
 LWin::Return
 RWin::Return
-#IfWinActive
 
 ; ======================= HOTKEYS =======================
 Pause::Pause
@@ -24,28 +22,20 @@ global SpamEnabled := 1
 global GlobalInterrupt := 0
 
 ; *********************** Armor Naming Macros BEGIN ***********************
-; Optional: Set a delay to ensure all characters are sent correctly
 SetKeyDelay, 50, 50
-
-; Rustclaw Guard (Ctrl + Number)
 ^1::Send, {Text} ~Rustclaw Guard (Arm-L)
 ^2::Send, {Text} ~Rustclaw Guard (Arm-R)
 ^3::Send, {Text} ~Rustclaw Guard (Leg-L)
 ^4::Send, {Text} ~Rustclaw Guard (Leg-R)
 ^5::Send, {Text} ~Rustclaw Guard (Torso)
 ^6::Send, {Text} ~Rustclaw Guard (Helmet)
-
-; Excavator (Shift + Number)
-+1::Send, {Text} ~Excavator Armor (Arm-L)
-+2::Send, {Text} ~Excavator Armor (Arm-R)
-+3::Send, {Text} ~Excavator Armor (Leg-L)
-+4::Send, {Text} ~Excavator Armor (Leg-R)
-+5::Send, {Text} ~Excavator Armor (Torso)
-+6::Send, {Text} ~Excavator Armor (Helmet)
-
-
+!1::Send, {Text} ~Excavator (Arm-L)
+!2::Send, {Text} ~Excavator (Arm-R)
+!3::Send, {Text} ~Excavator (Leg-L)
+!4::Send, {Text} ~Excavator (Leg-R)
+!5::Send, {Text} ~Excavator (Torso)
+!6::Send, {Text} ~Excavator (Helmet)
 ; *********************** Armor Naming Macros END ***********************
-
 
 ; *********************** LOOT ALL THE THINGS!!! Begin ***********************
 NumpadMult:: ; Toggle E-spam
@@ -54,23 +44,18 @@ NumpadMult:: ; Toggle E-spam
         SpamEnabled := 1
         return
     }
-    
     if (!SpamE) {
-        ; Disable R-spam if active
         if (SpamR) {
             SetTimer, PressRSpam, Off
             SetTimer, R_Spam_Reminder, Off
             SpamR := 0
             SoundPlay, notification_off.wav
         }
-        
-        ; Enable E-spam
         SetTimer, PressESpam, 15
         SetTimer, E_Spam_Reminder, 1000
         SpamE := 1
         SoundPlay, notification_on.wav
     } else {
-        ; Disable E-spam
         SetTimer, PressESpam, Off
         SetTimer, E_Spam_Reminder, Off
         SpamE := 0
@@ -102,23 +87,18 @@ NumpadDiv:: ; Toggle R-spam
         SpamEnabled := 1
         return
     }
-    
     if (!SpamR) {
-        ; Disable E-spam if active
         if (SpamE) {
             SetTimer, PressESpam, Off
             SetTimer, E_Spam_Reminder, Off
             SpamE := 0
             SoundPlay, notification_off.wav
         }
-        
-        ; Enable R-spam
         SetTimer, PressRSpam, 15
         SetTimer, R_Spam_Reminder, 1000
         SpamR := 1
         SoundPlay, notification_on.wav
     } else {
-        ; Disable R-spam
         SetTimer, PressRSpam, Off
         SetTimer, R_Spam_Reminder, Off
         SpamR := 0
@@ -142,7 +122,6 @@ return
 
 ; *********************** H Spam Macro BEGIN ***********************
 HSpamLock := 0
-
 ~h::
     if (HSpamLock || GlobalInterrupt)
         return
@@ -229,27 +208,23 @@ return
         if (SpamEnabled) {
             SpamEnabled := 0
             change := 0
-            
-            ; Disable E-spam if active
             if (SpamE) {
                 SetTimer, PressESpam, Off
                 SetTimer, E_Spam_Reminder, Off
                 SpamE := 0
                 change := 1
             }
-            
-            ; Disable R-spam if active
             if (SpamR) {
                 SetTimer, PressRSpam, Off
                 SetTimer, R_Spam_Reminder, Off
                 SpamR := 0
                 change := 1
             }
-            
-            ; Play sound if any spam was disabled
             if (change)
                 SoundPlay, notification_off.wav
         }
     }
 return
 ; *********************** DISABLE ALL SPAM ON M, TAB, or ESC END ***********************
+
+#IfWinActive ; END OF FALLOUT76 CONTEXT
