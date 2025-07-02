@@ -2,7 +2,7 @@
 // FOX_BUFFS_CONSUME Is The Curated List Of Consumables To Transfer Out Of Storage, And Consume For Use In Xp Grinding.
 // Use FOX_KEEP To Protect The Items, And This To Perform Transfers, Or Consume Automations.
 
-// Xp Food & Drink
+// XP Food & Drink
 ["Cranberry Relish",
 "Canned Cranberry Relish",
 "Cranberry Cobbler",
@@ -38,10 +38,6 @@
 "Glowing Bobblehead: Strength",
 "Bobblehead: Agility",
 "Glowing Bobblehead: Agility",
-"Bobblehead: Agility",
-"Glowing Bobblehead: Agility",
-"Bobblehead: Big Guns",
-"Glowing Bobblehead: Big Guns",
 "Bobblehead: Big Guns",
 "Glowing Bobblehead: Big Guns",
 "Bobblehead: Caps",
@@ -58,8 +54,7 @@
 "Astoundingly Awesome Tales 11", //  	+15 damage to ghouls 
 "Backwoodsman 5", //  	+15% damage to animals 
 "Grognak The Barbarian 5", //  	+15% damage to Scorched creatures 
-"Guns And Bullets 1" //  	+15% damage against robots
-],
+"Guns And Bullets 1"], //  	+15% damage against robots
 //Nuka Cola
 "Nuka-Cola Twist",
 //AP Regen

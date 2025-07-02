@@ -9,13 +9,15 @@
 	"showInventoryItemCount": true,
 	"customRepairKitRepairHotkey": 0,
 	"customWorkbenchRepairHotkey": 0,
-	"autoUseRepairKit": {
+	"autoUseRepairKit":
+	{
 		"enabled": false,
 		"conditionUnder": 15,
 		"exitAfterRepair": true,
 		"exitDelay": 250
 	},
-	"perkCardsConfig": {
+	"perkCardsConfig":
+	{
 		"enabled": true,
 		"textField": {
 			"x": 0,
@@ -45,7 +47,8 @@
 		],
 		"legendaryPerkCards": ["Ammo Factory"]
 	},
-	"uiConfig": {
+	"uiConfig":
+	{
 		"enabled": false,
 		"hideVignette": true,
 		"hideBackground": true,

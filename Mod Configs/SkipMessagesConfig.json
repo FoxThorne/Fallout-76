@@ -1,9 +1,10 @@
 {
 	"debug": true,
 	"testRun": false,
-	"SkipDelay": 25,
+	"SkipDelay": 50,
 	
-	"SkipScrapComponentsView": {
+	"SkipScrapComponentsView":
+	{
 		"Enabled": true,
 		"Legendary": false,
 		"NonLegendary": true
@@ -13,12 +14,14 @@
 	"ScrapLegendary": true,
 	"ScrapPremium": true,
 	
-	"SkipCustom": {
-		
+	"SkipCustom": 
+	{
 		//Custom text
 		"By performing this action, you will leave your current team. Leave your team?": 0,
-		"Scrap all junk items and move to Scrapbox?": 0,
+		"Scrap all junk items and move to Scrapbox?": 1,
+		"This item is being used at an inactive C.A.M.P Taking this item out of your stash will remove it from all C.A.M.P.s. Are you sure?": 1,
 		"Repair ?": 1,
+		"Exit Station?": 1,
 		//Header Message
 		"$Loaded_Into_Nuke_Zone": 0,
 		"$ConfirmDestroyUnlockedCraftable": 0,
@@ -28,8 +31,8 @@
 		"$ConfirmFavoritedItemHeader": 1,
 		".....":0
 	},
-	"SkipCustomRegex": {
-		
+	"SkipCustomRegex":
+	{
 		// Few examples:
 		"Pay [0-9]{1,2} Caps to travel": 0
 		// "Choose a travel point for": 1

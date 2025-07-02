@@ -3,64 +3,7 @@
 // Intended to be used at MAX quantity. 
 // It's to check against this file and deposit ONLY these items into storage.
 // Used to perform transfers ONLY.
-
-// Fishing
-// Axolotls
-"Banded Axolotl",
-"Charcoal Axolotl",
-"Clay Axolotl",
-"Dotted Axolotl",
-"Peach Axolotl",
-"Pink Axolotl",
-"Scaled Axolotl",
-"Shadow Axolotl",
-"Speckled Axolotl",
-"Stone Axolotl",
-"Striped Axolotl",
-// Fish
-// Commons
-"Brook Silverside",
-"Redbelly",
-"Sunscream",
-"Chain Pickerel",
-"Ridge Trout",
-"Smoky Salmon",
-"Walleye",
-"Yellow Bullhead",
-// Regionals
-"Alpine Sawgill",
-"Bog Sawgill",
-"Muddy Sawgill",
-"Noxious Sawgill",
-"Sooty Sawgill",
-"Static Sawgill",
-"Timber Sawgill",
-"Armored Spinefish",
-"Ashen Ambusher",
-"Blisterfish",
-"Bloodwhisker",
-"Bluefin Zapper",
-"Bog Lurker",
-"Deathjaw",
-"Gulpy",
-"Kanawha Piranha",
-"Leatherback",
-"Potbelly Kelt",
-"Purple Radpole",
-"Spikesnapper",
-"Stormswimmer",
-// Glowing
-"Glowing Ambusher",
-"Glowing Bog Lurker",
-"Glowing Gulpy",
-"Glowing Kanawha Piranha",
-"Glowing Potbelly Kelt",
-"Glowing Spinefish",
-"Glowing Stormswimmer",
-// Trophy Fish / Local Legends
-"Organ Grinder",
-"Ryl-Tkannoth, Maw-Begotten",
-"Wavy Willard",
+//
 // Bobbleheads
 "Bobblehead: Agility",
 "Bobblehead: Big Guns",
@@ -83,6 +26,27 @@
 "Bobblehead: Sneak",
 "Bobblehead: Strength",
 "Bobblehead: Unarmed",
+"[Bobblehead] Agility",
+"[Bobblehead] Big Guns",
+"[Bobblehead] Caps",
+"[Bobblehead] Charisma",
+"[Bobblehead] Endurance",
+"[Bobblehead] Energy Weapons",
+"[Bobblehead] Explosive",
+"[Bobblehead] Explosives",
+"[Bobblehead] Intelligence",
+"[Bobblehead] Leader",
+"[Bobblehead] Lock Picking",
+"[Bobblehead] Luck",
+"[Bobblehead] Medicine",
+"[Bobblehead] Melee",
+"[Bobblehead] Perception",
+"[Bobblehead] Repair",
+"[Bobblehead] Science",
+"[Bobblehead] Small Guns",
+"[Bobblehead] Sneak",
+"[Bobblehead] Strength",
+"[Bobblehead] Unarmed",
 // Glowing Bobbleheads
 "Glowing Bobblehead: Agility",
 "Glowing Bobblehead: Big Guns",
@@ -244,27 +208,36 @@
 "Unstable Isotope Serum",
 // Nuka-Cola
 "Nuka-Cola",
-"Nuka-Grape",
-"Nuka-Cola Orange",
 "Nuka-Cola Quantum",
-"Nuka-Cola Scorched",
-"Nuka-Cola Twist",
-"Nuka-Cola Vaccinated",
-"Nuka-Cola Wild",
 "Nuka-Cola Cranberry",
-//Misc.
+"Nuka-Cola Orange",
+"Nuka-Cola Twist",
+"Nuka-Cola Wild",
+"Nuka-Grape",
+"Nuka-Cherry",
+"Nuka-Cola Vaccinated",
+"Nuka-Cola Scorched",
+"Nuka-Cola My Blood'S In It",
+// Misc.
+"Lunchbox",
 "Perfect Bubblegum",
+"Canned Coffee",
 "Popcorn",
-//Company Tea
+"Stein",
+"Flair",
+"Flowery Deathclaw Easter Egg",
+"Ogua Egg",
+// Cooking/Crafting - Ingredients & Materials
+// Company Tea & Ingredients
 "Cream",
 "Whiskey",
 "Sweet Labrador Tea",
 "Honeycomb",
 "Rhododendron Flower",
-//Infused Soot Flower Tea
+// Infused Soot Flower Tea & Ingredients
+"Infused Soot Flower Tea",
 "Soot Flower",
-//Hard Lemonade
-"Hard Lemonade",
+// Hard Lemonade & Ingredients
 "Lemonade",
 "Acid",
 "Glowing Resin",
@@ -274,30 +247,30 @@
 "(Fresh) Vodka",
 "Vodka",
 "Sunshine Oil",
-//Cure Addictions
+// Cure Addictions & Ingredients
 "Radscorpion Egg",
 "Tato",
-// Cooking/Crafting
-//Berry Mentats / Mentats
-"Firecracker Berry",
-"Starlight Berries",
-"Brain Fungus",
-"Carrot Flower",
-"Firecap",
-//Cranberry Relish
+// Cranberry Relish (+5% XP)
 "Canned Cranberry Relish",
 "Boiled Water",
 "Cranberries",
 "Gourd",
 "Sugar",
-//Brain Bombs
+// Brain Bombs (+INT)
 "Mothman Egg",
 "Sugar Bombs",
+// Berry Mentats / Mentats
+"Firecracker Berry",
+"Starlight Berries",
+"Brain Fungus",
+"Carrot Flower",
+"Firecap",
 "Spices",
 "Salt",
 "Pepper",
 "Snaptail Reed",
-//Flux
+"Perfectly Preserved Pie",
+// Flux
 "Stable Cobalt Flux",
 "Stable Crimson Flux",
 "Stable Fluorescent Flux",
@@ -306,7 +279,7 @@
 "Hardened Mass",
 "Glowing Mass",
 "High-Radiation Fluids",
-//Ore & Scrap
+// Ore & Scrap
 "Aluminum Ore",
 "Black Titanium Ore",
 "Copper Ore",
@@ -319,23 +292,33 @@
 "Uranium Ore",
 "Unrefined Coal",
 "Raw Crystal",
-//Chems
+// Chems
+"Daddy-O",
 "Disease Cure",
+"\"The Fix\"",
+"Nuclear Don'S Custom Chem Blend",
+"Overdrive",
+"Psycho",
+"Psychobuff",
+"Psychotats",
+"Stimpak: Super",
+"X-Cell",
+// Aid
+"Blood Pack",
 "Glowing Blood",
 "Glowing Blood Pack",
-// Aid
 "Prototype Stealth Boy",
 "Stealth Boy Mark Iii",
 "Stealth Boy",
 "Phantom Device",
+"US Government Supply Requisition",
 // Special & Collectable
-// Holotapes
-"Atomic Command",
-"Automatron",
-"Grognak & The Ruby Ruins",
-"Nuka Tapper",
-"Pipfall",
-"Red Menace",
-"Wastelad",
-"Zeta Invaders"
+"Beer Stein",
+"Teapot",
+"Alarm Clock",
+"Monster Lamp",
+"Pristine",
+"Undamaged",
+"New",
+"Souvenir"
 ]
