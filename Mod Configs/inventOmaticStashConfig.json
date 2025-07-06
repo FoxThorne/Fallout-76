@@ -1,48 +1,5 @@
 {
-// Extraction
-"extractConfig":
-	{
-	"enabled": false,
-	"name": "Extract",
-	"showButton": true,
-	"hotkey": 79, // O
-	"itemCardEntryDelayStep": 100,
-	"types": ["POWER_ARMOR", "WEAPON", "ARMOR", "APPAREL", "FOOD_WATER", "AID", "NOTES", "HOLO", "AMMO", "MISC", "MODS", "JUNK"],
-	"additionalItemDataForAll": false,
-	"verboseOutput": false,
-	"apiMethods": [""],
-	"useCustomFormat": true,
-	"customFormat":
-	{
-		"format": "CSV",
-		"delimiter": ";",
-		"delimiterLine": "\n",
-		"valueNotFound": "",
-		"displayColumnNames": true,
-		"columns": [
-			"text",
-			"count",
-			"itemType",
-			"itemLevel",
-			"numLegendaryStars",
-			"legendary_1",
-			"legendary_2",
-			"legendary_3",
-			"legendary_4",
-			"isTradable",
-			"weight",
-			"weightInStash",
-			"physical",
-			"energy",
-			"radiation",
-			"poison",
-			"fire",
-			"cryo",
-			"source"
-					]
-		}
-	},
-// Scrap!
+// Scrap \\
 "scrapConfig":
 	{
 		"name": "Scrap-O-Matic",
@@ -63,10 +20,19 @@
 				"scrapEquipped": true,
 				"scrapFavorite": true,
 				"onlyLegendaries": false,
-				"scrapByLegendaryStar": false,
 				"matchMode": "CONTAINS",
 				"types": ["WEAPON", "ARMOR", "POWER_ARMOR", "APPAREL", "JUNK"],
 				"excluded": ["FOX_KEEP"]
+			},
+			// Scrap EVERYTHING NOT in FOX_EXACT
+			{
+				"enabled": false,
+				"scrapEquipped": true,
+				"scrapFavorite": true,
+				"onlyLegendaries": false,
+				"matchMode": "EXACT",
+				"types": ["WEAPON", "ARMOR", "POWER_ARMOR", "APPAREL", "JUNK"],
+				"excluded": ["Raider Armor"]
 			},
             // Scrap ALL Legendaries not in FOX_KEEP
 			{
@@ -75,13 +41,13 @@
 				"scrapFavorite": true,
 				"onlyLegendaries": true,
 				"scrapByLegendaryStar": [1,2,3,4],
-				"types": ["WEAPON", "ARMOR", "POWER_ARMOR", "JUNK"],
+				"types": ["WEAPON", "ARMOR", "POWER_ARMOR"],
 				"matchMode": "CONTAINS",
 				"excluded": ["FOX_KEEP"]
 			}
 		]
 	},
-// Transfer!
+// Transfer \\
 "transferConfig":
 	[
 // Stash All
@@ -89,7 +55,7 @@
 			"name": "Stash!",
 			"testRun": false,
 			"enabled": true,
-			"debug": false,
+			"debug": true,
 			"showButton": true,
 			"showMessage": false,
 			"hotkey": 97, // NumPad 1
@@ -110,12 +76,38 @@
 			// "checkContainerName": true,
 			// "containerName": ["MY STASH BOX (STASH)"]
 		},
-// Stash X
+// Stash Exact
 		{
-			"name": "Stash ONLY X amount!",
+			"name": "Stash Exact",
 			"testRun": false,
 			"enabled": true,
-			"debug": false,
+			"debug": true,
+			"showButton": false,
+			"showMessage": false,
+			"hotkey": 97, // NumPad 1
+            "maxItems":0,
+            "amount":0,
+            "exactAmountInDestination":false,
+            "repeat":1,
+            "delay":50,
+            "onlyHighlightedItem":false,
+			"transferEquipped": true,
+			"transferFavorite": true,
+			"transferAssigned": false,
+			"singleItemPerName": false,
+            "itemNames": ["FOX_EXACT"], // FOX_STASH is setup as an inclusionary list, use it in conjunction with matchMode: CONTAINS
+			"direction": "TO_CONTAINER",
+            "matchMode": "EXACT",
+            "types": ["WEAPON", "ARMOR", "APPAREL", "FOOD_WATER", "AID", "NOTES", "HOLO", "MISC", "MODS", "JUNK"]
+			// "checkContainerName": true,
+			// "containerName": ["MY STASH BOX (STASH)"]
+		},
+// Stash Collectibles (Only One of Each)
+		{
+			"name": "Stash ONLY 1 (for collectibles)",
+			"testRun": false,
+			"enabled": true,
+			"debug": true,
 			"showButton": false,
 			"showMessage": false,
 			"hotkey": 97, // NumPad 1
@@ -163,7 +155,7 @@
 		{
 			"name": "Take All!",
             // No really, this will take everything; use with caution.
-			"testRun": false,
+			"testRun": true,
 			"enabled": true,
 			"debug": false,
 			"showButton": true,
@@ -185,40 +177,22 @@
             "types":["FOOD_WATER", "AID", "NOTES", "HOLO", "AMMO", "MISC"]
 		}
 	],
-// Loot Config
-"lootConfig":
+// Camp Assign \\ (Semi-automatic stashing items in freezers/coolers, etc.)
+	"campAssignConfig":
 	{
-		"name": "AutoLoot",
-		"testRun": true,
-		"enabled": false,
+		"name": "Semi-Automatic Transfer",
+		"enabled": true,
 		"debug": false,
 		"showButton": false,
-		"showMessage": false,
-		"hotkey": 70, // F
-		"maxItems": 0,
-		"repeat": 1,
-		"delay": 50,
-		"transferLegendaries": true,
-        "transferTaggedForSearch": true,
-		"matchMode": "ALL",
-		"itemNames": [""],
-		"configs":
-		[
-			{
-				"enabled": false,
-				"itemNames": ["railway spike"],
-				"checkCharacterName": false,
-				"characterName": "Lorem Impsum",
-				"checkAccountName": false,
-				"accountName": ""
-			}
-		]
+		"hotkey": 84, // T
+		"amount": 100,
+		"delay": 600
 	},
-// Sell Config
+// Sell \\
 "npcSellConfig":
 	{
 		"name": "Sell-O-Matic",
-        "testRun": true,
+        "testRun": false,
 		"enabled": true,
 		"debug": true,
 		"showButton": true,
@@ -252,11 +226,11 @@
 		]
 
 	},
-// Mass Purchase
+// Buy \\
 "buyConfig":
 	{
   "name": "Buy-O-Matic",
-  "testRun": false,
+  "testRun": true,
   "enabled": true,
   "debug": true,
   "hotkey": 66, // B
@@ -341,7 +315,7 @@
     }
 		]
 	},
-// Category Weight on Tab
+// Weight on Tab \\
 	"categoryWeightConfig":
 	{
 		"enabled": true,
@@ -351,7 +325,7 @@
 		"itemCardDelay":100,
 		"itemCardFilters": [""]
 	},
-// Legendary Mod Tracking
+// Legendary Mod Tracking \\
 	"legendaryModsConfig":
 	{
 		"enabled": true,
@@ -366,18 +340,7 @@
 		"learnableTextColorStyle": "PREFIX",
 		"learnableTextColor": "0xff0000"
 	},
-// Camp Assign
-	"campAssignConfig": // This is the ONLY wayt to semi-automate stashing items in freezers/coolers, etc.
-	{
-		"name": "Semi-Automatic Transfer",
-		"enabled": true,
-		"debug": false,
-		"showButton": false,
-		"hotkey": 84, // T
-		"amount": 100,
-		"delay": 600
-	},
-// Currency Limit Indicator
+// Currency \\
 	"currencyLimitConfig":
 	{
 		"enabled": true,
@@ -387,18 +350,19 @@
 		"limitHigh": 90,
 		"limitHighColor": "0xff0000"
 	},
-// Tab Customization
+// Tab Customization \\
 	"tabsConfig":
 	{
 		"enabled": true,
 		"maxTabs": 14,
-		"labelWidthScale": 1.1
+		"labelWidthScale": 0.9
 	},
-// Item Protection
+// Item Protection \\ (Manual operations only)
 	"protectionConfig":
 	{
 		"checkOnSelectionChange": true,
 		"saleProtection":
+		// FOX_KEEP
 		{
 			"debug": false,
 			"enabled": true,
@@ -436,29 +400,20 @@
 			"disableForContainers": ["Power Armor", "Power Armor Chasis", "Gold Press Machine", "DONATIONS BOX"]
 		}
 	},
-// Debug Settings
-	"debug": true,
-	"debugKeys": false,
-	"toggleDebugHotkey": 192, // `
-
-// Misc. Settings
-	"showDurabilityValue": true,
-	"maintainScrollPosition": true,
-    "showCategoryItemCount": true,
-    "hideLoadMessage": true,
-    "hideTakeAllConfirm": true,
-    "defaultVendorItemPrice": -1,
-    "hideHeader": true,
-    "hideVignette": true,
-    "swapToPlayerInventoryHotkey": 192, // `
-    "swapToContainerInventoryHotkey": 192, // `
-    "notifyLegendaryModLearnedOnScrap": true,
-    "defaultSelectedTab": "",
-    "hideUnknownGamepadButtonIcons": true,
-
-// Item Lists
+// Item Lists \\
   "itemNamesGroupConfig":
-  {
+  	{
+	"FOX_EXACT":
+[
+"Mentats",
+"Wood",
+"Ultracite",
+"Firecracker Berry",
+"Nuka-Cola",
+"Clown",
+"Cranberries"
+]
+,
     "FOX_KEEP":
 [
 // This is a custom, curated list including all the items we wish to keep safe when scrapping, dropping, transferring or otherwise playing the inventory managment sim that is Fallout 76.
@@ -467,142 +422,74 @@
 // Everything else is useful items for quests, buffs, crafting, selling, or collecting.
 // Feel free to add whatever else you wish, customize it to your hearts desire.
 //
+// // Weapons \\ \\
 // Recommend renaming weapons to something more unique, so that you can easily identify them in your inventory.
-// Weapons \\
-"~Radfang Revolver",
-"~Ashclaw Longshot",
-"~Emberglow Spitter",
-"~Luminfang Volley",
-"~Flareclaw Barrage",
-"~Camera",
-"~Voltfang",
-"~Ironfang Saber",
-"~Brimstone Maul",
-"~Thirst Zapper",
-// Ammo \\
-".50 Caliber Ball",
-"5Mm Round",
-"Fusion Cell",
+"Radfang Revolver", // Gatling Gun
+"Valkyrie", // Valkyrie
+"Glowspike Emitter", // Gatling Plasma
+"Emberglow Spitter", // Plasma Caster
+"Thirst Zapper", // Thirst Zapper
+"Nuka-Snapper", // ProSnap Camera
+"Voltfang", // Tesla Rifle
+"Ashclaw Longshot", // The Dragon
+"Holy Fire", // Flamer
+"Ironfang Saber", // Ultracite Terror Sword
+// // Ammo \\ \\
+"5mm Round",
+"Ultracite 5mm Round",
 "Plasma Core",
-"Fusion Core",
+"Plasma Cartridge",
 "Camera Film",
-// Throwables \\
+"Fusion Cell",
+".50 Caliber Ball",
+"Fuel",
+"Fusion Core",
+// // Throwables \\ \\
 "Nuka Grenade",
+"Nuka Quantum Grenade",
 "Molotov Cocktail",
-"Meat Cleaver", // (Meat Week Event)",
+// "Meat Cleaver", // (Meat Week Event)",
 "Firecracker Berry Grenade", // (Meat Week Event)
 "Snowball", // (Holiday Scorched Event)
 // "Pumpkin Grenade", // (Spooky Scorched Event)
 "Confetti Grenade", // (Used In Some Seasonal Events)
 "Mystery Candy Grenade", // (Halloween Events)
-// Wearables \\
-// Power Armor \\
-// Recommend Renaming Power Armor To Something More Unique, So That You Can Easily Identify Them In Your Inventory.
-"~Excavator Armor", // Chassis
-"~Excavator (Helmet)",
-"~Excavator (Torso)",
-"~Excavator (L-Arm)",
-"~Excavator (R-Arm)",
-"~Excavator (L-Leg)",
-"~Excavator (R-Leg)",
-// This Of Course Is Each Individual Piece Renamed.
-// This Is Needed So That We Can Scrap Randomly Looted Pieces Without Losing The Whole Set.
-"~Hellcat Armor", // Chassis
-"~Hellcat (Helmet)",
-"~Hellcat (Torso)",
-"~Hellcat (L-Arm)",
-"~Hellcat (R-Arm)",
-"~Hellcat (L-Leg)",
-"~Hellcat (R-Leg)",
-"~Raider Armor", // Chassis
-"~Raider (Helmet)",
-"~Raider (Torso)",
-"~Raider (L-Arm)",
-"~Raider (R-Arm)",
-"~Raider (L-Leg)",
-"~Raider (R-Leg)",
-"~Strangler Armor", // Chassis
-"~Strangler (Helmet)",
-"~Strangler (Torso)",
-"~Strangler (L-Arm)",
-"~Strangler (R-Arm)",
-"~Strangler (L-Leg)",
-"~Strangler (R-Leg)",
-"~T-45 Armor", // Chassis
-"~T-45 (Helmet)",
-"~T-45 (Torso)",
-"~T-45 (L-Arm)",
-"~T-45 (R-Arm)",
-"~T-45 (L-Leg)",
-"~T-45 (R-Leg)",
-"~T-51B Armor", // Chassis
-"~T-51B (Helmet)",
-"~T-51B (Torso)",
-"~T-51B (L-Arm)",
-"~T-51B (R-Arm)",
-"~T-51B (L-Leg)",
-"~T-51B (R-Leg)",
-"~T-60 Armor", // Chassis
-"~T-60 (Helmet)",
-"~T-60 (Torso)",
-"~T-60 (L-Arm)",
-"~T-60 (R-Arm)",
-"~T-60 (L-Leg)",
-"~T-60 (R-Leg)",
-"~T-65 Armor", // Chassis
-"~T-65 (Helmet)",
-"~T-65 (Torso)",
-"~T-65 (L-Arm)",
-"~T-65 (R-Arm)",
-"~T-65 (L-Leg)",
-"~T-65 (R-Leg)",
-"~Ultracite Armor", // Chassis
-"~Ultracite (Helmet)",
-"~Ultracite (Torso)",
-"~Ultracite (L-Arm)",
-"~Ultracite (R-Arm)",
-"~Ultracite (L-Leg)",
-"~Ultracite (R-Leg)",
-"~Union Armor", // Chassis
-"~Union (Helmet)",
-"~Union (Torso)",
-"~Union (L-Arm)",
-"~Union (R-Arm)",
-"~Union (L-Leg)",
-"~Union (R-Leg)",
-"~Vulcan Armor", // Chassis
-"~Vulcan (Helmet)",
-"~Vulcan (Torso)",
-"~Vulcan (L-Arm)",
-"~Vulcan (R-Arm)",
-"~Vulcan (L-Leg)",
-"~Vulcan (R-Leg)",
-"~X-01 Armor", // Chassis
-"~X-01 (Helmet)",
-"~X-01 (Torso)",
-"~X-01 (L-Arm)",
-"~X-01 (R-Arm)",
-"~X-01 (L-Leg)",
-"~X-01 (R-Leg)",
-// Armor \\ 
-// Recommend Renaming Armor To Something More Unique, So That You Can Easily Identify Them In Your Inventory
-// This Is What I Used For Every Armor Piece
-"~Rustclaw Guard (Helmet)",
-"~Rustclaw Guard (Torso)",
-"~Rustclaw Guard (L-Arm)",
-"~Rustclaw Guard (R-Arm)",
-"~Rustclaw Guard (L-Leg)",
-"~Rustclaw Guard (R-Leg)",
-// Apparel \\
-// Recommend Renaming Apparel To Something More Unique, So That You Can Easily Identify Them In Your Inventory
-// This Is What I Used For Every Apparel Piece
-"~Scorchtail Sack", // Backpack
-"~Slyfox Threads", // Underarmor
-"~Foxglint Garb", // Apparel
-"~Bloodtail Brim", // Hat
-"~Wedding Ring", // Accessory
-"~Old Ring", // Accessory
-// Fishing
+// // Power Armor \\ \\
+// Recommend renaming Power Armor to something more unique, so that you can easily identify them in your inventory.
+// Chassis
+"", // This is from IconSortingTags addon, it's the icon for Power Armor Chassis; should protect them all.
+"Excavator Armor",
+"Raider Armor",
+"T-45 Armor",
+"T-60 Armor",
+"X-01 Armor",
+"Ultracite Armor",
+"Strangler Heart Armor",
+"T-51b Armor",
+"T-65 Armor",
+"Hellcat Armor",
+"Vulcan Armor",
+"Union Armor",
+// Individual pieces
+"(Arm-L)",
+"(Arm-R)",
+"(Leg-L)",
+"(Leg-R)",
+"(Torso)",
+"(Helmet)",
+// // Regular Armor \\ \\
+// Recommend renaming Armor to something more unique, so that you can easily identify them in your inventory.
+"Rustclaw Guard",
+// // Under Armor & Apparel \\ \\
+// Recommend renaming Apparel to something more unique, so that you can easily identify them in your inventory.
+"Slyfox Threads", // Underarmor
+"Foxglint Garb", // Apparel
+"Bloodtail Brim", // Hat
+"Glasses", // Accessory
+"Wedding Ring", // Accessory
+"Old Ring", // Accessory
+"Scorchtail Sack", // Backpack
+// // Fishing \\ \\
 // Rods
 "Broken Fishing Rod",
 "Charmcaster Rod Replica",
@@ -673,6 +560,7 @@
 "Bait - Common",
 "Bait - Improved",
 "Bait - Superb",
+// // Consumables \\ \\
 // Bobbleheads
 "Bobblehead: Agility",
 "Bobblehead: Big Guns",
@@ -854,7 +742,8 @@
 "Talons Serum",
 "Twisted Muscles Serum",
 "Unstable Isotope Serum",
-// Holiday
+// Loot Boxes
+// Holidays
 "Small Holiday Gift",
 "Holiday Gift",
 "Large Holiday Gift",
@@ -864,7 +753,7 @@
 "Spooky Treat Bag",
 "Halloween Candy",
 "Mystery Candy",
-//Treasure Hunters
+// Treasure Hunters
 "Dusty Mole Miner Pail",
 "Crafted Dusty Mole Miner Pail",
 "Mole Miner Pail",
@@ -895,64 +784,60 @@
 "Lunchbox",
 "Perfect Bubblegum",
 "Canned Coffee",
-"Popcorn",
-// Cooking/Crafting - Ingredients & Materials
-// Company Tea & Ingredients
+//"Popcorn",
+// // Cooking Ingredients & Materials \\ \\
+// Company Tea Ingredients (+10% AP Regen for 60m)
 "Company Tea",
 "Cream",
-"Whiskey",
 "Sweet Labrador Tea",
+"Whiskey",
+// Sweet Labrador Tea Ingredients
+//"Boiled Water",
 "Honeycomb",
 "Rhododendron Flower",
-// Infused Soot Flower Tea & Ingredients
-"Infused Soot Flower Tea",
-"Soot Flower",
-// Hard Lemonade & Ingredients
+"Starlight Berries",
+// Hard Lemonade Ingredients (+10% AP Regen for 10m)
 "Hard Lemonade",
 "Lemonade",
+"Vodka",
+// Lemonade Ingredients
+"Acid",
+"Sugar",
+// Fermentable Vodka
+"Fermentable Vodka",
 "Glowing Resin",
 "Razorgrain",
-"Fermentable Vodka",
-"Fresh Vodka",
-"(Fresh) Vodka",
-"Vodka",
+// Sunshine Oil Ingredients (+400 AP)
 "Sunshine Oil",
-// Cure Addictions & Ingredients
-"Tasty Radscorpion Egg Omelette",
-"Radscorpion Egg",
-"Tato",
+"Blight",
+"Glowing Blood",
+"Sugar Bombs",
+// Sweet Blackberry Tea Ingredients (+200 AP)
+"Sweet Blackberry Tea",
+"Wild Blackberry",
 // Cranberry Relish (+5% XP)
-"Canned Cranberry Relish",
 "Cranberry Relish",
-"Boiled Water",
-"Cranberries",
 "Gourd",
-"Sugar",
 // Brain Bombs (+INT)
 "Brain Bombs",
-"Mothman Egg",
-"Sugar Bombs",
-// Berry Mentats / Mentats
-"Berry Mentats",
-"Mentats",
-"Firecracker Berry",
-"Starlight Berries",
 "Brain Fungus",
+"Mothman Egg",
+"Purified Water",
+// Berry Mentats
+"Berry Mentats",
+// Mentats
 "Carrot Flower",
 "Firecap",
-// Ghoul Glow
-"Toxic Water",
-"Toxic Goo",
+// Spices
 "Spices",
 "Salt",
 "Pepper",
+//Sugar Ingredients
 "Snaptail Reed",
-"Perfectly Preserved Pie",
-// Flux
+// Flux Ingredients
 "Raw Cobalt Flux",
 "Raw Crimson Flux",
 "Raw Fluorescent Flux",
-"Raw Fog Crawler Meat",
 "Raw Violet Flux",
 "Raw Yellowcake Flux",
 "Stable Cobalt Flux",
@@ -963,32 +848,21 @@
 "Hardened Mass",
 "Glowing Mass",
 "High-Radiation Fluids",
-// Ore & Scrap
-"Aluminum Ore",
-"Black Titanium Ore",
-"Copper Ore",
-"Gold Ore",
-"Iron Ore",
-"Irradiated Ore",
-"Lead Ore",
-"Silver Ore",
-"Ultracite Ore",
-"Uranium Ore",
-"Unrefined Coal",
-"Raw Crystal",
 // Chems
+"Addictol",
 "Daddy-O",
+"Bufftats",
+"X-Cell",
+"Buffout",
+"Psychobuff",
+"Psychotats",
 "Disease Cure",
 "\"The Fix\"",
 "Nuclear Don'S Custom Chem Blend",
 "Overdrive",
 "Psycho",
-"Psychobuff",
-"Psychotats",
 "Stimpak: Super",
-"X-Cell",
-// Aid
-"Glowing Blood",
+// Misc. 
 "Glowing Blood Pack",
 "Prototype Stealth Boy",
 "Stealth Boy Mark Iii",
@@ -1004,6 +878,22 @@
 "US Government Supply Requisition",
 "Nuclear Keycard",
 "Recall Keycard Circuit Board",
+// Ore & Scrap
+"Aluminum Ore",
+"Black Titanium Ore",
+"Copper Ore",
+"Gold Ore",
+"Iron Ore",
+"Irradiated Ore",
+"Lead Ore",
+"Silver Ore",
+"Ultracite Ore",
+"Uranium Ore",
+"Unrefined Coal",
+"Raw Crystal",
+// Ghoul Glow
+"Toxic Water",
+"Toxic Goo",
 // Currency
 "Pleasant Valley Claim Ticket",
 "Tickets",
@@ -1485,8 +1375,8 @@
 "Black Hazmat Suit",
 "Prototype Hazmat Suit",
 "Swamp Camo Hazmat Suit",
-"Hazmat Suit - Pink",
-"Hazmat Suit - Teal",
+//"Hazmat Suit - Pink",
+//"Hazmat Suit - Teal",
 // Asylum Worker Uniforms
 "Asylum Worker Uniform Blue",
 "Asylum Worker Uniform Brown",
@@ -1562,8 +1452,8 @@
 "Civil War Era Dress",
 "Civil War Era Suit",
 "Civil War Era Top Hat",
-"Clown Hat",
-"Clown Outfit",
+//"Clown Hat",
+//"Clown Outfit",
 "Fireman Helmet",
 "Fireman Uniform",
 "Golf Outfit",
@@ -1768,14 +1658,6 @@
 "Autopsy Board Game",
 "Blast Radius Board Game",
 "Rad Poker Board Game",
-// Misc. Items
-"All-Star Basketball",
-"Bird Decoration",
-"Broken Garden Gnome",
-"Blue Garden Gnome",
-"Red Garden Gnome",
-"New Toy",
-"Clown",
 // Snow Globes
 "Axel'S Snow Globe",
 "Big Meadows Gas Well Snow Globe",
@@ -1795,12 +1677,10 @@
 "Tunnel Of Love Snow Globe",
 "Windy'S Snow Globe",
 // Cursed Items
-"Elder'S Mark",
 "Holy Fire",
 // Unique Items
 "Pearly Peepers",
 "Garb Of Mysteries",
-"Alien Blaster Round",
 ".308 Casing",
 "Mr. Gutsy Model",
 "Eyebot Model",
@@ -1809,7 +1689,10 @@
 "Protectron Model",
 "Boat Model",
 "Robot Parts Model",
-"Beer Stein",
+"Stein",
+"Flair",
+"Flowery Deathclaw Easter Egg",
+"Ogua Egg",
 "House Teapot",
 "Huffwarbler Teapot",
 "Vault-Tec Alarm Clock",
@@ -1875,7 +1758,15 @@
 "Ogua Card",
 "Foil Ogua Card",
 "Sheepsquatch Card",
-"Foil Sheepsquatch Card"
+"Foil Sheepsquatch Card",
+// Misc. Items
+"All-Star Basketball",
+"Bird Decoration",
+"Broken Garden Gnome",
+"Blue Garden Gnome",
+"Red Garden Gnome",
+"New Toy",
+"Perfectly Preserved Pie"
 ]
 ,    
 	"FOX_STASH":
@@ -2089,69 +1980,65 @@
 "Unstable Isotope Serum",
 // Nuka-Cola
 "Nuka-Cola",
-"Nuka-Cola Quantum",
 "Nuka-Cola Cranberry",
 "Nuka-Cola Orange",
 "Nuka-Cola Twist",
-"Nuka-Cola Wild",
-"Nuka-Grape",
-"Nuka-Cherry",
-"Nuka-Cola Vaccinated",
-"Nuka-Cola Scorched",
-"Nuka-Cola My Blood'S In It",
 // Misc.
 "Lunchbox",
 "Perfect Bubblegum",
 "Canned Coffee",
 "Popcorn",
-"Stein",
-"Flair",
-"Flowery Deathclaw Easter Egg",
-"Ogua Egg",
-// Cooking/Crafting - Ingredients & Materials
-// Company Tea & Ingredients
+// // Cooking Ingredients & Materials \\ \\
+// Company Tea Ingredients (+10% AP Regen for 60m)
+"Company Tea",
 "Cream",
-"Whiskey",
 "Sweet Labrador Tea",
+"Whiskey",
+// Sweet Labrador Tea Ingredients
+"Boiled Water",
 "Honeycomb",
 "Rhododendron Flower",
-// Infused Soot Flower Tea & Ingredients
-"Infused Soot Flower Tea",
-"Soot Flower",
-// Hard Lemonade & Ingredients
+"Starlight Berries",
+// Hard Lemonade Ingredients (+10% AP Regen for 10m)
+"Hard Lemonade",
 "Lemonade",
+"Vodka",
+// Lemonade Ingredients
 "Acid",
+"Sugar",
+// Fermentable Vodka
+"Fermentable Vodka",
 "Glowing Resin",
 "Razorgrain",
-"Fermentable Vodka",
-"Fresh Vodka",
-"(Fresh) Vodka",
-"Vodka",
+// Sunshine Oil Ingredients (+400 AP)
 "Sunshine Oil",
-// Cure Addictions & Ingredients
-"Radscorpion Egg",
-"Tato",
+"Blight",
+"Glowing Blood",
+"Sugar Bombs",
+// Sweet Blackberry Tea Ingredients (+200 AP)
+"Sweet Blackberry Tea",
+"Wild Blackberry",
 // Cranberry Relish (+5% XP)
-"Canned Cranberry Relish",
-"Boiled Water",
+"Cranberry Relish",
 "Cranberries",
 "Gourd",
-"Sugar",
 // Brain Bombs (+INT)
-"Mothman Egg",
-"Sugar Bombs",
-// Berry Mentats / Mentats
-"Firecracker Berry",
-"Starlight Berries",
+"Brain Bombs",
 "Brain Fungus",
+"Mothman Egg",
+"Purified Water",
+// Berry Mentats
+"Berry Mentats",
+// Mentats
 "Carrot Flower",
 "Firecap",
+// Spices
 "Spices",
 "Salt",
 "Pepper",
+//Sugar Ingredients
 "Snaptail Reed",
-"Perfectly Preserved Pie",
-// Flux
+// Flux Ingredients
 "Stable Cobalt Flux",
 "Stable Crimson Flux",
 "Stable Fluorescent Flux",
@@ -2160,41 +2047,34 @@
 "Hardened Mass",
 "Glowing Mass",
 "High-Radiation Fluids",
-// Ore & Scrap
-"Aluminum Ore",
-"Black Titanium Ore",
-"Copper Ore",
-"Gold Ore",
-"Iron Ore",
-"Irradiated Ore",
-"Lead Ore",
-"Silver Ore",
-"Ultracite Ore",
-"Uranium Ore",
-"Unrefined Coal",
-"Raw Crystal",
 // Chems
+"Addictol",
 "Daddy-O",
+"Bufftats",
+"X-Cell",
+"Buffout",
+"Psychobuff",
+"Psychotats",
 "Disease Cure",
 "\"The Fix\"",
 "Nuclear Don'S Custom Chem Blend",
 "Overdrive",
 "Psycho",
-"Psychobuff",
-"Psychotats",
 "Stimpak: Super",
-"X-Cell",
-// Aid
-"Blood Pack",
-"Glowing Blood",
-"Glowing Blood Pack",
+// Misc. 
 "Prototype Stealth Boy",
 "Stealth Boy Mark Iii",
 "Stealth Boy",
 "Phantom Device",
+// Aid
+"Blood Pack",
+"Glowing Blood Pack",
 "US Government Supply Requisition",
 // Special & Collectable
-"Beer Stein",
+"Stein",
+"Flair",
+"Flowery Deathclaw Easter Egg",
+"Ogua Egg",
 "Teapot",
 "Alarm Clock",
 "Monster Lamp",
@@ -2739,7 +2619,6 @@
 "Tunnel Of Love Snow Globe",
 "Windy'S Snow Globe",
 // Cursed Items
-"Elder'S Mark",
 "Holy Fire",
 // Unique Items
 "Garb Of Mysteries",
@@ -3109,6 +2988,12 @@
 "Tato Soup",
 "Vegetable Medley Soup",
 // Drinks
+"Nuka-Cola My Blood's In It",
+"Nuka-Cola Scorched",
+"Nuka-Cola Vaccinated",
+"Nuka-Cola Dark",
+"Nukashine",
+"Sugar-Free Nukashine",
 "Ballistic Bock",
 "Beer",
 "Blackberry Juice",
@@ -3134,11 +3019,9 @@
 "Melon Juice",
 "Mutfruit Juice",
 "New River Red Ale",
-"Nukashine",
 "Oak Holler Lager",
 "Old Possum",
 "Pickaxe Pilsner",
-"Purified Water",
 "Rad Ant Lager",
 "Simple Ash Rose Tea",
 "Simple Aster Tea",
@@ -4911,7 +4794,9 @@
 "Nuka Grenade",
 "Nuka Quantum Grenade",
 "Turbo-Fert Fertilizer",
-"Stimpak"
+"Stimpak",
+"Purified Water",
+"Bobby Pin"
 ]
 ,
 	"FOX_BUY_ALL":
@@ -5044,6 +4929,7 @@
 "Ultracite Supply Crate Atom",
 "Ultracite Scrap",
 "Ultracite Ore",
+"Ultracite",
 // Stable Flux
 "Stable Cobalt Flux",
 "Stable Crimson Flux",
@@ -5054,15 +4940,13 @@
 "Sugar Bombs",
 "Glowing Mass",
 "High-Radiation Fluids",
+//Bait
 "Bait - Improved",
 "Bait - Superb",
-//Bait
 // Buff Items
-"Cranberry Relish",
-"Canned Cranberry Relish",
-"Brain Bombs",
 "Nuka-Cola Twist",
 "Canned Coffee",
+"Sunshine Oil",
 //Company Tea
 "Company Tea",
 "Cream",
@@ -5070,9 +4954,6 @@
 "Sweet Labrador Tea",
 "Honeycomb",
 "Rhododendron Flower",
-//Infused Soot Flower Tea
-"Infused Soot Flower Tea",
-"Soot Flower",
 //Hard Lemonade
 "Hard Lemonade",
 "Lemonade",
@@ -5080,15 +4961,9 @@
 "Glowing Resin",
 "Razorgrain",
 "Fermentable Vodka",
-"Fresh Vodka",
-"(Fresh) Vodka",
 "Vodka",
-"Sunshine Oil",
-//Cure Addictions
-"Tasty Radscorpion Egg Omelette",
-"Radscorpion Egg",
-"Tato",
 // Chems
+"Addictol",
 //Berry Mentats / Mentats
 "Berry Mentats",
 "Firecracker Berry",
@@ -5097,14 +4972,13 @@
 "Carrot Flower",
 "Firecap",
 //Cranberry Relish
+"Cranberry Relish",
 "Cranberries",
 "Gourd",
 "Sugar",
 //Brain Bombs
+"Brain Bombs",
 "Mothman Egg",
-//Flux
-"Stable Fog Crawler Meat",
-"Addictol",
 // Currency
 "Tickets",
 "Mega-Dispenser Test Token",
@@ -5210,6 +5084,7 @@
 "Fasnachtler Mask",
 "Fasnachtler Outfit",
 // Rare Outfits & Hats
+"Blood Eagle Leather Jacket And Jeans",
 "Leather Coat",
 "Traveling Leather Coat",
 "Tattered Field Jacket",
@@ -5275,7 +5150,7 @@
 "Muni Worker Outfit",
 // Hazmat Suits
 "Emmett Mountain Hazmat Suit No Helmet",
-"Emmett Mountain Hazmat Suit",
+//"Emmett Mountain Hazmat Suit",
 "Black Hazmat Suit",
 "Prototype Hazmat Suit",
 "Swamp Camo Hazmat Suit",
@@ -5357,7 +5232,7 @@
 "Civil War Era Suit",
 "Civil War Era Top Hat",
 "Clown Hat",
-"Clown Outfit",
+//"Clown Outfit",
 "Fireman Helmet",
 "Fireman Uniform",
 "Golf Outfit",
@@ -5584,7 +5459,6 @@
 "Monster Lamp",
 "Pristine",
 "Undamaged",
-"New",
 "Souvenir",
 "Pawn",
 "Bishop",
@@ -5691,68 +5565,128 @@
 ,
 	"FOX_BUFFS_TRANSFER": 
 [
-// FOX_BUFFS_CONSUME Is The Curated List Of Consumables To Transfer Out Of Storage, And Consume For Use In Xp Grinding.
+// FOX_BUFFS_CONSUME Is The Curated List Of Consumables To Transfer Out Of Storage, And Consume For Use In XP grinding and general performance improvement.
 // Use FOX_KEEP To Protect The Items, And This To Perform Transfers, Or Consume Automations.
 
-// XP Food & Drink
-["Cranberry Relish",
-"Canned Cranberry Relish",
-"Cranberry Cobbler",
-"Cranberry Juice"],
-["Brain Bombs",
-"Brain Fungus Soup",
-"Steeped Aster Tea",
-"Steeped Tato Flower Tea",
-"Simple Aster Tea"],
+// Food/Soup/Drink
+// XP Buffs
+"Cranberry Relish", // +10% XP for 60m
+"Cranberry Cobbler",// +5% XP for 30m
+"Cranberry Juice", // +2% XP for 30m
+"Nuka-Cola Cranberry", // +2% XP for 30m
+// INT Buffs
+"Brain Bombs", // +3 INT for 30m
+"Brain Fungus Soup", // +2 INT for 30m
+"Steeped Aster Tea", // +2 INT for 60m
+"Steeped Tato Flower Tea", // +2 INT for 60m
+"Simple Aster Tea", // +1 INT for 30m
 // Chems
-["Berry Mentats",
-"Daddy-O",
-"Mentats",
-"X-Cell",
-"Nuclear Don's Custom Chem Blend",
-"Psychotats",
-"Psychobuff",
-"Psycho",
-"Bufftats",
-"Buffout",
-"Overdrive"
-],
+"Berry Mentats", // +5 INT +highlights living targets for 5m
+"Daddy-O", // +3 INT, +3 PER, -2 CHR for 10m
+"Mentats", // +2 INT, +2 PER for 5m
+"Bufftats", // STR +3, PER +3, END +3, Max HP +40 (5m) 
+"X-Cell", // +2 STR, +2 PER, +2 END, +2 CHA, +2 INT, +2 AGI, +2 LCK for 2m
+"Buffout", // STR +2, END +2, +25 Max HP (5m) 
+"Psychobuff", // Damage +25%, STR +3, END +3, Max HP +65 (3m) 
+"Psychotats", // Damage +25%, Damage Resistance +15, PER +3 (3m)
 // Serums
-"Egg Head Serum",
-"Herd Mentality Serum",
-"Marsupial Serum",
-// Bobblehead
-["Bobblehead: Leader",
-"Glowing Bobblehead: Leader",
-"Bobblehead: Intelligence",
-"Glowing Bobblehead: Intelligence",
-"Bobblehead: Strength",
-"Glowing Bobblehead: Strength",
-"Bobblehead: Agility",
-"Glowing Bobblehead: Agility",
-"Bobblehead: Big Guns",
-"Glowing Bobblehead: Big Guns",
-"Bobblehead: Caps",
-"Glowing Bobblehead: Caps"],
+"Adrenal Reaction", // Supresses -50 HP
+"Egg Head Serum", // Supresses -3 STR, -3 END
+"Healing Factor", // Supresses -55% Chem Effects
+"Marsupial Serum", // Supresses -4 INT
+// Bobbleheads
+"Bobblehead: Leader", // +5% XP for 60m
+"Glowing Bobblehead: Leader", // +5% XP for 60m
+"Bobblehead: Intelligence", // +2 INT for 60m
+"Glowing Bobblehead: Intelligence", // +2 INT for 60m
+"Bobblehead: Strength", // +2 STR for 60m
+"Glowing Bobblehead: Strength", // +2 STR for 60m
+"Bobblehead: Agility", // +2 AGI for 60m
+"Glowing Bobblehead: Agility", // +2 AGI for 60m
+"Bobblehead: Endurance", // +2 END for 60m
+"Glowing Bobblehead: Endurance", // +2 END for 60m
+"Bobblehead: Big Guns", // +Heavy Gun damage
+"Glowing Bobblehead: Big Guns", // +Heavy Gun damage
+"Bobblehead: Energy Weapons", // +Energy Weapons damage
+"Glowing Bobblehead: Energy Weapons", // +Energy Weapons damage
+"Bobblehead: Explosive", // +Explosive damage
+"Glowing Bobblehead: Explosive", // +Explosive damage
+"Bobblehead: Caps", // +Cap Discovery
+"Glowing Bobblehead: Caps", // +Cap Discovery
 //Magazines
-["Live & Love 8",
-"Live & Love 4",
+"Live & Love 8", // +5% XP for 60m (while on a team)
+"Live & Love 4", // +10% AP regen for 60m (while on a team)
 "Guns And Bullets 4", // +6% AP regeneration 
 "Astoundingly Awesome Tales 6", // +0.20% Health Regeneration
 "Astoundingly Awesome Tales 7", // +5 maximum AP
 "Astoundingly Awesome Tales 8", // 25% less damage from robots
 "Astoundingly Awesome Tales 1", // +15% damage against mirelurks
 "Astoundingly Awesome Tales 2", // +15% damage against super mutants
-"Astoundingly Awesome Tales 11", //  	+15 damage to ghouls 
-"Backwoodsman 5", //  	+15% damage to animals 
-"Grognak The Barbarian 5", //  	+15% damage to Scorched creatures 
-"Guns And Bullets 1"], //  	+15% damage against robots
-//Nuka Cola
-"Nuka-Cola Twist",
+"Astoundingly Awesome Tales 11", // +15 damage to ghouls 
+"Backwoodsman 5", // +15% damage to animals 
+"Grognak The Barbarian 5", // +15% damage to Scorched creatures 
+"Guns And Bullets 1", // +15% damage against robots
 //AP Regen
-["Company Tea",
 "Hard Lemonade",
-"Infused Soot Flower Tea"]
+"Company Tea",
+//Misc. Buffs
+"Nuka-Cola Twist"
 ]
-  }
+  	},
+// Debug Settings
+	"debug": true,
+	"debugKeys": false,
+	"toggleDebugHotkey": 192, // `
+	"debugX": 200, // Horizontal offset for debug logger, negative is left, positive is right
+	"debugY": 90, // Vertical offset for debug logger, negative is up, positive is down
+// Additional Columns
+	"additionalColumnsConfig": {
+	"enabled": true,
+	"offsetInventories": 132,
+	"columns": {
+	"LEVEL": false,
+	"VALUE": true,
+	"VALUE_PER_WEIGHT": true,
+	"WEIGHT": true,
+	"STACK_WEIGHT": true
+	}
+	},
+	// Misc. Settings
+	"showDurabilityValue": true,
+	"maintainScrollPosition": true,
+    "showCategoryItemCount": true,
+    "hideLoadMessage": true,
+    "hideTakeAllConfirm": true,
+    "defaultVendorItemPrice": -1,
+    "hideHeader": true,
+    "hideVignette": true,
+    "swapToPlayerInventoryHotkey": 192, // `
+    "swapToContainerInventoryHotkey": 192, // `
+    "notifyLegendaryModLearnedOnScrap": true,
+    "defaultSelectedTab": "", // Breaks area looting/random issues in transfer boxes.
+	"hideUnknownGamepadButtonIcons": true,
+// Extract Config
+"extractConfig": {
+"name": "Extract Items",
+"enabled": false,
+"showButton": true,
+"hotkey": 70,
+"types": [],
+"itemCardEntryDelayStep": 100,
+"additionalItemDataForAll": false,
+"useCustomFormat": true,
+"customFormat":
+{
+"format": "csv",
+"delimiter": ";",
+"delimiterLine": "\n",
+"valueNotFound": "_",
+"displayColumnNames": true,
+"columns": [
+"text", "count", "itemType", "itemLevel", "numLegendaryStars", "legendary_1", "legendary_2", "legendary_3", "legendary_4", "isTradable", "weight", "weightInStash", "physical", "energy", "radiation", "poison", "fire", "cryo", "source", "char", "account"
+]
+},
+"verboseOutput": false,
+"apiMethods": []
+}
 }

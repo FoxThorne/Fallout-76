@@ -127,6 +127,7 @@
 "Ultracite Supply Crate Atom",
 "Ultracite Scrap",
 "Ultracite Ore",
+"Ultracite",
 // Stable Flux
 "Stable Cobalt Flux",
 "Stable Crimson Flux",
@@ -137,15 +138,13 @@
 "Sugar Bombs",
 "Glowing Mass",
 "High-Radiation Fluids",
+//Bait
 "Bait - Improved",
 "Bait - Superb",
-//Bait
 // Buff Items
-"Cranberry Relish",
-"Canned Cranberry Relish",
-"Brain Bombs",
 "Nuka-Cola Twist",
 "Canned Coffee",
+"Sunshine Oil",
 //Company Tea
 "Company Tea",
 "Cream",
@@ -153,9 +152,6 @@
 "Sweet Labrador Tea",
 "Honeycomb",
 "Rhododendron Flower",
-//Infused Soot Flower Tea
-"Infused Soot Flower Tea",
-"Soot Flower",
 //Hard Lemonade
 "Hard Lemonade",
 "Lemonade",
@@ -163,15 +159,9 @@
 "Glowing Resin",
 "Razorgrain",
 "Fermentable Vodka",
-"Fresh Vodka",
-"(Fresh) Vodka",
 "Vodka",
-"Sunshine Oil",
-//Cure Addictions
-"Tasty Radscorpion Egg Omelette",
-"Radscorpion Egg",
-"Tato",
 // Chems
+"Addictol",
 //Berry Mentats / Mentats
 "Berry Mentats",
 "Firecracker Berry",
@@ -180,14 +170,13 @@
 "Carrot Flower",
 "Firecap",
 //Cranberry Relish
+"Cranberry Relish",
 "Cranberries",
 "Gourd",
 "Sugar",
 //Brain Bombs
+"Brain Bombs",
 "Mothman Egg",
-//Flux
-"Stable Fog Crawler Meat",
-"Addictol",
 // Currency
 "Tickets",
 "Mega-Dispenser Test Token",
@@ -293,6 +282,7 @@
 "Fasnachtler Mask",
 "Fasnachtler Outfit",
 // Rare Outfits & Hats
+"Blood Eagle Leather Jacket And Jeans",
 "Leather Coat",
 "Traveling Leather Coat",
 "Tattered Field Jacket",
@@ -358,7 +348,7 @@
 "Muni Worker Outfit",
 // Hazmat Suits
 "Emmett Mountain Hazmat Suit No Helmet",
-"Emmett Mountain Hazmat Suit",
+//"Emmett Mountain Hazmat Suit",
 "Black Hazmat Suit",
 "Prototype Hazmat Suit",
 "Swamp Camo Hazmat Suit",
@@ -440,7 +430,7 @@
 "Civil War Era Suit",
 "Civil War Era Top Hat",
 "Clown Hat",
-"Clown Outfit",
+//"Clown Outfit",
 "Fireman Helmet",
 "Fireman Uniform",
 "Golf Outfit",
@@ -667,7 +657,6 @@
 "Monster Lamp",
 "Pristine",
 "Undamaged",
-"New",
 "Souvenir",
 "Pawn",
 "Bishop",

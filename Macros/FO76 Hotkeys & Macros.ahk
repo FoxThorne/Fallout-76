@@ -23,18 +23,18 @@ global GlobalInterrupt := 0
 
 ; *********************** Armor Naming Macros BEGIN ***********************
 SetKeyDelay, 50, 50
-^1::Send, {Text} ~Rustclaw Guard (Arm-L)
-^2::Send, {Text} ~Rustclaw Guard (Arm-R)
-^3::Send, {Text} ~Rustclaw Guard (Leg-L)
-^4::Send, {Text} ~Rustclaw Guard (Leg-R)
-^5::Send, {Text} ~Rustclaw Guard (Torso)
-^6::Send, {Text} ~Rustclaw Guard (Helmet)
-!1::Send, {Text} ~Excavator (Arm-L)
-!2::Send, {Text} ~Excavator (Arm-R)
-!3::Send, {Text} ~Excavator (Leg-L)
-!4::Send, {Text} ~Excavator (Leg-R)
-!5::Send, {Text} ~Excavator (Torso)
-!6::Send, {Text} ~Excavator (Helmet)
+^1::Send, {Text} Rustclaw Guard (Arm-L)
+^2::Send, {Text} Rustclaw Guard (Arm-R)
+^3::Send, {Text} Rustclaw Guard (Leg-L)
+^4::Send, {Text} Rustclaw Guard (Leg-R)
+^5::Send, {Text} Rustclaw Guard (Torso)
+^6::Send, {Text} Rustclaw Guard (Helmet)
+!1::Send, {Text} (Arm-L)
+!2::Send, {Text} (Arm-R)
+!3::Send, {Text} (Leg-L)
+!4::Send, {Text} (Leg-R)
+!5::Send, {Text} (Torso)
+!6::Send, {Text} (Helmet)
 ; *********************** Armor Naming Macros END ***********************
 
 ; *********************** LOOT ALL THE THINGS!!! Begin ***********************
@@ -220,8 +220,12 @@ return
                 SpamR := 0
                 change := 1
             }
-            if (change)
+            if (change) {
+                ; Force key release to prevent stuck keys
+                SendInput {e Up}
+                SendInput {r Up}
                 SoundPlay, notification_off.wav
+            }
         }
     }
 return

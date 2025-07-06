@@ -2,6 +2,10 @@
 <UniMap>
  <QuickFT>
   <HotKey>
+   <FT Slot="1">
+    <Key>0</Key>
+    <ID>0</ID>
+   </FT>
   </HotKey>
 
   <HotKeyPlayer>

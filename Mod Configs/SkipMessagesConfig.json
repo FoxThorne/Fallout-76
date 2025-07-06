@@ -22,6 +22,7 @@
 		"This item is being used at an inactive C.A.M.P Taking this item out of your stash will remove it from all C.A.M.P.s. Are you sure?": 1,
 		"Repair ?": 1,
 		"Exit Station?": 1,
+		"Choose a travel point for The Boardwalk": 0,
 		//Header Message
 		"$Loaded_Into_Nuke_Zone": 0,
 		"$ConfirmDestroyUnlockedCraftable": 0,
@@ -29,12 +30,23 @@
 		"$ConfirmDestroyNonCraftableMTX": 1,
 		"$SecureTrade_TransferDisplayItemInactiveCampConfirm": 1,
 		"$ConfirmFavoritedItemHeader": 1,
-		".....":0
+		".....":0,
+		"Choose a travel point for Foundation": 0,
+		"Choose a travel point for The Crater": 0,
+		"Choose a travel point for The Whitespring North Entrance": 1,
+		"Choose a travel point for The Whitespring Resort": 1,
+		"Choose a travel point for  The Whitespring Resort": 1, // If using IconSortingTags
+		"Choose a travel point for Fort Atlas": 0,
+		"Choose a travel point for The Rusty Pick": 1,
+		"Choose a travel point for Milepost Zero": 1,
+		"Choose a travel point for Radiant Hills": 1
+		
 	},
 	"SkipCustomRegex":
 	{
 		// Few examples:
-		"Pay [0-9]{1,2} Caps to travel": 0
+		"Pay [0-9]{1,2} Caps to travel": 0,
 		// "Choose a travel point for": 1
-	}
-}
+		"Spend [0-9]{1,2} Caps to Claim this Workshop\\? Other players may initiate PvP with you by attempting to Claim it from you!": 0
+
+}}

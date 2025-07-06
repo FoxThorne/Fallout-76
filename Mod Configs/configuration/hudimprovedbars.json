@@ -94,7 +94,7 @@
               {
                 "enabled": true,
                 "pattern": "/Stimpak: Super/",
-                "label": "Stimpak: Super",
+                "label": "StimSuper",
                 "valuecolor": "#66ACB7",
                 "labelcolor": "#FFFFCA"
               },
@@ -115,16 +115,16 @@
                 "labelcolor": "#FFFFCA"
               },
               {
-                "enabled": false,
-                "pattern": "",
-                "label": "Everything",
+                "enabled": true,
+                "pattern": "/Dirty Water/",
+                "label": "Dirty Water",
                 "valuecolor": "#66ACB7",
                 "labelcolor": "#FFFFCA"
               },
               {
-                "enabled": false,
-                "pattern": "",
-                "label": "Everything",
+                "enabled": true,
+                "pattern": "/Primal Meat/",
+                "label": "Primal Meat",
                 "valuecolor": "#66ACB7",
                 "labelcolor": "#FFFFCA"
               }

@@ -1,0 +1,80 @@
+[
+// FOX_BUFFS_CONSUME Is The Curated List Of Consumables To Transfer Out Of Storage, And Consume For Use In XP grinding and general performance improvement.
+// Use FOX_KEEP To Protect The Items, And This To Perform Transfers, Or Consume Automations.
+
+// Food/Soup/Drink
+// XP Buffs
+[
+"Cranberry Relish", // +10% XP for 60m
+"Cranberry Cobbler",// +5% XP for 30m
+"Cranberry Juice", // +2% XP for 30m
+"Nuka-Cola Cranberry" // +2% XP for 30m
+],
+// INT Buffs
+[
+"Brain Bombs", // +3 INT for 30m
+"Brain Fungus Soup", // +2 INT for 30m
+"Steeped Aster Tea", // +2 INT for 60m
+"Steeped Tato Flower Tea", // +2 INT for 60m
+"Simple Aster Tea"// +1 INT for 30m]
+],
+// Chems
+[
+"Berry Mentats", // +5 INT +highlights living targets for 5m
+"Daddy-O", // +3 INT, +3 PER, -2 CHR for 10m
+"Mentats", // +2 INT, +2 PER for 5m
+"Bufftats", // STR +3, PER +3, END +3, Max HP +40 (5m) 
+"X-Cell", // +2 STR, +2 PER, +2 END, +2 CHA, +2 INT, +2 AGI, +2 LCK for 2m
+"Buffout", // STR +2, END +2, +25 Max HP (5m) 
+"Psychobuff", // Damage +25%, STR +3, END +3, Max HP +65 (3m) 
+"Psychotats" // Damage +25%, Damage Resistance +15, PER +3 (3m) 
+],
+// Serums
+"Adrenal Reaction", // Supresses -50 HP
+"Egg Head Serum", // Supresses -3 STR, -3 END
+"Healing Factor", // Supresses -55% Chem Effects
+"Marsupial Serum", // Supresses -4 INT
+// Bobbleheads
+[
+"Bobblehead: Leader", // +5% XP for 60m
+"Glowing Bobblehead: Leader", // +5% XP for 60m
+"Bobblehead: Intelligence", // +2 INT for 60m
+"Glowing Bobblehead: Intelligence", // +2 INT for 60m
+"Bobblehead: Strength", // +2 STR for 60m
+"Glowing Bobblehead: Strength", // +2 STR for 60m
+"Bobblehead: Agility", // +2 AGI for 60m
+"Glowing Bobblehead: Agility", // +2 AGI for 60m
+"Bobblehead: Endurance", // +2 END for 60m
+"Glowing Bobblehead: Endurance", // +2 END for 60m
+"Bobblehead: Big Guns", // +Heavy Gun damage
+"Glowing Bobblehead: Big Guns", // +Heavy Gun damage
+"Bobblehead: Energy Weapons", // +Energy Weapons damage
+"Glowing Bobblehead: Energy Weapons", // +Energy Weapons damage
+"Bobblehead: Explosive", // +Explosive damage
+"Glowing Bobblehead: Explosive", // +Explosive damage
+"Bobblehead: Caps", // +Cap Discovery
+"Glowing Bobblehead: Caps" // +Cap Discovery
+],
+//Magazines
+[
+"Live & Love 8", // +5% XP for 60m (while on a team)
+"Live & Love 4", // +10% AP regen for 60m (while on a team)
+"Guns And Bullets 4", // +6% AP regeneration 
+"Astoundingly Awesome Tales 6", // +0.20% Health Regeneration
+"Astoundingly Awesome Tales 7", // +5 maximum AP
+"Astoundingly Awesome Tales 8", // 25% less damage from robots
+"Astoundingly Awesome Tales 1", // +15% damage against mirelurks
+"Astoundingly Awesome Tales 2", // +15% damage against super mutants
+"Astoundingly Awesome Tales 11", // +15 damage to ghouls 
+"Backwoodsman 5", // +15% damage to animals 
+"Grognak The Barbarian 5", // +15% damage to Scorched creatures 
+"Guns And Bullets 1" // +15% damage against robots
+],
+//AP Regen
+"Hard Lemonade",
+[
+"Company Tea"
+],
+//Misc. Buffs
+"Nuka-Cola Twist"
+]

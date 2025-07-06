@@ -208,69 +208,65 @@
 "Unstable Isotope Serum",
 // Nuka-Cola
 "Nuka-Cola",
-"Nuka-Cola Quantum",
 "Nuka-Cola Cranberry",
 "Nuka-Cola Orange",
 "Nuka-Cola Twist",
-"Nuka-Cola Wild",
-"Nuka-Grape",
-"Nuka-Cherry",
-"Nuka-Cola Vaccinated",
-"Nuka-Cola Scorched",
-"Nuka-Cola My Blood'S In It",
 // Misc.
 "Lunchbox",
 "Perfect Bubblegum",
 "Canned Coffee",
 "Popcorn",
-"Stein",
-"Flair",
-"Flowery Deathclaw Easter Egg",
-"Ogua Egg",
-// Cooking/Crafting - Ingredients & Materials
-// Company Tea & Ingredients
+// // Cooking Ingredients & Materials \\ \\
+// Company Tea Ingredients (+10% AP Regen for 60m)
+"Company Tea",
 "Cream",
-"Whiskey",
 "Sweet Labrador Tea",
+"Whiskey",
+// Sweet Labrador Tea Ingredients
+"Boiled Water",
 "Honeycomb",
 "Rhododendron Flower",
-// Infused Soot Flower Tea & Ingredients
-"Infused Soot Flower Tea",
-"Soot Flower",
-// Hard Lemonade & Ingredients
+"Starlight Berries",
+// Hard Lemonade Ingredients (+10% AP Regen for 10m)
+"Hard Lemonade",
 "Lemonade",
+"Vodka",
+// Lemonade Ingredients
 "Acid",
+"Sugar",
+// Fermentable Vodka
+"Fermentable Vodka",
 "Glowing Resin",
 "Razorgrain",
-"Fermentable Vodka",
-"Fresh Vodka",
-"(Fresh) Vodka",
-"Vodka",
+// Sunshine Oil Ingredients (+400 AP)
 "Sunshine Oil",
-// Cure Addictions & Ingredients
-"Radscorpion Egg",
-"Tato",
+"Blight",
+"Glowing Blood",
+"Sugar Bombs",
+// Sweet Blackberry Tea Ingredients (+200 AP)
+"Sweet Blackberry Tea",
+"Wild Blackberry",
 // Cranberry Relish (+5% XP)
-"Canned Cranberry Relish",
-"Boiled Water",
+"Cranberry Relish",
 "Cranberries",
 "Gourd",
-"Sugar",
 // Brain Bombs (+INT)
-"Mothman Egg",
-"Sugar Bombs",
-// Berry Mentats / Mentats
-"Firecracker Berry",
-"Starlight Berries",
+"Brain Bombs",
 "Brain Fungus",
+"Mothman Egg",
+"Purified Water",
+// Berry Mentats
+"Berry Mentats",
+// Mentats
 "Carrot Flower",
 "Firecap",
+// Spices
 "Spices",
 "Salt",
 "Pepper",
+//Sugar Ingredients
 "Snaptail Reed",
-"Perfectly Preserved Pie",
-// Flux
+// Flux Ingredients
 "Stable Cobalt Flux",
 "Stable Crimson Flux",
 "Stable Fluorescent Flux",
@@ -279,41 +275,34 @@
 "Hardened Mass",
 "Glowing Mass",
 "High-Radiation Fluids",
-// Ore & Scrap
-"Aluminum Ore",
-"Black Titanium Ore",
-"Copper Ore",
-"Gold Ore",
-"Iron Ore",
-"Irradiated Ore",
-"Lead Ore",
-"Silver Ore",
-"Ultracite Ore",
-"Uranium Ore",
-"Unrefined Coal",
-"Raw Crystal",
 // Chems
+"Addictol",
 "Daddy-O",
+"Bufftats",
+"X-Cell",
+"Buffout",
+"Psychobuff",
+"Psychotats",
 "Disease Cure",
 "\"The Fix\"",
 "Nuclear Don'S Custom Chem Blend",
 "Overdrive",
 "Psycho",
-"Psychobuff",
-"Psychotats",
 "Stimpak: Super",
-"X-Cell",
-// Aid
-"Blood Pack",
-"Glowing Blood",
-"Glowing Blood Pack",
+// Misc. 
 "Prototype Stealth Boy",
 "Stealth Boy Mark Iii",
 "Stealth Boy",
 "Phantom Device",
+// Aid
+"Blood Pack",
+"Glowing Blood Pack",
 "US Government Supply Requisition",
 // Special & Collectable
-"Beer Stein",
+"Stein",
+"Flair",
+"Flowery Deathclaw Easter Egg",
+"Ogua Egg",
 "Teapot",
 "Alarm Clock",
 "Monster Lamp",

@@ -17,7 +17,7 @@
 			"equipped": true,
 			"named": true,
 			"matchMode": "CONTAINS",
-			"itemNames":// Paste from FOX_KEEP
+			"itemNames": // Paste from FOX_KEEP
 [
 // This is a custom, curated list including all the items we wish to keep safe when scrapping, dropping, transferring or otherwise playing the inventory managment sim that is Fallout 76.
 // Items on this list are intended to be protected from sale, scrap, trade, transfer or destroy.
@@ -25,142 +25,74 @@
 // Everything else is useful items for quests, buffs, crafting, selling, or collecting.
 // Feel free to add whatever else you wish, customize it to your hearts desire.
 //
+// // Weapons \\ \\
 // Recommend renaming weapons to something more unique, so that you can easily identify them in your inventory.
-// Weapons \\
-"~Radfang Revolver",
-"~Ashclaw Longshot",
-"~Emberglow Spitter",
-"~Luminfang Volley",
-"~Flareclaw Barrage",
-"~Camera",
-"~Voltfang",
-"~Ironfang Saber",
-"~Brimstone Maul",
-"~Thirst Zapper",
-// Ammo \\
-".50 Caliber Ball",
-"5Mm Round",
-"Fusion Cell",
+"Radfang Revolver", // Gatling Gun
+"Valkyrie", // Valkyrie
+"Glowspike Emitter", // Gatling Plasma
+"Emberglow Spitter", // Plasma Caster
+"Thirst Zapper", // Thirst Zapper
+"Nuka-Snapper", // ProSnap Camera
+"Voltfang", // Tesla Rifle
+"Ashclaw Longshot", // The Dragon
+"Holy Fire", // Flamer
+"Ironfang Saber", // Ultracite Terror Sword
+// // Ammo \\ \\
+"5mm Round",
+"Ultracite 5mm Round",
 "Plasma Core",
-"Fusion Core",
+"Plasma Cartridge",
 "Camera Film",
-// Throwables \\
+"Fusion Cell",
+".50 Caliber Ball",
+"Fuel",
+"Fusion Core",
+// // Throwables \\ \\
 "Nuka Grenade",
+"Nuka Quantum Grenade",
 "Molotov Cocktail",
-"Meat Cleaver", // (Meat Week Event)",
+// "Meat Cleaver", // (Meat Week Event)",
 "Firecracker Berry Grenade", // (Meat Week Event)
 "Snowball", // (Holiday Scorched Event)
 // "Pumpkin Grenade", // (Spooky Scorched Event)
 "Confetti Grenade", // (Used In Some Seasonal Events)
 "Mystery Candy Grenade", // (Halloween Events)
-// Wearables \\
-// Power Armor \\
-// Recommend Renaming Power Armor To Something More Unique, So That You Can Easily Identify Them In Your Inventory.
-"~Excavator Armor", // Chassis
-"~Excavator (Helmet)",
-"~Excavator (Torso)",
-"~Excavator (L-Arm)",
-"~Excavator (R-Arm)",
-"~Excavator (L-Leg)",
-"~Excavator (R-Leg)",
-// This Of Course Is Each Individual Piece Renamed.
-// This Is Needed So That We Can Scrap Randomly Looted Pieces Without Losing The Whole Set.
-"~Hellcat Armor", // Chassis
-"~Hellcat (Helmet)",
-"~Hellcat (Torso)",
-"~Hellcat (L-Arm)",
-"~Hellcat (R-Arm)",
-"~Hellcat (L-Leg)",
-"~Hellcat (R-Leg)",
-"~Raider Armor", // Chassis
-"~Raider (Helmet)",
-"~Raider (Torso)",
-"~Raider (L-Arm)",
-"~Raider (R-Arm)",
-"~Raider (L-Leg)",
-"~Raider (R-Leg)",
-"~Strangler Armor", // Chassis
-"~Strangler (Helmet)",
-"~Strangler (Torso)",
-"~Strangler (L-Arm)",
-"~Strangler (R-Arm)",
-"~Strangler (L-Leg)",
-"~Strangler (R-Leg)",
-"~T-45 Armor", // Chassis
-"~T-45 (Helmet)",
-"~T-45 (Torso)",
-"~T-45 (L-Arm)",
-"~T-45 (R-Arm)",
-"~T-45 (L-Leg)",
-"~T-45 (R-Leg)",
-"~T-51B Armor", // Chassis
-"~T-51B (Helmet)",
-"~T-51B (Torso)",
-"~T-51B (L-Arm)",
-"~T-51B (R-Arm)",
-"~T-51B (L-Leg)",
-"~T-51B (R-Leg)",
-"~T-60 Armor", // Chassis
-"~T-60 (Helmet)",
-"~T-60 (Torso)",
-"~T-60 (L-Arm)",
-"~T-60 (R-Arm)",
-"~T-60 (L-Leg)",
-"~T-60 (R-Leg)",
-"~T-65 Armor", // Chassis
-"~T-65 (Helmet)",
-"~T-65 (Torso)",
-"~T-65 (L-Arm)",
-"~T-65 (R-Arm)",
-"~T-65 (L-Leg)",
-"~T-65 (R-Leg)",
-"~Ultracite Armor", // Chassis
-"~Ultracite (Helmet)",
-"~Ultracite (Torso)",
-"~Ultracite (L-Arm)",
-"~Ultracite (R-Arm)",
-"~Ultracite (L-Leg)",
-"~Ultracite (R-Leg)",
-"~Union Armor", // Chassis
-"~Union (Helmet)",
-"~Union (Torso)",
-"~Union (L-Arm)",
-"~Union (R-Arm)",
-"~Union (L-Leg)",
-"~Union (R-Leg)",
-"~Vulcan Armor", // Chassis
-"~Vulcan (Helmet)",
-"~Vulcan (Torso)",
-"~Vulcan (L-Arm)",
-"~Vulcan (R-Arm)",
-"~Vulcan (L-Leg)",
-"~Vulcan (R-Leg)",
-"~X-01 Armor", // Chassis
-"~X-01 (Helmet)",
-"~X-01 (Torso)",
-"~X-01 (L-Arm)",
-"~X-01 (R-Arm)",
-"~X-01 (L-Leg)",
-"~X-01 (R-Leg)",
-// Armor \\ 
-// Recommend Renaming Armor To Something More Unique, So That You Can Easily Identify Them In Your Inventory
-// This Is What I Used For Every Armor Piece
-"~Rustclaw Guard (Helmet)",
-"~Rustclaw Guard (Torso)",
-"~Rustclaw Guard (L-Arm)",
-"~Rustclaw Guard (R-Arm)",
-"~Rustclaw Guard (L-Leg)",
-"~Rustclaw Guard (R-Leg)",
-// Apparel \\
-// Recommend Renaming Apparel To Something More Unique, So That You Can Easily Identify Them In Your Inventory
-// This Is What I Used For Every Apparel Piece
-"~Scorchtail Sack", // Backpack
-"~Slyfox Threads", // Underarmor
-"~Foxglint Garb", // Apparel
-"~Bloodtail Brim", // Hat
-"~Wedding Ring", // Accessory
-"~Old Ring", // Accessory
-// Fishing
+// // Power Armor \\ \\
+// Recommend renaming Power Armor to something more unique, so that you can easily identify them in your inventory.
+// Chassis
+"", // This is from IconSortingTags addon, it's the icon for Power Armor Chassis; should protect them all.
+"Excavator Armor",
+"Raider Armor",
+"T-45 Armor",
+"T-60 Armor",
+"X-01 Armor",
+"Ultracite Armor",
+"Strangler Heart Armor",
+"T-51b Armor",
+"T-65 Armor",
+"Hellcat Armor",
+"Vulcan Armor",
+"Union Armor",
+// Individual pieces
+"(Arm-L)",
+"(Arm-R)",
+"(Leg-L)",
+"(Leg-R)",
+"(Torso)",
+"(Helmet)",
+// // Regular Armor \\ \\
+// Recommend renaming Armor to something more unique, so that you can easily identify them in your inventory.
+"Rustclaw Guard",
+// // Under Armor & Apparel \\ \\
+// Recommend renaming Apparel to something more unique, so that you can easily identify them in your inventory.
+"Slyfox Threads", // Underarmor
+"Foxglint Garb", // Apparel
+"Bloodtail Brim", // Hat
+"Glasses", // Accessory
+"Wedding Ring", // Accessory
+"Old Ring", // Accessory
+"Scorchtail Sack", // Backpack
+// // Fishing \\ \\
 // Rods
 "Broken Fishing Rod",
 "Charmcaster Rod Replica",
@@ -231,6 +163,7 @@
 "Bait - Common",
 "Bait - Improved",
 "Bait - Superb",
+// // Consumables \\ \\
 // Bobbleheads
 "Bobblehead: Agility",
 "Bobblehead: Big Guns",
@@ -412,7 +345,8 @@
 "Talons Serum",
 "Twisted Muscles Serum",
 "Unstable Isotope Serum",
-// Holiday
+// Loot Boxes
+// Holidays
 "Small Holiday Gift",
 "Holiday Gift",
 "Large Holiday Gift",
@@ -422,7 +356,7 @@
 "Spooky Treat Bag",
 "Halloween Candy",
 "Mystery Candy",
-//Treasure Hunters
+// Treasure Hunters
 "Dusty Mole Miner Pail",
 "Crafted Dusty Mole Miner Pail",
 "Mole Miner Pail",
@@ -453,64 +387,60 @@
 "Lunchbox",
 "Perfect Bubblegum",
 "Canned Coffee",
-"Popcorn",
-// Cooking/Crafting - Ingredients & Materials
-// Company Tea & Ingredients
+//"Popcorn",
+// // Cooking Ingredients & Materials \\ \\
+// Company Tea Ingredients (+10% AP Regen for 60m)
 "Company Tea",
 "Cream",
-"Whiskey",
 "Sweet Labrador Tea",
+"Whiskey",
+// Sweet Labrador Tea Ingredients
+//"Boiled Water",
 "Honeycomb",
 "Rhododendron Flower",
-// Infused Soot Flower Tea & Ingredients
-"Infused Soot Flower Tea",
-"Soot Flower",
-// Hard Lemonade & Ingredients
+"Starlight Berries",
+// Hard Lemonade Ingredients (+10% AP Regen for 10m)
 "Hard Lemonade",
 "Lemonade",
+"Vodka",
+// Lemonade Ingredients
+"Acid",
+"Sugar",
+// Fermentable Vodka
+"Fermentable Vodka",
 "Glowing Resin",
 "Razorgrain",
-"Fermentable Vodka",
-"Fresh Vodka",
-"(Fresh) Vodka",
-"Vodka",
+// Sunshine Oil Ingredients (+400 AP)
 "Sunshine Oil",
-// Cure Addictions & Ingredients
-"Tasty Radscorpion Egg Omelette",
-"Radscorpion Egg",
-"Tato",
+"Blight",
+"Glowing Blood",
+"Sugar Bombs",
+// Sweet Blackberry Tea Ingredients (+200 AP)
+"Sweet Blackberry Tea",
+"Wild Blackberry",
 // Cranberry Relish (+5% XP)
-"Canned Cranberry Relish",
 "Cranberry Relish",
-"Boiled Water",
-"Cranberries",
 "Gourd",
-"Sugar",
 // Brain Bombs (+INT)
 "Brain Bombs",
-"Mothman Egg",
-"Sugar Bombs",
-// Berry Mentats / Mentats
-"Berry Mentats",
-"Mentats",
-"Firecracker Berry",
-"Starlight Berries",
 "Brain Fungus",
+"Mothman Egg",
+"Purified Water",
+// Berry Mentats
+"Berry Mentats",
+// Mentats
 "Carrot Flower",
 "Firecap",
-// Ghoul Glow
-"Toxic Water",
-"Toxic Goo",
+// Spices
 "Spices",
 "Salt",
 "Pepper",
+//Sugar Ingredients
 "Snaptail Reed",
-"Perfectly Preserved Pie",
-// Flux
+// Flux Ingredients
 "Raw Cobalt Flux",
 "Raw Crimson Flux",
 "Raw Fluorescent Flux",
-"Raw Fog Crawler Meat",
 "Raw Violet Flux",
 "Raw Yellowcake Flux",
 "Stable Cobalt Flux",
@@ -521,32 +451,21 @@
 "Hardened Mass",
 "Glowing Mass",
 "High-Radiation Fluids",
-// Ore & Scrap
-"Aluminum Ore",
-"Black Titanium Ore",
-"Copper Ore",
-"Gold Ore",
-"Iron Ore",
-"Irradiated Ore",
-"Lead Ore",
-"Silver Ore",
-"Ultracite Ore",
-"Uranium Ore",
-"Unrefined Coal",
-"Raw Crystal",
 // Chems
+"Addictol",
 "Daddy-O",
+"Bufftats",
+"X-Cell",
+"Buffout",
+"Psychobuff",
+"Psychotats",
 "Disease Cure",
 "\"The Fix\"",
 "Nuclear Don'S Custom Chem Blend",
 "Overdrive",
 "Psycho",
-"Psychobuff",
-"Psychotats",
 "Stimpak: Super",
-"X-Cell",
-// Aid
-"Glowing Blood",
+// Misc. 
 "Glowing Blood Pack",
 "Prototype Stealth Boy",
 "Stealth Boy Mark Iii",
@@ -562,6 +481,22 @@
 "US Government Supply Requisition",
 "Nuclear Keycard",
 "Recall Keycard Circuit Board",
+// Ore & Scrap
+"Aluminum Ore",
+"Black Titanium Ore",
+"Copper Ore",
+"Gold Ore",
+"Iron Ore",
+"Irradiated Ore",
+"Lead Ore",
+"Silver Ore",
+"Ultracite Ore",
+"Uranium Ore",
+"Unrefined Coal",
+"Raw Crystal",
+// Ghoul Glow
+"Toxic Water",
+"Toxic Goo",
 // Currency
 "Pleasant Valley Claim Ticket",
 "Tickets",
@@ -1043,8 +978,8 @@
 "Black Hazmat Suit",
 "Prototype Hazmat Suit",
 "Swamp Camo Hazmat Suit",
-"Hazmat Suit - Pink",
-"Hazmat Suit - Teal",
+//"Hazmat Suit - Pink",
+//"Hazmat Suit - Teal",
 // Asylum Worker Uniforms
 "Asylum Worker Uniform Blue",
 "Asylum Worker Uniform Brown",
@@ -1120,8 +1055,8 @@
 "Civil War Era Dress",
 "Civil War Era Suit",
 "Civil War Era Top Hat",
-"Clown Hat",
-"Clown Outfit",
+//"Clown Hat",
+//"Clown Outfit",
 "Fireman Helmet",
 "Fireman Uniform",
 "Golf Outfit",
@@ -1326,14 +1261,6 @@
 "Autopsy Board Game",
 "Blast Radius Board Game",
 "Rad Poker Board Game",
-// Misc. Items
-"All-Star Basketball",
-"Bird Decoration",
-"Broken Garden Gnome",
-"Blue Garden Gnome",
-"Red Garden Gnome",
-"New Toy",
-"Clown",
 // Snow Globes
 "Axel'S Snow Globe",
 "Big Meadows Gas Well Snow Globe",
@@ -1352,13 +1279,9 @@
 "Theodore'S Snow Globe",
 "Tunnel Of Love Snow Globe",
 "Windy'S Snow Globe",
-// Cursed Items
-"Elder'S Mark",
-"Holy Fire",
 // Unique Items
 "Pearly Peepers",
 "Garb Of Mysteries",
-"Alien Blaster Round",
 ".308 Casing",
 "Mr. Gutsy Model",
 "Eyebot Model",
@@ -1367,7 +1290,10 @@
 "Protectron Model",
 "Boat Model",
 "Robot Parts Model",
-"Beer Stein",
+"Stein",
+"Flair",
+"Flowery Deathclaw Easter Egg",
+"Ogua Egg",
 "House Teapot",
 "Huffwarbler Teapot",
 "Vault-Tec Alarm Clock",
@@ -1433,7 +1359,15 @@
 "Ogua Card",
 "Foil Ogua Card",
 "Sheepsquatch Card",
-"Foil Sheepsquatch Card"
+"Foil Sheepsquatch Card",
+// Misc. Items
+"All-Star Basketball",
+"Bird Decoration",
+"Broken Garden Gnome",
+"Blue Garden Gnome",
+"Red Garden Gnome",
+"New Toy",
+"Perfectly Preserved Pie"
 ]
 		},
         // Equip Protection
@@ -1455,14 +1389,15 @@
 		"types": ["WEAPON", "ARMOR", "APPAREL"],
 		"onlyIfEquipped": false,
 		"onlyIfFavorite": false,
-		"conditionUnder": 25
+		"conditionUnder": 100
 	},
     // Drop Section
 	"drop":
 	{
 		"enabled": true,
 		"delay": 100,
-		"configs": [
+		"configs":
+		[
         // Useless Items (Drop_ALL)
 			{
 				"enabled": true,
@@ -1766,6 +1701,16 @@
 "Tato Soup",
 "Vegetable Medley Soup",
 // Drinks
+"Nuka-Grape",
+"Nuka-Cherry",
+"Nuka-Cola Wild",
+"Nuka-Cola Orange",
+"Nuka-Cola My Blood's In It",
+"Nuka-Cola Scorched",
+"Nuka-Cola Vaccinated",
+"Nuka-Cola Dark",
+"Nukashine",
+"Sugar-Free Nukashine",
 "Ballistic Bock",
 "Beer",
 "Blackberry Juice",
@@ -1791,11 +1736,9 @@
 "Melon Juice",
 "Mutfruit Juice",
 "New River Red Ale",
-"Nukashine",
 "Oak Holler Lager",
 "Old Possum",
 "Pickaxe Pilsner",
-"Purified Water",
 "Rad Ant Lager",
 "Simple Ash Rose Tea",
 "Simple Aster Tea",
@@ -3582,614 +3525,23 @@
 				"matchMode": "CONTAINS",
 				"itemNames": // Paste from FOX_DROP_SELL_QUANTITY
 [
-// This is an INCLUSIONARY list, intended to be used for transfers INTO the Stash Box/Scrap Box/Ammo Storage Box.
-// Intended to be used  for X quantity, e.g. if you setup a transfer to onlyhave 1 of each item in the stash, you can use this list. 
-// It's to check against this file and deposit ONLY these items into storage.
-// Used to perform transfers ONLY.
-//
-// Fishing
-// Rods
-"Broken Fishing Rod",
-"Charmcaster Rod Replica",
-"Fishkebab Rod Replica",
-"Janky Rod Replica",
-"Makeshift Rod Replica",
-"Ruby Reel Rod Replica",
-// Axolotls
-"Banded Axolotl",
-"Charcoal Axolotl",
-"Clay Axolotl",
-"Dotted Axolotl",
-"Peach Axolotl",
-"Pink Axolotl",
-"Scaled Axolotl",
-"Shadow Axolotl",
-"Speckled Axolotl",
-"Stone Axolotl",
-"Striped Axolotl",
-// Fish
-// Commons
-"Brook Silverside",
-"Redbelly",
-"Sunscream",
-"Chain Pickerel",
-"Ridge Trout",
-"Smoky Salmon",
-"Walleye",
-"Yellow Bullhead",
-// Regionals
-"Alpine Sawgill",
-"Bog Sawgill",
-"Muddy Sawgill",
-"Noxious Sawgill",
-"Sooty Sawgill",
-"Static Sawgill",
-"Timber Sawgill",
-"Armored Spinefish",
-"Ashen Ambusher",
-"Blisterfish",
-"Bloodwhisker",
-"Bluefin Zapper",
-"Bog Lurker",
-"Deathjaw",
-"Gulpy",
-"Kanawha Piranha",
-"Leatherback",
-"Potbelly Kelt",
-"Purple Radpole",
-"Spikesnapper",
-"Stormswimmer",
-// Glowing
-"Glowing Ambusher",
-"Glowing Bog Lurker",
-"Glowing Gulpy",
-"Glowing Kanawha Piranha",
-"Glowing Potbelly Kelt",
-"Glowing Spinefish",
-"Glowing Stormswimmer",
-// Trophy Fish / Local Legends
-"Organ Grinder",
-"Ryl-Tkannoth, Maw-Begotten",
-"Wavy Willard",
-// Special & Collectable
-// Fasnacht Masks
-"Faschnacht Moon Mask",
-"Fasnacht Alien Mask",
-"Fasnacht Beret",
-"Fasnacht Bigfoot Mask",
-"Fasnacht Blissful Buffoon Mask",
-"Fasnacht Blue Crazy Guy Mask",
-"Fasnacht Blue Demon Mask",
-"Fasnacht Blue Devil Mask",
-"Fasnacht Blue Jester Mask",
-"Fasnacht Blue Man Mask",
-"Fasnacht Blue Owl Mask",
-"Fasnacht Brahmin Mask",
-"Fasnacht Bucking Brahmin Mask",
-"Fasnacht Buffoon Mask",
-"Fasnacht Crazy Guy Mask",
-"Fasnacht Deathclaw Mask",
-"Fasnacht Demon Mask",
-"Fasnacht Fiend Mask",
-"Fasnacht Frog Mask",
-"Fasnacht Ghoul Boy Mask",
-"Fasnacht Ghoul Girl Mask",
-"Fasnacht Giant Mask",
-"Fasnacht Glowing Abe Mask",
-"Fasnacht Glowing Alien Mask",
-"Fasnacht Glowing Bigfoot Mask",
-"Fasnacht Glowing Blue Devil Mask",
-"Fasnacht Glowing Ghoul Boy Mask",
-"Fasnacht Glowing Ghoul Girl Mask",
-"Fasnacht Glowing Honey Bee Mask",
-"Fasnacht Glowing Jackalope Mask",
-"Fasnacht Glowing Minotaur Mask",
-"Fasnacht Glowing Ogua Mask",
-"Fasnacht Glowing Pig Mask",
-"Fasnacht Glowing Robot Head Mask",
-"Fasnacht Glowing Robot Mask",
-"Fasnacht Glowing Scorchbeast Mask",
-"Fasnacht Glowing Scorchbeast Queen Mask",
-"Fasnacht Glowing Turkey Mask",
-"Fasnacht Glowing Unicorn Mask",
-"Fasnacht Glowing Veggie Man Mask",
-"Fasnacht Goblin Mask",
-"Fasnacht Green Crazy Guy Mask",
-"Fasnacht Green Skull Mask",
-"Fasnacht Green Toothy Man Mask",
-"Fasnacht Hag Mask",
-"Fasnacht Honey Bee Mask",
-"Fasnacht Jack Mask",
-"Fasnacht Jackalope Mask",
-"Fasnacht Jester Mask",
-"Fasnacht King Mask",
-"Fasnacht Loon Mask",
-"Fasnacht Man Mask",
-"Fasnacht Minotaur Mask",
-"Fasnacht Moonshine Mama Mask",
-"Fasnacht Ogua Mask",
-"Fasnacht Old Man Summer Mask",
-"Fasnacht Owl Mask",
-"Fasnacht Pig Mask",
-"Fasnacht Queen Mask",
-"Fasnacht Rail Splitter Mask",
-"Fasnacht Raven Mask",
-"Fasnacht Red Deathclaw Mask",
-"Fasnacht Red Giant Mask",
-"Fasnacht Red Goblin Mask",
-"Fasnacht Red Raven Mask",
-"Fasnacht Robot Head Mask",
-"Fasnacht Robot Mask",
-"Fasnacht Scorchbeast Mask",
-"Fasnacht Scorchbeast Queen Mask",
-"Fasnacht Skull Mask",
-"Fasnacht Soldier Mask",
-"Fasnacht Sun Mask",
-"Fasnacht Toothy Man Mask",
-"Fasnacht Turkey Mask",
-"Fasnacht Tyrolean Hat",
-"Fasnacht Unicorn Mask",
-"Fasnacht Veggie Man Mask",
-"Fasnacht Winter Man Mask",
-"Fasnacht Winter Helmet",
-"Fasnacht Witch Mask",
-"Fasnacht Yellow Soldier Mask",
-"Fasnacht Yellow Witch Mask",
-"Fasnachtler Mask",
-"Fasnachtler Outfit",
-// Rare Outfits & Hats
-"Leather Coat",
-"Traveling Leather Coat",
-"Tattered Field Jacket",
-"Winter Jacket And Jeans",
-"Vtu Baseball Cap",
-"Strongman Outfit",
-"Trench Runner'S Coat",
-"Trench Runner'S Hood",
-"Blue Ridge Caravan Outfit",
-"Flight Helmet",
-"Brown Flight Helmet",
-"Red Flight Helmet",
-"Yellow Flight Helmet",
-"Garrahan Foreman Helmet",
-"Garrahan Foreman Outfit",
-"Green Hood",
-"Imposter Sheepsquatch Helmet",
-"Imposter Sheepsquatch Outfit",
-"Forest Scout Armor Mask",
-"Urban Scout Armor Mask",
-"Tin Foil Hat",
-"Sheriff'S Hat",
-"Confederate Hat",
-"Costume Witch Hat",
-"Witch Costume",
-"Halloween Skull Mask",
-"Skeleton Costume",
-"Brotherhood Special Ops Mask",
-"Brotherhood Special Ops Suit",
-"Cowboy Chaps",
-"Cowboy Duster",
-"Cowboy Hat",
-"Umbrella Hat",
-"Treasure Hunter Outfit",
-"Treasure Hunter Outfit Hat",
-"Insurgent Hat",
-"Insurgent Outfit",
-"Burnt Vault 63 Recon Helmet",
-"Burnt Vault 63 Recon Outfit",
-"Burnt Vault 63 Riot Control Helmet",
-"Burnt Vault 63 Riot Control Outfit",
-"Burnt Vault 63 Security Helmet",
-"Burnt Vault 63 Security Outfit",
-"Burnt Vault Chemist Coat",
-"Burnt Vault Lab Coat",
-"Shenandoah T-Shirt and Slacks",
-"Vault 63 Recon Outfit (Light)",
-"Vault 63 Recon Helmet (Light)",
-"Vault 63 Riot Control Outfit (Heavy)",
-"Vault 63 Riot Control Helmet (Heavy)",
-"Vault 63 Security Outfit (Medium)",
-"Vault 63 Security Helmet (Medium)",
-"Seasoned Survivor Outfit",
-"Sunburst Sequin Dress",
-"Snake Wrangler Hat",
-"Snake Wrangler Outfit",
-"Apocalyptic Farmer Headwear",
-"Apocalyptic Farmer Outfit",
-"Civil Engineer Underarmour",
-"Enforcer's Outfit",
-"Muni Drudger Outfit",
-"Muni Operator Outfit",
-"Muni Worker Outfit",
-// Hazmat Suits
-"Emmett Mountain Hazmat Suit No Helmet",
-"Emmett Mountain Hazmat Suit",
-"Black Hazmat Suit",
-"Prototype Hazmat Suit",
-"Swamp Camo Hazmat Suit",
-"Hazmat Suit - Pink",
-"Hazmat Suit - Teal",
-// Asylum Worker Uniforms
-"Asylum Worker Uniform Blue",
-"Asylum Worker Uniform Brown",
-"Asylum Worker Uniform Green",
-"Asylum Worker Uniform Pink",
-"Asylum Worker Uniform Yellow",
-"Asylum Worker Uniform Forest",
-"Asylum Worker Uniform Red",
-"Straight Jacket Clean",
-// Nuka World on Tour
-"Bottle And Cappy Jacket And Jeans",
-"Nuka-Cola Jacket And Jeans",
-"Nuka-World Jacket And Jeans",
-"Nuka-World On Tour Jumpsuit",
-"Nuka-World On Tour Shirt",
-"Western Outfit",
-"Western Outfit & Chaps",
-// Mothman Equinox
-"Bone Chill Skull Mask",
-"Crude Chill Skull Mask",
-"Hammered Skull Mask",
-"Cultist Adept Hood",
-"Cultist Adept Robe",
-"Cultist Enlightened Hood",
-"Cultist Enlightened Robe",
-"Cultist Eventide Hood",
-"Cultist Eventide Robe",
-"Cultist Neophyte Hood",
-"Cultist Neophyte Robe",
-"Cultist Elder Clothes",
-"Cultist Elder Helmet",
-"Cultist Elder Robe",
-"Cultist Incarnate Helmet",
-// Atomic Shop Items
-"Cultist Dungeon Helmet",
-"Cultist Dungeon Outfit",
-"Cultist Headpiece",
-"Cultist High Priest Hood",
-"Cultist High Priest Robe",
-"Cultist Hood",
-"Cultist Monarch Mask",
-"Cultist Monarch Outfit",
-"Cultist'S Garments",
-// Fishing Themed
-"Longshoreman Outfit",
-"Grey Fisherman'S Overalls",
-// Tinkerer's Outfit
-"Tinkerer'S Goggles",
-"Tinkerer'S Overalls",
-// Mr. Fuzzy
-"Mr. Fuzzy Mascot Head",
-"Mr. Fuzzy Mascot Suit",
-"Mr. Fuzzy Mining Helmet",
-"Mr. Fuzzy Red Hard Hat",
-"Mr. Fuzzy Teal Hard Hat",
-"Mr. Fuzzy Yellow Hard Hat",
-"Soiled Mr. Fuzzy Mascot Head",
-"Soiled Mr. Fuzzy Mascot Suit",
-// Pant Suits
-"Jaguar Pant Suit",
-"Jaguar Short Suit",
-"Tulip Sky Blue Pant Suit",
-"Tulip Sky Blue Pants Suit",
-// Jumpsuits
-"White Powder Jumpsuit",
-"Bos Jumpsuit",
-// Gas Masks
-"Reclaimed Deep Mining Gas Mask",
-// Spooky Scorched (Halloween)
-"Bear Gas Mask",
-"Gazelle Gas Mask",
-"Rooster Gas Mask",
-"Civil War Era Dress",
-"Civil War Era Suit",
-"Civil War Era Top Hat",
-"Clown Hat",
-"Clown Outfit",
-"Fireman Helmet",
-"Fireman Uniform",
-"Golf Outfit",
-"Golf Skirt",
-"Jack O'Lantern Pant Suit",
-"Jack O'Lantern Short Suit",
-"Pastor'S Vestments",
-"Pirate Costume",
-"Pirate Costume Hat",
-"Ranger Hat Clean",
-"Ranger Outfit Clean",
-"Tattered Mole Head",
-"Whitespring Jumpsuit",
-"Communist Commander Hat",
-"Communist Commander Outfit",
-"Jitterbug Judy Outfit",
-// MilePost Zero
-"Deathclaw Skin Outfit",
-"Gulper Skin Hood",
-"Gulper Skin Outfit",
-"Hunter'S Hanbok Outfit",
-"Lederhosen Outfit",
-"Lederhosen Outfit Hat",
-"Redcoat Hat",
-"Redcoat Outfit",
-// Raider themes items
-"Skull Lord Blood Eagle Helmet",
-"Skull Lord Blood Eagle Suit",
-"Skull Lord Helmet",
-"Skull Lord War Suit",
-// Meat Week Event
-"Bloody Chef Hat",
-"Bloody Chef Outfit",
-"Grillmaster'S Hat",
-"Grillmaster'S Outfit",
-"Chally The Moo-Moo Mask",
-"Chally The Moo-Moo Outfit",
-// Space Suits
-"Clean Spacesuit Helmet",
-"Clean Spacesuit Jumpsuit Helmet",
-"Clean Spacesuit Jumpsuit",
-"Clean Spacesuit",
-"Xerxo'S Spacesuit",
-// Hunter Outfits
-"Hunter'S Long Coat",
-"Deathclaw Hunter Hat",
-"Deathclaw Hunter Outfit",
-"Ogua Hunter Outfit",
-"Ogua Hunter Hood",
-"Blue Devil Hunter Outfit",
-"Blue Devil Hunter Hood",
-// Responder
-"Responder Fireman Helmet",
-"Responder Fireman Uniform",
-// Skiing Outfits
-"Skiing Gray",
-"Skiing Navy And Orange Outfit",
-"Skiing Navy",
-"Skiing Outfit Hat Clean",
-"Skiing Outfit Hat",
-"Skiing Outfit",
-"Skiing Purple And White Outfit",
-"Skiing Purple",
-"Skiing Red And Green Outfit",
-"Skiing Red",
-// The Big Bloom
-"Flower Crown - Carnal Weeper",
-"Flower Crown - Crystalcup",
-"Flower Crown - Radlily",
-"Flower Crown - Embergold",
-"Flower Crown - Glorybell",
-"Flower Crown - Green Invader",
-"Flower Crown - Seesprout",
-"Flower Crown - Starlace",
-"Flower Crown - Candykill",
-"Flower Crown - Gigablossom",
-"Wasteland Florist Apron",
-"Wasteland Florist Sunhat",
-"Flower Suit",
-"Flower-Printed Sundress",
-// Accessories
-"Wedding Ring",
-"Old Ring",
-"Prisoner Collar",
-"Dud Explosive Collar",
-// Holotapes
-"Atomic Command",
-"Automatron",
-"Grognak & The Ruby Ruins",
-"Nuka Tapper",
-"Pipfall",
-"Red Menace",
-"Wastelad",
-"Zeta Invaders",
-// Teddy Bears
-"Bubblegum Bear",
-"Bumblebear",
-"Comrade Chubs",
-"Dirty Old Teddy Bear",
-"Chinese Panda",
-"Lil' Ginger Snuggles",
-"Pristine Teddy Bear",
-"Quantum Bear",
-"Radbear",
-"Stuffed Grizzly",
-"Stuffed Polar Bear",
-"Teddy Fear",
-"Teddy Bear",
-// Plushies
-"Action Abe Plushie",
-"Alien Plushie",
-"Angler Plushie",
-"Bat Plushie",
-"Behemoth Boss Plushie",
-"Bloated Tick Plushie",
-"Blue Devil Plushie",
-"Blue Ridge Mr. Fuzzy Plushie",
-"Bottle Plushie",
-"Brahmin Plushie",
-"Cappy Plushie",
-"Comrade Fuzzy Plushie",
-"Crab Boat Plushie",
-"Dealer Mr. Fuzzy Plushie",
-"Dizzy Marshal Mallow Plushie",
-"Dizzy Toasty Mallow Plushie",
-"Easter Rabbit Plushie",
-"Ferocious Mr. Fuzzy Plushie",
-"Flatwoods Monster Plushie",
-"Fuzzy Enlightened Plushie",
-"Fuzzy Mothman Plushie",
-"Giant Sheepsquatch Plushie",
-"Grafton Monster Plushie",
-"Grahm Plushie",
-"Grelok Plushie",
-"Grognak Plushie",
-"Ground Meat Plushie",
-"Gulper Plushie",
-"Hamilton J. Pigg Plushie",
-"Hazmat Mr. Fuzzy Plushie",
-"Holiday Mr. Fuzzy Plushie",
-"Jackalope Plushie",
-"Jersey Devil Plushie",
-"Large Overgrown Plushie",
-"Lesser Devil Plushie 1",
-"Lesser Devil Plushie 2",
-"Lesser Devil Plushie 3",
-"Marshal Mallow Plushie",
-"Mirelurk Plushie",
-"Moe The Mole Plushie",
-"Mothman Plushie",
-"Mr. Bony Plushie",
-"Mr. Fuzzy Cowboy Plushie",
-"Mr. Fuzzy Halloween Plushie",
-"Mr. Fuzzy New Year'S Plushie",
-"Mr. Fuzzy Valentine'S Day Plushie",
-"Mr. Ghoulie Plushie",
-"Mr. Pebbles Plushie",
-"Mr. Rusty Plushie",
-"Nuka-Cola Mr. Fuzzy Plushie",
-"Nuka-Cola Quantum Mr. Fuzzy Plushie",
-"Nuka-Twist Mr. Fuzzy Plushie",
-"Octosaw Plushie",
-"Ogua Plushie",
-"Overgrown Thorn Plushie",
-"Patchwork Mr. Fuzzy Plushie",
-"Patriotic Bottle Plushie",
-"Patriotic Cappy Plushie",
-"Peppino Pig Plushie",
-"Pheasant Plushie",
-"Pink Brahmin Plushie",
-"Pioneer Mr. Fuzzy Plushie",
-"Pioneer Scouts Squirrel Mr. Fuzzy Plushie",
-"Punty Pig Plushie",
-"Rabbit Plushie",
-"Rib Plushie",
-"Rotted Ground Meat Plushie",
-"Rotted Rib Plushie",
-"Rotted Steak Plushie",
-"Santa Mr. Fuzzy Plushie",
-"Scientist Mr. Fuzzy Plushie",
-"Scorchbeast Queen Plushie",
-"Scorpion Plushie",
-"Sergeant Mr. Fuzzy Plushie",
-"Sheepsquatch Plushie",
-"Silver Shroud Plushie",
-"Slocum'S Joe Plushie",
-"Slocum'S Mr. Fuzzy Plushie",
-"Snallygaster Plushie",
-"Steak Plushie",
-"Titan Plushie",
-"Toasty Mallow Plushie",
-"Trog Plushie",
-"Uncle Sam Vault Boy Plushie",
-"Vault Boy 2000 Plushie",
-"Wanamingo Plushie",
-"Wendigo Colossus Plushie",
-"Wicker Mr. Fuzzy Plushie",
-"Wilber Mcpigg Plushie",
-"Willard Plushie",
-// Board Games
-"Unstoppables! Board Game",
-"Autopsy Board Game",
-"Blast Radius Board Game",
-"Rad Poker Board Game",
-// Misc. Items
-"All-Star Basketball",
-"Bird Decoration",
-"Broken Garden Gnome",
-"Blue Garden Gnome",
-"Red Garden Gnome",
-// Snow Globes
-"Axel'S Snow Globe",
-"Big Meadows Gas Well Snow Globe",
-"Camp Liberty Snow Globe",
-"Dark Hollow Manor Snow Globe",
-"High Knob Lookout Snow Globe",
-"Ineke'S Snow Globe",
-"Josie'S Snow Globe",
-"Marley'S Snow Globe",
-"Most Wanted Snow Globe",
-"Nuka Launcher Snow Globe",
-"Nuka-Cade Snow Globe",
-"Shenandoah Visitor Center Snow Globe",
-"Slumber Mill Motel Snow Globe",
-"Spin The Wheel Snow Globe",
-"Theodore'S Snow Globe",
-"Tunnel Of Love Snow Globe",
-"Windy'S Snow Globe",
-// Cursed Items
-"Elder'S Mark",
-"Holy Fire",
-// Unique Items
-"Garb Of Mysteries",
-"Alien Blaster Round",
-".308 Casing",
-"Mr. Gutsy Model",
-"Eyebot Model",
-"Sentry Bot Model",
-"Mr. Handy Model",
-"Protectron Model",
-"Boat Model",
-"Robot Parts Model",
-"House Teapot",
-"Huffwarbler Teapot",
-"Vault-Tec Alarm Clock",
-"Wakemaster Alarm Clock",
-"Restored Desk Fan",
-"Pawn",
-"Bishop",
-"Knight",
-"Chessboard",
-"Carlisle Typewriter",
-"Super Mutant Head",
-"Super Mutant Left Lower Arm",
-"Super Mutant Left Lower Leg",
-"Super Mutant Left Thigh",
-"Super Mutant Left Upper Arm",
-"Super Mutant Right Hand",
-"Super Mutant Right Lower Arm",
-"Super Mutant Right Lower Leg",
-"Super Mutant Right Thigh",
-"Super Mutant Right Upper Arm",
-"Jarred Scorched Head",
-"Jarred Scorched Hand",
-"Jarred Scorched Foot",
-"Scorched Ashes",
-"Neurotoxic Dust",
-"Toad Eye",
-"Flight Data Recorder",
-"Food Dehydrator",
-"Lumberjack Saw",
-"Detonator",
-"Pet Rock",
-"Toxic Sludge",
-"Earle'S Pocket Watch",
-"Fancy Glass",
-"Cocktail Glass",
-"Champagne Glass",
-//Instruments
-"Drumstick",
-"Snare Drum",
-"Frame Drum",
-"Violin",
-"Flute",
-"Trumpet",
-"Harmonica",
-"Accordion",
-//Trading Cards
-"Blue Devil Card",
-"Foil Blue Devil Card",
-"Beast Of Beckley Card",
-"Foil Beast Of Beckley Card",
-"Flatwoods Monster Card",
-"Foil Flatwoods Monster Card",
-"Grafton Monster Card",
-"Foil Grafton Monster Card",
-"Jersey Devil Card",
-"Foil Jersey Devil Card",
-"Mothman Card",
-"Foil Mothman Card",
-"Ogua Card",
-"Foil Ogua Card",
-"Sheepsquatch Card",
-"Foil Sheepsquatch Card"
+// This includes all the items we wish to drop/sell. Useful when overencumbered, or automating selling to vendors.
+// It is highly customized utilizing lists of ALL known useless items that just clutter inventory, or aren't worth their weight.
+// Intended for X quantity. e.g. If you only want to sell/drop 10 (or whetver your config is setup for) of something.
+// Feel free to add whatever else you wish, customize it to your hearts desire.
+// This list is meant to be used as the INCLUSIVE list of things to drop/sell/destroy because they have little value.
+// BE SURE TO ACTUALLY READ THIS LIST OR DOUBLE-CHECK YOUR LOOT BAG WHEN DROPPING ITEMS!!!
+// I AM NOT RESPONSIBLE IF YOU DROP/SELL/SCRAP SOMETHING YOU WANTED!!!
+
+// List of things I want to drop all but X amount of.
+// Throwables
+"Fragmentation Grenade",
+"Molotov Cocktail",
+"Nuka Grenade",
+"Nuka Quantum Grenade",
+"Turbo-Fert Fertilizer",
+"Stimpak",
+"Purified Water"
 ]
 ,
 				"dropFavorite": true,
@@ -4242,11 +3594,11 @@
 		"enabled": true,
         "delay": 100,
 		"configs": [
-            // Consume: XP!
+            // Consume: Buffs
 			{
 				"enabled": true,
                 "testRun": false,
-				"name": "XP!",
+				"name": "Buffs!",
 				"showButton": true,
 				"showMessage": false,
 				"hotkey":  97, // NumPad1
@@ -4257,68 +3609,84 @@
 				"matchMode": "CONTAINS",
 				"itemNames": // Copy Paste from FOX_BUFFS_CONSUME
 [
-// FOX_BUFFS_CONSUME Is The Curated List Of Consumables To Transfer Out Of Storage, And Consume For Use In Xp Grinding.
+// FOX_BUFFS_CONSUME Is The Curated List Of Consumables To Transfer Out Of Storage, And Consume For Use In XP grinding and general performance improvement.
 // Use FOX_KEEP To Protect The Items, And This To Perform Transfers, Or Consume Automations.
 
-// XP Food & Drink
-["Cranberry Relish",
-"Canned Cranberry Relish",
-"Cranberry Cobbler",
-"Cranberry Juice"],
-["Brain Bombs",
-"Brain Fungus Soup",
-"Steeped Aster Tea",
-"Steeped Tato Flower Tea",
-"Simple Aster Tea"],
+// Food/Soup/Drink
+// XP Buffs
+[
+"Cranberry Relish", // +10% XP for 60m
+"Cranberry Cobbler",// +5% XP for 30m
+"Cranberry Juice", // +2% XP for 30m
+"Nuka-Cola Cranberry" // +2% XP for 30m
+],
+// INT Buffs
+[
+"Brain Bombs", // +3 INT for 30m
+"Brain Fungus Soup", // +2 INT for 30m
+"Steeped Aster Tea", // +2 INT for 60m
+"Steeped Tato Flower Tea", // +2 INT for 60m
+"Simple Aster Tea"// +1 INT for 30m]
+],
 // Chems
-["Berry Mentats",
-"Daddy-O",
-"Mentats",
-"X-Cell",
-"Nuclear Don's Custom Chem Blend",
-"Psychotats",
-"Psychobuff",
-"Psycho",
-"Bufftats",
-"Buffout",
-"Overdrive"
+[
+"Berry Mentats", // +5 INT +highlights living targets for 5m
+"Daddy-O", // +3 INT, +3 PER, -2 CHR for 10m
+"Mentats", // +2 INT, +2 PER for 5m
+"Bufftats", // STR +3, PER +3, END +3, Max HP +40 (5m) 
+"X-Cell", // +2 STR, +2 PER, +2 END, +2 CHA, +2 INT, +2 AGI, +2 LCK for 2m
+"Buffout", // STR +2, END +2, +25 Max HP (5m) 
+"Psychobuff", // Damage +25%, STR +3, END +3, Max HP +65 (3m) 
+"Psychotats" // Damage +25%, Damage Resistance +15, PER +3 (3m) 
 ],
 // Serums
-"Egg Head Serum",
-"Herd Mentality Serum",
-"Marsupial Serum",
-// Bobblehead
-["Bobblehead: Leader",
-"Glowing Bobblehead: Leader",
-"Bobblehead: Intelligence",
-"Glowing Bobblehead: Intelligence",
-"Bobblehead: Strength",
-"Glowing Bobblehead: Strength",
-"Bobblehead: Agility",
-"Glowing Bobblehead: Agility",
-"Bobblehead: Big Guns",
-"Glowing Bobblehead: Big Guns",
-"Bobblehead: Caps",
-"Glowing Bobblehead: Caps"],
+"Adrenal Reaction", // Supresses -50 HP
+"Egg Head Serum", // Supresses -3 STR, -3 END
+"Healing Factor", // Supresses -55% Chem Effects
+"Marsupial Serum", // Supresses -4 INT
+// Bobbleheads
+[
+"Bobblehead: Leader", // +5% XP for 60m
+"Glowing Bobblehead: Leader", // +5% XP for 60m
+"Bobblehead: Intelligence", // +2 INT for 60m
+"Glowing Bobblehead: Intelligence", // +2 INT for 60m
+"Bobblehead: Strength", // +2 STR for 60m
+"Glowing Bobblehead: Strength", // +2 STR for 60m
+"Bobblehead: Agility", // +2 AGI for 60m
+"Glowing Bobblehead: Agility", // +2 AGI for 60m
+"Bobblehead: Endurance", // +2 END for 60m
+"Glowing Bobblehead: Endurance", // +2 END for 60m
+"Bobblehead: Big Guns", // +Heavy Gun damage
+"Glowing Bobblehead: Big Guns", // +Heavy Gun damage
+"Bobblehead: Energy Weapons", // +Energy Weapons damage
+"Glowing Bobblehead: Energy Weapons", // +Energy Weapons damage
+"Bobblehead: Explosive", // +Explosive damage
+"Glowing Bobblehead: Explosive", // +Explosive damage
+"Bobblehead: Caps", // +Cap Discovery
+"Glowing Bobblehead: Caps" // +Cap Discovery
+],
 //Magazines
-["Live & Love 8",
-"Live & Love 4",
+[
+"Live & Love 8", // +5% XP for 60m (while on a team)
+"Live & Love 4", // +10% AP regen for 60m (while on a team)
 "Guns And Bullets 4", // +6% AP regeneration 
 "Astoundingly Awesome Tales 6", // +0.20% Health Regeneration
 "Astoundingly Awesome Tales 7", // +5 maximum AP
 "Astoundingly Awesome Tales 8", // 25% less damage from robots
 "Astoundingly Awesome Tales 1", // +15% damage against mirelurks
 "Astoundingly Awesome Tales 2", // +15% damage against super mutants
-"Astoundingly Awesome Tales 11", //  	+15 damage to ghouls 
-"Backwoodsman 5", //  	+15% damage to animals 
-"Grognak The Barbarian 5", //  	+15% damage to Scorched creatures 
-"Guns And Bullets 1"], //  	+15% damage against robots
-//Nuka Cola
-"Nuka-Cola Twist",
+"Astoundingly Awesome Tales 11", // +15 damage to ghouls 
+"Backwoodsman 5", // +15% damage to animals 
+"Grognak The Barbarian 5", // +15% damage to Scorched creatures 
+"Guns And Bullets 1" // +15% damage against robots
+],
 //AP Regen
-["Company Tea",
 "Hard Lemonade",
-"Infused Soot Flower Tea"]
+[
+"Company Tea"
+],
+//Misc. Buffs
+"Nuka-Cola Twist"
 ]
 ,
 				"checkCharacterName": false,
@@ -4326,7 +3694,7 @@
 				"checkAccountName": false,
 				"accountName": "none"
 			},
-            // Consume: XP! (Lunchboxes)
+            // Consume: XP (Lunchboxes)
 			{
 				"enabled": true,
                 "testRun": true,
@@ -4345,7 +3713,7 @@
 				"checkAccountName": false,
 				"accountName": "none"
 			},
-            // Equip: Helmet!
+            // Equip: Helmet
 			{
 				"enabled": true,
                 // An attempt to automate re-equiping the helmets that always un-equip themselves.
@@ -4359,24 +3727,7 @@
                 "onlyIfNotEquipped" : true,
 				"onlyIfEquipped": false,
 				"matchMode": "CONTAINS",
-				"itemNames": // Custom helmet list here
-                [
-                    [
-					"Excavator (Helmet)",
-                    "Hellcat (Helmet)",
-                    "Raider (Helmet)",
-                    "Strangler (Helmet)",
-                    "T-45 (Helmet)",
-                    "T-51B (Helmet)",
-                    "T-60 (Helmet)",
-                    "T-65 (Helmet)",
-                    "Ultracite (Helmet)",
-                    "Union (Helmet)",
-                    "Vulcan (Helmet)",
-                    "X-01 (Helmet)",
-                    "Rustclaw Guard (Helmet)"
-					]
-                ]
+				"itemNames": ["(Helmet)"]
 			},
 			// Open: Gifts! (Pails, Gifts, Packages, etc.)
 			{

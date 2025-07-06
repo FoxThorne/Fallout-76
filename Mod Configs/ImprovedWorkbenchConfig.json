@@ -1,7 +1,7 @@
 {
 	"hideLoadMessage": true,
 	"showDurabilityValue": true,
-	"enableExamineRepairAll": false,
+	"enableExamineRepairAll": true,
 	"enableQuickRepairButton": true,
 	"enableImprovedQuantityMenu": true,
 	"enableLegendaryModTracking": true,
@@ -11,8 +11,8 @@
 	"customWorkbenchRepairHotkey": 0,
 	"autoUseRepairKit":
 	{
-		"enabled": false,
-		"conditionUnder": 15,
+		"enabled": true,
+		"conditionUnder": 100,
 		"exitAfterRepair": true,
 		"exitDelay": 250
 	},

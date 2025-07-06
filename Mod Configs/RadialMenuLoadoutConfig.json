@@ -17,22 +17,38 @@
 	"loadouts": [
 		{
 			"enabled": true,
-			"hotkey":49, //1
+			"hotkey":49, // 1
 			"name": "Heavy Guns",
 			//"account": ["acc 1", "acc 2", "..."],
 			//"character": ["char 1", "char 2", "..."],
 			"matchMode": "CONTAINS",
-			"1": "~Radfang Revolver",
-			"2": "~Ashclaw Longshot",
-			"3": "~Emberglow Spitter",
-			"4": "~Luminfang Volley",
-			"5": "~Thirst Zapper",
-			"6": ["Shepherd's Crook", "Vox", "Camera"], //Quest Items
-			"7": "~Voltfang",
-			"8": ["Nuka Grenade", "Molotov Cocktail"], //Quest Items
-			"9": "~Ironfang Saber",
-			"10": "Lorem Ipsum",
-			"11": "Lorem Ipsum",
+			"1": "Radfang Revolver",
+			"2": "Valkyrie",
+			"3": "Glowspike Emitter",
+			"4": "Emberglow Spitter",
+			"5": "Thirst Zapper",
+			"6": //Quest Items
+			[
+				"Shepherd's Crook",
+				"Vox",
+				"Nuka-Snapper"
+			],
+			"7": "Voltfang",
+			"8": "Ashclaw Longshot",
+			"9": "Holy Fire",
+			"10": "Ironfang Saber",
+			"11": // AP Consumables
+			[
+				"Sunshine Oil",
+				"Canned Coffee",
+				"Sweet Blackberry Tea",
+				"Tarberry Juice",
+				"Nuka-Cola Quantum",
+				"Nuka-Cola Orange",
+				"Nuka-Grape",
+				"Nuka-Cherry",
+				"Nuka-Cola Wild"
+			],
 			"12": ["Toxic Water", "Toxic Goo"] // Disable if not longer a Ghoul. ["Purified water", "Boiled water", "Dirty water"]
 		},
 		{
