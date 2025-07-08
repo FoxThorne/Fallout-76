@@ -32,7 +32,7 @@
 				"onlyLegendaries": false,
 				"matchMode": "EXACT",
 				"types": ["WEAPON", "ARMOR", "POWER_ARMOR", "APPAREL", "JUNK"],
-				"excluded": ["Raider Armor"]
+				"excluded": ["FOX_EXACT"]
 			},
             // Scrap ALL Legendaries not in FOX_KEEP
 			{
@@ -126,7 +126,7 @@
             "matchMode": "CONTAINS",
             "types":["WEAPON", "ARMOR", "APPAREL", "FOOD_WATER", "AID", "NOTES", "HOLO", "MISC", "MODS", "JUNK"]
 		},
-// Buffs
+// Take Buffs
 		{
 			"name": "Buffs!",
 			"testRun": false,
@@ -147,6 +147,78 @@
             "transferLegendaries": false,
 			"singleItemPerName": false,
 			"itemNames": ["FOX_BUFFS_TRANSFER"],
+            "direction": "FROM_CONTAINER",
+            "matchMode": "CONTAINS",
+            "types":["AID","FOOD_WATER","MISC"]
+		},
+// Take Buffs from Fridge/Freezer
+		{
+			"name": "Buffs Quantity",
+			"testRun": false,
+			"enabled": true,
+			"debug": true,
+			"showButton": false,
+			"showmessage": false,
+			"hotkey": 98, // NumPad 2
+            "maxItems":0,
+			"amount": 3,
+            "exactAmountInDestination":true,
+            "repeat":1,
+            "delay":80,
+            "onlyHighlightedItem":false,
+            "transferEquipped": false,
+			"transferFavorite": true,
+			"transferAssigned": true,
+            "transferLegendaries": false,
+			"singleItemPerName": true,
+			"itemNames":[
+// FOX_BUFFS_TARNSFER_QUANTITY Is The Curated List Of Consumables To Transfer Out Of Storage, And Consume For Use In XP grinding and general performance improvement.
+// Use FOX_KEEP To Protect The Items, And This To Perform Transfers, Or Consume Automations.
+// XP Buffs
+"Cranberry Relish", // +10% XP for 60m
+"Cranberry Cobbler",// +5% XP for 30m
+"Cranberry Juice", // +2% XP for 30m
+"Nuka-Cola Cranberry", // +2% XP for 30m
+// INT Buffs
+"Brain Bombs", // +3 INT for 30m
+"Brain Fungus Soup", // +2 INT for 30m
+"Steeped Aster Tea", // +2 INT for 60m
+"Steeped Tato Flower Tea", // +2 INT for 60m
+"Simple Aster Tea" // +1 INT for 30m
+],
+            "direction": "FROM_CONTAINER",
+            "matchMode": "CONTAINS",
+            "types":["AID","FOOD_WATER","MISC"]
+		},
+// Take Kits
+		{
+			"name": "Kits Quantity",
+			"testRun": false,
+			"enabled": true,
+			"debug": true,
+			"showButton": false,
+			"showmessage": false,
+			"hotkey": 98, // NumPad 2
+            "maxItems":0,
+			"amount": 100,
+            "exactAmountInDestination":true,
+            "repeat":1,
+            "delay":50,
+            "onlyHighlightedItem":false,
+            "transferEquipped": false,
+			"transferFavorite": false,
+			"transferAssigned": true,
+            "transferLegendaries": false,
+			"singleItemPerName": false,
+			"itemNames":
+[
+	"Canned Coffee",
+	"Basic Repair Kit",
+	"Improved Repair Kit",
+	"Scrap Kit",
+	"Health Kit Bundle",
+	"Rad Kit Bundle"
+],
             "direction": "FROM_CONTAINER",
             "matchMode": "CONTAINS",
             "types":["AID","FOOD_WATER","MISC"]
@@ -905,48 +977,6 @@
 "Token",
 "Gold Bullion",
 "Stack Of Gold Bullion",
-// Treasure Maps
-// Ash Heap
-"Ash Heap Treasure Map #01",
-"Ash Heap Treasure Map #02",
-// Cranberry Bog
-"Cranberry Bog Treasure Map #01",
-"Cranberry Bog Treasure Map #02",
-"Cranberry Bog Treasure Map #03",
-"Cranberry Bog Treasure Map #04",
-// Forest
-"Forest Treasure Map #01",
-"Forest Treasure Map #02",
-"Forest Treasure Map #03",
-"Forest Treasure Map #04",
-"Forest Treasure Map #05",
-"Forest Treasure Map #06",
-"Forest Treasure Map #07",
-"Forest Treasure Map #08",
-"Forest Treasure Map #09",
-"Forest Treasure Map #10",
-// Mire
-"Mire Treasure Map #01",
-"Mire Treasure Map #02",
-"Mire Treasure Map #03",
-"Mire Treasure Map #04",
-"Mire Treasure Map #05",
-// Savage Divide
-"Savage Divide Treasure Map #01",
-"Savage Divide Treasure Map #02",
-"Savage Divide Treasure Map #03",
-"Savage Divide Treasure Map #04",
-"Savage Divide Treasure Map #05",
-"Savage Divide Treasure Map #06",
-"Savage Divide Treasure Map #07",
-"Savage Divide Treasure Map #08",
-"Savage Divide Treasure Map #09",
-"Savage Divide Treasure Map #10",
-// Toxic Valley
-"Toxic Valley Treasure Map #01",
-"Toxic Valley Treasure Map #02",
-"Toxic Valley Treasure Map #03",
-"Toxic Valley Treasure Map #04",
 // Keys, Access Cards, etc. Anything That "Unlocks" Something In The Game.
 "Aaronholt Granary Shed Key",
 "Abandoned Bunker Safe Key",
@@ -1676,8 +1706,6 @@
 "Theodore'S Snow Globe",
 "Tunnel Of Love Snow Globe",
 "Windy'S Snow Globe",
-// Cursed Items
-"Holy Fire",
 // Unique Items
 "Pearly Peepers",
 "Garb Of Mysteries",
@@ -1986,8 +2014,12 @@
 // Misc.
 "Lunchbox",
 "Perfect Bubblegum",
-"Canned Coffee",
 "Popcorn",
+"Basic Repair Kit",
+"Improved Repair Kit",
+"Scrap Kit",
+"Health Kit Bundle",
+"Rad Kit Bundle",
 // // Cooking Ingredients & Materials \\ \\
 // Company Tea Ingredients (+10% AP Regen for 60m)
 "Company Tea",
@@ -1995,7 +2027,6 @@
 "Sweet Labrador Tea",
 "Whiskey",
 // Sweet Labrador Tea Ingredients
-"Boiled Water",
 "Honeycomb",
 "Rhododendron Flower",
 "Starlight Berries",
@@ -2019,14 +2050,11 @@
 "Sweet Blackberry Tea",
 "Wild Blackberry",
 // Cranberry Relish (+5% XP)
-"Cranberry Relish",
 "Cranberries",
 "Gourd",
 // Brain Bombs (+INT)
-"Brain Bombs",
 "Brain Fungus",
 "Mothman Egg",
-"Purified Water",
 // Berry Mentats
 "Berry Mentats",
 // Mentats
@@ -2049,18 +2077,9 @@
 "High-Radiation Fluids",
 // Chems
 "Addictol",
-"Daddy-O",
-"Bufftats",
-"X-Cell",
-"Buffout",
-"Psychobuff",
-"Psychotats",
 "Disease Cure",
 "\"The Fix\"",
 "Nuclear Don'S Custom Chem Blend",
-"Overdrive",
-"Psycho",
-"Stimpak: Super",
 // Misc. 
 "Prototype Stealth Boy",
 "Stealth Boy Mark Iii",
@@ -2618,8 +2637,6 @@
 "Theodore'S Snow Globe",
 "Tunnel Of Love Snow Globe",
 "Windy'S Snow Globe",
-// Cursed Items
-"Holy Fire",
 // Unique Items
 "Garb Of Mysteries",
 "Alien Blaster Round",
@@ -2897,6 +2914,7 @@
 "Mystery Meat Pie",
 "Nuka-Bottle Dog",
 "Nuka-Dog",
+"Nuka-Cola Candy",
 "Owlet Nuggets",
 "Pemmican",
 "Poached Angler",
@@ -5569,17 +5587,6 @@
 // Use FOX_KEEP To Protect The Items, And This To Perform Transfers, Or Consume Automations.
 
 // Food/Soup/Drink
-// XP Buffs
-"Cranberry Relish", // +10% XP for 60m
-"Cranberry Cobbler",// +5% XP for 30m
-"Cranberry Juice", // +2% XP for 30m
-"Nuka-Cola Cranberry", // +2% XP for 30m
-// INT Buffs
-"Brain Bombs", // +3 INT for 30m
-"Brain Fungus Soup", // +2 INT for 30m
-"Steeped Aster Tea", // +2 INT for 60m
-"Steeped Tato Flower Tea", // +2 INT for 60m
-"Simple Aster Tea", // +1 INT for 30m
 // Chems
 "Berry Mentats", // +5 INT +highlights living targets for 5m
 "Daddy-O", // +3 INT, +3 PER, -2 CHR for 10m
@@ -5631,6 +5638,23 @@
 "Company Tea",
 //Misc. Buffs
 "Nuka-Cola Twist"
+]
+,
+	"FOX_BUFFS_TRANSFER_QUANTITY":
+[
+// FOX_BUFFS_TARNSFER_QUANTITY Is The Curated List Of Consumables To Transfer Out Of Storage, And Consume For Use In XP grinding and general performance improvement.
+// Use FOX_KEEP To Protect The Items, And This To Perform Transfers, Or Consume Automations.
+// XP Buffs
+"Cranberry Relish", // +10% XP for 60m
+"Cranberry Cobbler",// +5% XP for 30m
+"Cranberry Juice", // +2% XP for 30m
+"Nuka-Cola Cranberry", // +2% XP for 30m
+// INT Buffs
+"Brain Bombs", // +3 INT for 30m
+"Brain Fungus Soup", // +2 INT for 30m
+"Steeped Aster Tea", // +2 INT for 60m
+"Steeped Tato Flower Tea", // +2 INT for 60m
+"Simple Aster Tea" // +1 INT for 30m
 ]
   	},
 // Debug Settings

@@ -1,0 +1,15 @@
+[
+// FOX_BUFFS_TARNSFER_QUANTITY Is The Curated List Of Consumables To Transfer Out Of Storage, And Consume For Use In XP grinding and general performance improvement.
+// Use FOX_KEEP To Protect The Items, And This To Perform Transfers, Or Consume Automations.
+// XP Buffs
+"Cranberry Relish", // +10% XP for 60m
+"Cranberry Cobbler",// +5% XP for 30m
+"Cranberry Juice", // +2% XP for 30m
+"Nuka-Cola Cranberry", // +2% XP for 30m
+// INT Buffs
+"Brain Bombs", // +3 INT for 30m
+"Brain Fungus Soup", // +2 INT for 30m
+"Steeped Aster Tea", // +2 INT for 60m
+"Steeped Tato Flower Tea", // +2 INT for 60m
+"Simple Aster Tea" // +1 INT for 30m
+]

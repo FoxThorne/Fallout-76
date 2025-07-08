@@ -3,17 +3,6 @@
 // Use FOX_KEEP To Protect The Items, And This To Perform Transfers, Or Consume Automations.
 
 // Food/Soup/Drink
-// XP Buffs
-"Cranberry Relish", // +10% XP for 60m
-"Cranberry Cobbler",// +5% XP for 30m
-"Cranberry Juice", // +2% XP for 30m
-"Nuka-Cola Cranberry", // +2% XP for 30m
-// INT Buffs
-"Brain Bombs", // +3 INT for 30m
-"Brain Fungus Soup", // +2 INT for 30m
-"Steeped Aster Tea", // +2 INT for 60m
-"Steeped Tato Flower Tea", // +2 INT for 60m
-"Simple Aster Tea", // +1 INT for 30m
 // Chems
 "Berry Mentats", // +5 INT +highlights living targets for 5m
 "Daddy-O", // +3 INT, +3 PER, -2 CHR for 10m

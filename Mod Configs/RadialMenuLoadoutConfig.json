@@ -24,8 +24,8 @@
 			"matchMode": "CONTAINS",
 			"1": "Radfang Revolver",
 			"2": "Valkyrie",
-			"3": "Glowspike Emitter",
-			"4": "Emberglow Spitter",
+			"3": "Voltfang",
+			"4": "Ashclaw Longshot",
 			"5": "Thirst Zapper",
 			"6": //Quest Items
 			[
@@ -33,8 +33,8 @@
 				"Vox",
 				"Nuka-Snapper"
 			],
-			"7": "Voltfang",
-			"8": "Ashclaw Longshot",
+			"7": "Glowspike Emitter",
+			"8": "Emberglow Spitter",
 			"9": "Holy Fire",
 			"10": "Ironfang Saber",
 			"11": // AP Consumables

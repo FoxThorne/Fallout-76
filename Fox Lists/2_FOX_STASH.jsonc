@@ -214,8 +214,12 @@
 // Misc.
 "Lunchbox",
 "Perfect Bubblegum",
-"Canned Coffee",
 "Popcorn",
+"Basic Repair Kit",
+"Improved Repair Kit",
+"Scrap Kit",
+"Health Kit Bundle",
+"Rad Kit Bundle",
 // // Cooking Ingredients & Materials \\ \\
 // Company Tea Ingredients (+10% AP Regen for 60m)
 "Company Tea",
@@ -223,7 +227,6 @@
 "Sweet Labrador Tea",
 "Whiskey",
 // Sweet Labrador Tea Ingredients
-"Boiled Water",
 "Honeycomb",
 "Rhododendron Flower",
 "Starlight Berries",
@@ -247,14 +250,11 @@
 "Sweet Blackberry Tea",
 "Wild Blackberry",
 // Cranberry Relish (+5% XP)
-"Cranberry Relish",
 "Cranberries",
 "Gourd",
 // Brain Bombs (+INT)
-"Brain Bombs",
 "Brain Fungus",
 "Mothman Egg",
-"Purified Water",
 // Berry Mentats
 "Berry Mentats",
 // Mentats
@@ -277,18 +277,9 @@
 "High-Radiation Fluids",
 // Chems
 "Addictol",
-"Daddy-O",
-"Bufftats",
-"X-Cell",
-"Buffout",
-"Psychobuff",
-"Psychotats",
 "Disease Cure",
 "\"The Fix\"",
 "Nuclear Don'S Custom Chem Blend",
-"Overdrive",
-"Psycho",
-"Stimpak: Super",
 // Misc. 
 "Prototype Stealth Boy",
 "Stealth Boy Mark Iii",
